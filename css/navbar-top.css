@@ -1,0 +1,157 @@
+/* TOP BAR */
+
+.top-bar{
+    background-color: #2f2a3e;
+    color: #7f7999;
+    display: flex;
+    line-height: 0;
+    
+}
+
+.bar-content{
+    display: flex;
+    margin-top: 30px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.bar-content-right{
+    text-align: right;
+    margin-top: 30px;
+    width: 200px;
+    display: flex;
+}
+
+.bar-content-right .social-medias-top svg{
+    height: 40px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    fill: #7f7999;
+}
+
+.bar-content-right .social-medias-top svg:hover{
+    fill: white;
+   
+}
+
+.top-bar .bar-content .phone{
+    display: flex;
+    fill: #7f7999;
+}
+
+.top-bar .bar-content .phone:hover{
+    color: white;
+    fill: white;
+    cursor: default;
+}
+
+.top-bar .bar-content .bar-phone-icon svg {
+    height: 40px;
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.top-bar .bar-content .bar-text-phone{
+    margin-left: 20px;
+}
+
+.top-bar .bar-content .top-button{
+    margin-left: 20px;
+    color: #7f7999;
+    text-decoration: none;
+}
+
+.top-bar .bar-content .top-button:hover {
+    color: white;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    display: flex;
+    top: 0s;
+    justify-content: space-between;
+    background: white;
+    opacity: 0.8;
+    width: 100%;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + #content {
+    padding-top: 150px;
+}
+
+.sticky + #content-about {
+    padding-top: 150px;
+}
+
+.sticky + #content-contact {
+    padding-top: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    line-height: 0;
+}
+
+nav ul li {
+    padding: 0px 10px;
+    line-height: 0;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 65px 20px;
+    line-height: 0;
+    font-size: 16px;
+    display: block;
+    transition-duration: 0.4s;
+}
+
+li a:hover:not(.active) {
+    background-color: lightgray;
+}
+
+nav div:first-child h1 {
+    line-height: 0;
+    padding: .8rem 0rem;
+    margin: 0;
+}
+
+nav div:first-child img {
+    height: 100px;
+    padding-left: 20px;
+}
+
+nav #register a {
+  background: white;
+  border: 2px solid #f98d7d;
+  border-radius: 25px;
+  color: #f98d7d;
+  padding: 7px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 55px 24px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+nav #register a:hover {
+    color: white;
+    background-color: #f98d7d;
+}

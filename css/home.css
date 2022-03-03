@@ -1,0 +1,305 @@
+/* OPENING PAGE */
+
+#content{
+    display: block;
+}
+
+#openHeading{
+  margin-top: 100px;
+  text-align: center;
+}
+
+#openHeading h1 {
+    font-weight: 900;
+}
+
+#openHeading h1 span{
+    color: #f98d7d;
+}
+
+#social-medias{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#social-medias #icon{
+    height: 40px;
+    padding: 20px;
+}
+
+
+/* APPLE BUTTON */
+.btn{
+    border-radius: 30px;
+    border-color: white;
+    background-color: white;
+    display: inline-flex;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat';
+}
+
+.btn .circle img{
+    height: 40px;
+    transition: 0.5s;
+}
+
+.btn span{
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.btn span:after{
+    content: "App Store";
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    top: 20px;
+    right: 0px;
+    left: 30px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    border-color: black;
+    padding-right: 40px;
+}
+
+.btn:hover span{
+    padding-right: 55px;
+}
+
+.btn:hover span:after{
+    opacity: 1;
+    right: -40px;
+}
+
+
+/* GOOGLE PLAY BUTTON */
+.btn-reverse{
+    border-radius: 30px;
+    border-color: white;
+    background-color: white;
+    display: inline-flex;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-reverse a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat';
+}
+
+.btn-reverse .circle img{
+    height: 40px;
+    transition: 0.5s;
+}
+
+.btn-reverse span{
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.btn-reverse span:after{
+    content: "Google Play";
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    top: 20px;
+    left: 0px;
+    right: 30px;
+    transition: 0.5s;
+}
+
+.btn-reverse:hover{
+    border-color: black;
+    padding-left: 40px;
+}
+
+.btn-reverse:hover span{
+    padding-left: 55px;
+}
+
+.btn-reverse:hover span:after{
+    opacity: 1;
+    left: -50px;
+}
+
+/* WHAT WE DO */
+
+#what-we-do{
+    margin-top: 150px;
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+#what-we-do #what-we-do-heading {
+    text-align: center;
+    flex: auto;
+}
+
+#what-we-do #what-we-do-heading h1 {
+    margin-top: 200px;
+}
+
+#what-we-do #keep-phone{
+    text-align: center;
+    flex: auto;
+}
+
+#what-we-do #keep-phone img{
+    height: 450px;
+}
+
+#what-we-do #what-we-do-text{
+    flex: auto;
+    text-align: left;
+    inline-size: 230px;
+    overflow-wrap: break-word;
+    margin-right: 45px;
+}
+
+#what-we-do #what-we-do-text p{
+    margin-top: 150px;
+    flex: auto;
+}
+
+/* HOME BANNERS  */
+
+#banner{
+    text-align: center;
+    background-image: linear-gradient(to right, #f9bb87, #fc4c71);
+    padding: 40px;
+}
+
+#banner a {
+    border: 2px solid black;
+    border-radius: 25px;
+    color: black;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  
+  #banner a:hover {
+      color: #f98d7d;
+      background-color: black;
+  }
+
+  /* FEATURES BOX */
+
+  #feature{
+      width: 100%;
+  }
+
+  #features-box{
+      padding-bottom: 40px;
+      background: #ffdcab;
+  }
+
+  #features-box #features-heading {
+      text-align: center;
+      font-size: 80px;
+      color: white;
+
+  }
+
+  #features-box #feature{
+      display: flex;
+
+  }
+
+  #features-box #feature #feature-picture{
+      width: 20%;
+      text-align: left;
+  }
+
+  #feature-description{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #features-box #feature #feature-description-text{
+    width: 100%;
+    text-align: left;
+    inline-size: 230px;
+    overflow-wrap: break-word;
+    float: right;
+    margin-right: 280px;
+  }
+
+  /* MIRROR */
+
+  #features-box #feature #feature-picture-mirror{
+    width: 20%;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: right;
+}
+
+  #features-box #feature #feature-description-text-mirror{
+    width: 100%;
+    text-align: left;
+    inline-size: 230px;
+    overflow-wrap: break-word;
+    float: right;
+    margin-right: 280px;
+  }
+
+.container{
+    margin-top: 50px;
+    width: auto;
+    background: white;
+    height: 600px;
+    display: flex;
+    transition: 0.5s;
+}
+
+.container .half{
+    width: 100%;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.container .half .text{
+    opacity: 0;
+    font-family: 'Montserrat';
+}
+
+.container .half img{
+    height: 160px;
+    margin-top: 150px;
+    transition: 0.2s;
+    
+}
+.container .half:hover{
+    background: #f98d7d;
+}
+
+.container .half:hover .text{
+    opacity: 1;
+}
+
+.container .half:hover img{
+    height: 100px;
+}
