@@ -1,21 +1,26 @@
-#content-about #box{
+.content-about .opener{
+    display: flex;
+    background-color: #f98d7d;
+}
+
+.content-about .box{
     width: 55%;
     height: 500px;
-    background-color: #f98d7d;
+    
     
 }
 
-#content-about #box #heading{
+.content-about .box .heading{
     padding-top: 100px;
     margin-left: 150px;
 }
 
-#content-about #box #button{
+.content-about .box .button{
     margin-top: 100px;
     margin-left: 150px;
 }
 
-#content-about #box #button a{
+.content-about .box .button a{
     border: 2px solid black;
     border-radius: 25px;
     color: black;
@@ -27,7 +32,16 @@
     cursor: pointer;
 }
 
-#content-about #box #button a:hover {
+.content-about .box .button a:hover {
     color: #f98d7d;
     background-color: black;
+}
+
+.content-about .opener .phone{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.content-about .opener .phone img{
+    height: 450px;
 }

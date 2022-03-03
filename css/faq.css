@@ -1,0 +1,101 @@
+.content-faq .opener{
+    display: flex;
+    background-color: #2f2a3e;
+}
+
+.content-faq .box{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.content-faq .box .heading{
+    padding-top: 50px;
+}
+
+
+.content-faq .box .heading h1{
+    color: white;
+}
+
+.content-faq .box .input{
+    margin-top: 50px;
+}
+
+.content-faq .box .input svg{
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.content-faq .box .input input{
+    border: none;
+    padding: 20px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.search {
+    font-family: 'Montserrat';
+    text-indent: 20px;
+}
+
+.questions{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.question{
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.question .icon {
+    float: right;
+}
+
+.accordion {
+    background-color: white;
+    font-family: 'Montserrat';
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+  }
+  
+  .accordion:hover {
+    background-color: #ccc; 
+  }
+
+  .accordion .i{
+    transition: all 0.4s ease;
+  }
+
+  .active i{
+    transform: rotateZ(-180deg);
+  }
+
+  
+  .panel {
+    font-size: 16px;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 50%;
+    max-height: 0;
+    display: inline-block;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    border-radius: 10px;
+    top: -5px;
+  }
+
+  .panel p{
+    padding: 5px
+  }
