@@ -319,6 +319,7 @@
     transform: translate(-50%, -50%);
     transition: 0.2s;
     cursor: default;
+    pointer-events: none;
 
 }
 
