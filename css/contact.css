@@ -93,6 +93,7 @@
 }
 
 .form .form-contents .button button{
+    text-align: center;
     background: black;
     border: none;
     border-radius: 20px;
@@ -100,12 +101,33 @@
     transition: 0.5s;
 }
 
+.form .form-contents .submit{
+    transition: 0.2s;
+    display: inline-flex;
+}
+
 .form .form-contents .button .button-text{
     opacity: 0;
+    color: white;
+    transition: 0.2s;
+    left: 30;
+    display: flex;
 }
 
 .form .form-contents .button button:hover{
-    padding-right: 70px;
+    padding-right: 60px;
+    padding-left: 60px;
 }
+
+.form .form-contents .button button:hover svg{
+    fill: #f98d7d;
+}
+
+.form .form-contents .button button:hover .button-text{
+    opacity: 1;
+
+}
+
+
 
 

@@ -68,22 +68,22 @@
     transition: 0.2s;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px lightgray;
-  }
+}
   
-  .accordion:hover {
+.accordion:hover {
     background-color: #ccc; 
-  }
+}
 
-  .accordion .i{
+.accordion .i{
     transition: all 0.4s ease;
-  }
+}
 
-  .active i{
+.active i{
     transform: rotateZ(-180deg);
-  }
+}
 
   
-  .panel {
+.panel {
     font-size: 16px;
     text-align: center;
     background-color: #f2f2f2;
@@ -93,8 +93,8 @@
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
     border-radius: 10px;
-  }
+}
 
-  .panel p{
+.panel p{
     padding: 5px
-  }
+}

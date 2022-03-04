@@ -5,55 +5,52 @@ footer{
     font-size: 16px;
 }
 
-#topic{
+.topic{
     margin-left: 200px;
     color: white;
     
 }
 
-#topic #links {
+.topic .links {
     text-align: center;
 }
 
-#topic #links a{
+.topic .links a{
     color: lightgray;
     text-decoration: none;
 }
 
-#topic #address p{
+.topic #address p{
     color: lightgray;
     text-decoration: none;
     
 }
 
-footer #footer-content{
+footer .footer-content{
     display: flex;
 }
 
-footer #footer-content #topic{
+footer .footer-content .topic{
     margin-top: 30px;
 }
 
-footer #footer-content #image img{
+footer .footer-content .image img{
     height: 200px;
 }
 
-footer #socials-footer{
+footer .socials-footer{
     display: block;
-}
-
-footer #socials-footer{
     margin-top: 30px;
 }
 
-footer #socials-footer #icon svg{
+footer .socials-footer .icon svg{
     margin-left: 200px;
     height: 50px;
     margin-bottom: 30px;
     fill: white;
 }
 
-footer #copyright{
+footer .copyright{
     text-align: center;
     background: #2f2a3e;
     color: white;
