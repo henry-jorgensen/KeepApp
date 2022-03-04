@@ -200,57 +200,57 @@
     margin-right: 40%;
   }
   
-  #banner a:hover {
-      color: #f98d7d;
-      background-color: black;
-  }
+#banner a:hover {
+    color: #f98d7d;
+    background-color: black;
+}
 
-  /* FEATURES BOX */
+/* FEATURES BOX */
 
-  #feature{
-      width: 100%;
-  }
+#feature{
+    width: 100%;
+}
 
-  #features-box{
-      padding-bottom: 40px;
-      background: #ffdcab;
-  }
+#features-box{
+    padding-bottom: 40px;
+    background: #ffdcab;
+}
 
-  #features-box #features-heading {
-      text-align: center;
-      font-size: 80px;
-      color: white;
+#features-box #features-heading {
+    text-align: center;
+    font-size: 80px;
+    color: white;
 
-  }
+}
 
-  #features-box #feature{
-      display: flex;
+#features-box #feature{
+    display: flex;
 
-  }
+}
 
-  #features-box #feature #feature-picture{
-      width: 20%;
-      text-align: left;
-  }
+#features-box #feature #feature-picture{
+    width: 20%;
+    text-align: left;
+}
 
-  #feature-description{
+#feature-description{
     width: 50%;
     text-align: center;
     justify-content: center;
-  }
+}
 
-  #features-box #feature #feature-description-text{
+#features-box #feature #feature-description-text{
     width: 100%;
     text-align: left;
     inline-size: 230px;
     overflow-wrap: break-word;
     float: right;
     margin-right: 280px;
-  }
+}
 
-  /* MIRROR */
+/* MIRROR */
 
-  #features-box #feature #feature-picture-mirror{
+#features-box #feature #feature-picture-mirror{
     width: 20%;
     margin-left: 150px;
     margin-right: 150px;
@@ -273,6 +273,7 @@
     height: 600px;
     display: flex;
     transition: 0.5s;
+    position: relative;
 }
 
 .container .half{
@@ -288,7 +289,7 @@
 
 .container .half img{
     height: 160px;
-    margin-top: 150px;
+    margin-top: 190px;
     transition: 0.2s;
     
 }
@@ -303,3 +304,16 @@
 .container .half:hover img{
     height: 100px;
 }
+
+#end-phone, #download-text{
+    text-align: center;
+    margin-top: 50px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    cursor: default;
+
+}
+
