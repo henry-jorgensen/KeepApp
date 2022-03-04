@@ -20,7 +20,7 @@ footer{
     text-decoration: none;
 }
 
-.topic #address p{
+.topic .address p{
     color: lightgray;
     text-decoration: none;
     
