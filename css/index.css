@@ -253,64 +253,45 @@
 
 /* FEATURES BOX */
 
-#feature{
-    width: 100%;
-}
 
-#features-box{
+.features-box{
     padding-bottom: 40px;
     background: #ffdcab;
 }
 
-#features-box #features-heading {
+.features-box .features-heading {
     text-align: center;
     font-size: 80px;
     color: white;
-
 }
 
-#features-box #feature{
+.feature{
+    width: 100%;
     display: flex;
-
 }
 
-#features-box #feature #feature-picture{
-    width: 20%;
+
+.features-box .feature .feature-picture{
+    width: 100%;
     text-align: left;
 }
 
-#feature-description{
-    width: 50%;
+
+.feature-description{
+    width: 100%;
     text-align: center;
     justify-content: center;
 }
 
-#features-box #feature #feature-description-text{
-    width: 100%;
-    text-align: left;
-    inline-size: 230px;
-    overflow-wrap: break-word;
-    float: right;
-    margin-right: 280px;
+.feature-description p{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
+
 
 /* MIRROR FEATURE BOX*/
 
-#features-box #feature #feature-picture-mirror{
-    width: 20%;
-    margin-left: 150px;
-    margin-right: 150px;
-    text-align: right;
-}
-
-#features-box #feature #feature-description-text-mirror{
-    width: 100%;
-    text-align: left;
-    inline-size: 230px;
-    overflow-wrap: break-word;
-    float: right;
-    margin-right: 280px;
-}
 
 /* DOWNLOAD APP ANIMATION */
 
