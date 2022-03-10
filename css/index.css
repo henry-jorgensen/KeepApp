@@ -141,44 +141,86 @@
 
 .slideshow{
     position: relative;
+    margin: auto;
 }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .prev{
+      left: 0;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
 
 .what-we-do{
     margin-top: 150px;
-    display: inline-flex;
+    display: none;
     width: 100%;
     margin-bottom: 150px;
+    
 }
 
-.what-we-do .what-we-do-heading {
-    text-align: center;
-    flex: auto;
+.what-we-do .heading{
+    width: 100%;
 }
 
-.what-we-do .what-we-do-heading h1 {
-    margin-top: 200px;
+.what-we-do .heading h1{
+    float: right;
+    
 }
 
 .what-we-do .keep-phone{
     text-align: center;
-    flex: auto;
+    width: 100%;
 }
 
 .what-we-do .keep-phone img{
     height: 450px;
 }
 
-.what-we-do .what-we-do-text{
-    flex: auto;
-    text-align: left;
-    inline-size: 230px;
+.what-we-do .text{
+    width: 100%;
     overflow-wrap: break-word;
-    margin-right: 45px;
 }
 
-.what-we-do .what-we-do-text p{
-    margin-top: 150px;
-    flex: auto;
+.what-we-do .text p{
+    float: left;
+    width: 200px;
+    margin-right: 40px;
 }
 
 /* HOME BANNERS  */
