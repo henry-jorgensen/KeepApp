@@ -79,7 +79,7 @@
 
 .btn:hover span:after{
     opacity: 1;
-    right: -40px;
+    right: -50px;
 }
 
 
@@ -305,10 +305,16 @@
     position: relative;
 }
 
+.container a{
+    text-decoration: none;
+    color: black;
+}
+
 .container .half{
     width: 100%;
     text-align: center;
     transition: 0.2s;
+    
 }
 
 .container .half .text{
