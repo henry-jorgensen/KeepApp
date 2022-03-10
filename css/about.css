@@ -1,3 +1,5 @@
+/* OPENING SCREEN */
+
 .content-about .opener{
     display: flex;
     background-color: #f98d7d;
@@ -36,12 +38,14 @@
     background-color: black;
 }
 
+/* PHONE CSS AND ANIMATION */
+
 .content-about .opener .phone{
     width: 80%;
     position: relative;
 }
 
-@keyframes slideLeft {
+@keyframes rotate {
     0%{
         transform: rotateY(90deg);
         transform: skewY(-20deg);
@@ -55,10 +59,12 @@
 
 .content-about .opener .phone img{
     position: absolute;
-    animation: 1.5s ease-out 0s 1 slideLeft;
+    animation: rotate 1.5s;
     height: 450px;
     margin-top: 40px;
 }
+
+/* WHAT WE DO  */
 
 .what-we-do{
     width: 100%;
@@ -69,30 +75,67 @@
 .what-we-do .wwd-description{
     width: 100%;
     height: 100%;
-    text-align: center;
-    margin-top: 50px;
+    
 }
 
-.what-we-do .wwd-description h1{
-    overflow-wrap: break-word;
-    margin-left: 100px;
-    width: 150px;
+.header{
+    position: absolute;
+    font-size: 200px;
+    white-space: nowrap;
+    margin-left: 200px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .header {
+      transition: font-size 1.5s ease;
+    }
+  }
+
+.transition-header{
     font-size: 50px;
+    
 }
 
+.what-we-do .wwd-description .wwd-text{
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+
+}
+
+.description{
+    position: absolute;
+    overflow-wrap: break-word;
+    width: 250px;
+    margin-left: 200px;
+    margin-top: 240px;
+    opacity: 0;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .description {
+      transition: opacity 2s ease-out;
+    }
+  }
+
+.transition-description{
+    opacity: 1;
+}
+
+
+/* SVG BOX */
 .what-we-do .wwd-box{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
-.what-we-do .wwd-animation-box{
-    background-color: red;
-    margin-left: 100px;
-    margin-right: 100px;
-
-}
-
-.what-we-do .wwd-animation-box svg{
-    width: 100%;
-    height: 100%;
+.what-we-do .wwd-box svg{
+    position: absolute;
+    background-color: #f2f2f2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
