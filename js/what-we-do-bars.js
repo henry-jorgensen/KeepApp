@@ -6,17 +6,17 @@ let data = {
 };
 
 let img = {
-    "Technology": "~/assets/Technology.png",
-    "Design": "~/assets/Design.png",
-    "Accuracy": "~/assets/Accuracy.png",
-    "Lorem Ipsum": "~/assets/LoremIpsum.png"
+    "Technology": "~/assets/about/Technology.png",
+    "Design": "~/assets/about/Design.png",
+    "Accuracy": "~/KeepApp/assets/about/Accuracy.png",
+    "Lorem Ipsum": "~/assets/about/LoremIpsum.png"
 }
 
 
 let margin = {top: 80, right: 40, bottom: 0, left: 110};
 let svgWidth = 620, svgHeight = 480;
 let height = svgHeight- margin.top- margin.bottom, width = svgWidth - margin.left - margin.right;
-let sourceNames = [], sourceCount = [], imgsNames = [], imgsCount = [];
+let sourceNames = [], sourceCount = [];
 
 let x = d3.scaleLinear().rangeRound([0, width]),
     y = d3.scaleBand().rangeRound([0, height]).padding(0.1);
@@ -34,7 +34,8 @@ y.domain(sourceNames);
 
 let svg = d3.select("#graph-box");
 svg.attr('height', svgHeight)
-   .attr('width', svgWidth);
+   .attr('width', svgWidth)
+   .attr('opacity', 0);
 
 svg = svg.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -48,7 +49,7 @@ let bars = svg.selectAll('.bar')
 
 
 bars.append('rect')
-    .attr('class', 'bar')
+    .attr('class', 'back-bar')
     .attr("x", function(d) { return 0; })
     .attr("y", function(d) { return y(d); })
     .attr("width", function(d){return x(100)})
@@ -63,9 +64,6 @@ bars.append('rect')
     .attr("width", 0)
     .style("fill", "#f98d7d")
     .attr("height", "15px")
-    .transition()
-    .duration(2000)
-    .attr("width", function(d){return x(data[d])})
     .attr("rx", "10px");
     
 
@@ -90,9 +88,38 @@ bars.append("text")
     .attr("text-anchor", "start");
 
 bars.append("svg:image")
-    .attr('x', -40)
-    .attr('y', function(d){return y(d) + y.bandwidth() -95})
-    .attr('width', 20)
-    .attr('height', 24)
+    .attr('x', -65)
+    .attr('y', function(d){return y(d) + y.bandwidth() -110})
+    .attr('width', 50)
+    .attr('height', 50)
+    .attr("text-anchor", "start")
     .attr("xlink:href", function(d){return img[d]})
+
+function triggerAnimation(){
+    console.log("TRIGGERED")
+    d3.select('#graph-box')
+        .transition()
+        .duration(1500)
+        .attr('opacity', 1)
+
+    setTimeout(function(){
+        d3.selectAll('.bar')
+        .transition()
+        .duration(1500)
+        .attr("width", function(d){return x(data[d])});
+    }, 1300);
+    
+}
+
+function reverseAnimation(){
+    d3.select('#graph-box')
+        .transition()
+        .duration(500)
+        .attr('opacity', 0)
+
+    d3.selectAll('.bar')
+        .transition()
+        .duration(500)
+        .attr("width", 0);
+}
     

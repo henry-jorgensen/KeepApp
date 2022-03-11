@@ -8,11 +8,13 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       header.classList.add('transition-header');
-      description.classList.add('transition-description')
+      description.classList.add('transition-description');
+      triggerAnimation();
       return;
     }
     header.classList.remove('transition-header');
-    description.classList.remove('transition-description')
+    description.classList.remove('transition-description');
+    reverseAnimation();
   });
 });
 
