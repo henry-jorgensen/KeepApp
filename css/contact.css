@@ -50,82 +50,94 @@
     font-family: 'Montserrat';
 }
 
-.form .form-contents{
-    margin-top: 220px;
+.form-contents{
+    margin-top: 150px;
     margin-left: 50px;
     width: 500px;
 }
 
-.form .form-contents input{
+.form-contents input, textarea{
     background: lightgray;
     border: none;
     font-family: 'Montserrat';
     border-radius: 30px;
     margin: 6px;
-    padding: 12px;
+    padding: 16px;
 }
 
-.form .form-contents .form-name{
+.form-contents .form-textarea{
+    width: 500px;
+    width: 100%;
+}
+
+.form-textarea textarea{
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+
+.form-name{
     display: flex;
+    width: 500px;
 }
 
-.form .form-contents .form-name #lastname{
-    margin-left: 55px;
-}
-
-.form .form-contents .form-name .form-half input{
+.form-half{
     width: 100%;
 }
 
-.form .form-contents .form-line input{
+.form-half + .form-half{
+    margin-left: 40px;
+}
+
+.form-half input{
     width: 100%;
 }
 
-.form .form-contents .button{
-    margin-top: 20px;
+.form-line{
+    width: 500px;
+}
+
+.form-line input{
+    width: 100%;
+}
+
+.form-button{
+    width: 100%;
+    margin: 6px;
+    padding: 16px;
     text-align: center;
 }
 
-.form .form-contents .button svg{
+.form-button svg{
+
     fill: white;
     padding: 5px;
-    transition: 0.5s;
 }
 
-.form .form-contents .button button{
+.form-button button{
     text-align: center;
     background: black;
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    position: relative;
+    display: inline-flex;
     transition: 0.5s;
 }
 
-.form .form-contents .submit{
-    transition: 0.2s;
-    display: inline-flex;
-}
-
-.form .form-contents .button .button-text{
-    opacity: 0;
+.form-button .button-text{
+    position: absolute;
     color: white;
-    transition: 0.2s;
-    left: 30;
-    display: flex;
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.form .form-contents .button button:hover{
-    padding-right: 60px;
-    padding-left: 60px;
+.form-button button:hover{
+    padding-right: 40px;
 }
 
-.form .form-contents .button button:hover svg{
-    fill: #f98d7d;
-}
-
-.form .form-contents .button button:hover .button-text{
+.form-button button:hover .button-text{
     opacity: 1;
-
 }
 
 

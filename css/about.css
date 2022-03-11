@@ -47,7 +47,7 @@
 
 @keyframes rotate {
     from {
-        margin-left: -250px;
+        margin-left: -350px;
         transform: skewY(-20deg);
     }
     to {
@@ -141,6 +141,42 @@
     transform: translate(-50%, -50%);
 }
 
+/* GENIUSES AT WORK */
+
+.meet-team {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #2f2a3e;
+}
+
+.team-header{
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline-flex;
+}
+
+.team-header img{
+    height: 100px;
+}
+
+.team-header img + h2{
+    margin-left: 20px;
+}
+
+.team-header h2{
+    color: white;
+}
+
+
+
+/* GET IN TOUCH SECTION */
+
 .get-in-touch{
     width: 100%;
     height: 600px;
@@ -154,8 +190,13 @@
 }
 
 .git-text{
-    margin-top: 150px;
+    margin-top: 70px;
     float: right;
+    margin-right: 200px;
+}
+
+.git-description h1{
+    font-size: 70px;
 }
 
 .git-description p{
@@ -163,6 +204,10 @@
     overflow-wrap: break-word;
 }
 
+
+
+
+/* CONTACT FORM */
 .git-form{
     width: 100%;
     height: 100%;
@@ -172,4 +217,86 @@
     margin-top: 150px;
     margin-left: 50px;
     width: 500px;
+}
+
+.form-contents input, textarea{
+    background: lightgray;
+    border: none;
+    font-family: 'Montserrat';
+    border-radius: 30px;
+    margin: 6px;
+    padding: 16px;
+}
+
+.form-contents .form-textarea{
+    width: 500px;
+    width: 100%;
+}
+
+.form-textarea textarea{
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+
+.form-name{
+    display: flex;
+    width: 500px;
+}
+
+.form-half{
+    width: 100%;
+}
+
+.form-half + .form-half{
+    margin-left: 40px;
+}
+
+.form-half input{
+    width: 100%;
+}
+
+.form-line{
+    width: 500px;
+}
+
+.form-line input{
+    width: 100%;
+}
+
+.form-button{
+    width: 100%;
+    margin: 6px;
+    padding: 16px;
+    text-align: center;
+}
+
+.form-button svg{
+    fill: white;
+    padding: 5px;
+}
+
+.form-button button{
+    text-align: center;
+    background: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    transition: 0.5s;
+}
+
+.form-button .button-text{
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.form-button button:hover{
+    padding-right: 40px;
+}
+
+.form-button button:hover .button-text{
+    opacity: 1;
 }

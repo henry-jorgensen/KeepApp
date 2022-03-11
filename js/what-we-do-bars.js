@@ -6,10 +6,10 @@ let data = {
 };
 
 let img = {
-    "Technology": "~/assets/about/Technology.png",
-    "Design": "~/assets/about/Design.png",
-    "Accuracy": "~/KeepApp/assets/about/Accuracy.png",
-    "Lorem Ipsum": "~/assets/about/LoremIpsum.png"
+    "Technology": "/assets/about/Technology.png",
+    "Design": "/assets/about/Design.png",
+    "Accuracy": "/assets/about/Accuracy.png",
+    "Lorem Ipsum": "/assets/about/LoremIpsum.png"
 }
 
 
@@ -89,14 +89,13 @@ bars.append("text")
 
 bars.append("svg:image")
     .attr('x', -65)
-    .attr('y', function(d){return y(d) + y.bandwidth() -110})
+    .attr('y', function(d){return y(d) + y.bandwidth() -105})
     .attr('width', 50)
     .attr('height', 50)
     .attr("text-anchor", "start")
-    .attr("xlink:href", function(d){return img[d]})
+    .attr("xlink:href", function(d){return img[d]});
 
 function triggerAnimation(){
-    console.log("TRIGGERED")
     d3.select('#graph-box')
         .transition()
         .duration(1500)
@@ -109,7 +108,7 @@ function triggerAnimation(){
         .attr("width", function(d){return x(data[d])});
     }, 1300);
     
-}
+};
 
 function reverseAnimation(){
     d3.select('#graph-box')
@@ -120,6 +119,6 @@ function reverseAnimation(){
     d3.selectAll('.bar')
         .transition()
         .duration(500)
-        .attr("width", 0);
-}
+        .attr("width", 0)
+};
     
