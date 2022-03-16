@@ -3,15 +3,19 @@ footer{
     height: 300px; 
     background: #2f2a3e;
     font-size: 16px;
+    width: 100%;
+}
+
+.image{
+    width: 100%;
+}
+
+.block{
+    width: 100%;
 }
 
 .topic{
-    margin-left: 200px;
     color: white;
-    
-}
-
-.topic .links {
     text-align: center;
 }
 
@@ -22,8 +26,7 @@ footer{
 
 .topic .address p{
     color: lightgray;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 footer .footer-content{
@@ -36,6 +39,7 @@ footer .footer-content .topic{
 
 footer .footer-content .image img{
     height: 200px;
+    float: right;
 }
 
 footer .socials-footer{
@@ -44,7 +48,7 @@ footer .socials-footer{
 }
 
 footer .socials-footer .icon svg{
-    margin-left: 200px;
+    margin-left: 50px;
     height: 50px;
     margin-bottom: 30px;
     fill: white;
