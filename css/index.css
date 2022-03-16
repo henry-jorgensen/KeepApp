@@ -358,7 +358,8 @@
 }
 
 .container #right-side:hover ~ #end-phone{
-    transform: translate(64%, -50%);
+    left: 75%;
+    transform: translate(-50%, -50%);
 } 
 
 .container #left-side:hover ~ #download-text{
@@ -366,7 +367,8 @@
 }
 
 .container #left-side:hover ~ #end-phone{
-    transform: translate(-164%, -50%);
+    left: 25%;
+    transform: translate(-50%, -50%);
 } 
 
 
