@@ -27,6 +27,11 @@
     margin-bottom: 80px;
 }
 
+.blog-item a{
+    text-decoration: none;
+    color: black;
+}
+
 .blog-picture{
     width: auto;
     height: 45%;
