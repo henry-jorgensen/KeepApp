@@ -1,7 +1,6 @@
 const header = document.querySelector('.header');
 const description = document.querySelector('.description');
 header.classList.remove('transition-header');
-description.classList.remove('transition-description')
 
 // Create the observer, same as before:
 const observer = new IntersectionObserver(entries => {

@@ -147,6 +147,11 @@
     position: relative;
     width: 100%;
     height: 600px;
+    background-color: white;
+}
+
+.meet-team-transition{
+    transition: 2s;
     background-color: #2f2a3e;
 }
 
@@ -154,23 +159,38 @@
     position: absolute;
     height: auto;
     width: auto;
-    top: 15%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     display: inline-flex;
+    
 }
 
 .team-header img{
     height: 100px;
 }
 
-.team-header img + h2{
-    margin-left: 20px;
+.team-h1{
+    font-size: 40px;
 }
 
-.team-header h2{
+
+.transition-team-header{
+    transition: 4s;
+    top: 15%;
+}
+
+.team-header{
+    color: #2f2a3e;
+}
+
+.transition-h1{
     color: white;
+}
+
+.team-header img + h1{
+    margin-left: 20px;
 }
 
 
