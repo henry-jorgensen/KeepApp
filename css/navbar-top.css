@@ -106,6 +106,10 @@ nav {
     padding-top: 130px;
 }
 
+.sticky + .content-tutorial{
+    padding-top: 130px;
+}
+
 .sticky + #content-contact {
     padding-top: 130px;
 }
