@@ -38,7 +38,7 @@ function toggleGenerator(){
   ideaImplementors.classList.remove('toggle-active');
 }
 
-function toggleImplementors(){
+function toggleImplementor(){
   ideaImplementors.classList.add('toggle-active');
   ideaGenerators.classList.remove('toggle-active');
 }

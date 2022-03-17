@@ -146,7 +146,7 @@
 .meet-team {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 800px;
     background-color: white;
 }
 
@@ -210,6 +210,36 @@
 .toggle-active{
     border-bottom: 5px solid white;
     border-radius: 5px;
+}
+
+.idea-generators{
+    position: absolute;
+    height: 400px;
+    width: 60%;
+    background-color: red;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.person{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(31, 22, 22);
+    
+}
+
+.photo{
+    position: relative;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 140px;
+    width: 140px;
+    border-radius: 140px;
+    background-color: green;
 }
 
 
