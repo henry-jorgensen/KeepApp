@@ -163,8 +163,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    display: inline-flex;
-    
+    display: inline-flex;    
 }
 
 .team-header img{
@@ -174,7 +173,6 @@
 .team-h1{
     font-size: 40px;
 }
-
 
 .transition-team-header{
     transition: 4s;
@@ -191,6 +189,27 @@
 
 .team-header img + h1{
     margin-left: 20px;
+}
+
+.team-buttons{
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 17px;
+}
+
+.toggle{
+    cursor: pointer;
+    
+}
+
+.toggle-active{
+    border-bottom: 5px solid white;
+    border-radius: 5px;
 }
 
 

@@ -28,3 +28,20 @@ const teamObserver = new IntersectionObserver(entries => {
   });
   
 teamObserver.observe(document.querySelector('.meet-team'));
+
+const ideaGenerators = document.getElementById('ideaGenerator');
+const ideaImplementors = document.getElementById('ideaImplementor');
+
+
+function toggleGenerator(){
+  ideaGenerators.classList.add('toggle-active');
+  ideaImplementors.classList.remove('toggle-active');
+}
+
+function toggleImplementors(){
+  ideaImplementors.classList.add('toggle-active');
+  ideaGenerators.classList.remove('toggle-active');
+}
+
+
+
