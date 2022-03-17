@@ -1,0 +1,35 @@
+.content-blog{
+    height: auto;
+    display: block;
+}
+
+.blog{
+    height: auto;
+    width: 100%;
+}
+
+.blog-container{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px;
+    width: auto;
+    height: auto;
+}
+
+.blog-items{
+    display: block;
+    background-color: antiquewhite;
+}
+
+
+.blog-item{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: block;
+}
+
+.blog-item + .blog-item{
+    margin-left: 20px;
+}
