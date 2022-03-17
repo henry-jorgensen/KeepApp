@@ -62,6 +62,7 @@ bars.append('rect')
     .attr("x", function(d) { return 0; })
     .attr("y", function(d) { return y(d); })
     .attr("width", 0)
+    .attr("opacity", 0)
     .style("fill", "#f98d7d")
     .attr("height", "15px")
     .attr("rx", "10px");
@@ -105,7 +106,8 @@ function triggerAnimation(){
         d3.selectAll('.bar')
         .transition()
         .duration(1500)
-        .attr("width", function(d){return x(data[d])});
+        .attr("width", function(d){return x(data[d])})
+        .attr("opacity", 1);
     }, 1300);
     
 };
@@ -119,6 +121,7 @@ function reverseAnimation(){
     d3.selectAll('.bar')
         .transition()
         .duration(500)
+        .attr("opacity", 0)
         .attr("width", 0)
 };
     
