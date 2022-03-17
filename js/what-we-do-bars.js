@@ -50,9 +50,9 @@ let bars = svg.selectAll('.bar')
 
 bars.append('rect')
     .attr('class', 'back-bar')
-    .attr("x", function(d) { return 0; })
+    .attr("x", 0 )
     .attr("y", function(d) { return y(d); })
-    .attr("width", function(d){return x(100)})
+    .attr("width", x(100))
     .attr("height", "15px")
     .attr("rx", "10px")
     .style("fill", "#b3b3b3");
