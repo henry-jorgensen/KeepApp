@@ -102,6 +102,10 @@ nav {
     padding-top: 130px;
 }
 
+.sticky + .content-blog-details{
+    padding-top: 130px;
+}
+
 .sticky + #content-contact {
     padding-top: 130px;
 }

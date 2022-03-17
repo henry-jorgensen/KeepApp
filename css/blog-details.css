@@ -1,0 +1,85 @@
+.content-blog-details{
+    height: auto;
+}
+
+.top-details{
+    font-size: 12px;
+}
+
+.top-details p {
+    margin-left: 100px;
+}
+
+p{
+    margin: 0;
+}
+
+h4{
+    margin: 0;
+}
+
+.photo-header{
+    height: 250px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.details-column{
+    width: auto;
+    height: auto;
+    background-color: aliceblue;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.header{
+    font-size: 30px;
+    width: auto;
+    margin-right: 70px;
+}
+
+.photo-header img{
+    width: 100%;
+    height: 100%;
+}
+
+.details-content{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.user-detail{
+    height: auto;
+    width: 500px;
+    display: flex;
+}
+
+.user-detail .profile-icon img{
+    height: 50px;
+    border-radius: 20px;
+}
+
+.user-bottom-text{
+    margin-left: 20px;
+}
+
+.profile-name{
+    height: 50%;
+}
+
+.blog-date{
+    height: 50%;
+}
+
+.details-photo{
+    padding: 10px;
+}
+
+.details-photo img{
+    height: auto;
+    width: 100%;
+}
+
+.details-text{
+    padding: 10px;
+}
