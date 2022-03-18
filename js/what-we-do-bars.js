@@ -75,7 +75,7 @@ bars.append("text")
     .attr("font-family" , "montserrat")
     .attr("font-weight", "bold")
     .attr("font-size" , "14px")
-    .attr("fill" , "black")
+    .attr("fill" , "#2f2a3e")
     .attr("text-anchor", "end");
 
 bars.append("text")
@@ -85,7 +85,7 @@ bars.append("text")
     .attr("font-family" , "montserrat")
     .attr("font-weight", "bold")
     .attr("font-size" , "14px")
-    .attr("fill" , "black")
+    .attr("fill" , "#2f2a3e")
     .attr("text-anchor", "start");
 
 bars.append("svg:image")

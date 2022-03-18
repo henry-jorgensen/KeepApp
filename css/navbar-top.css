@@ -85,7 +85,7 @@ nav {
     width: 100%;
   }
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  /* Add some top padding to the page content to prevent sudden quick movement */
 .sticky + #content {
     padding-top: 130px;
 }
@@ -130,7 +130,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: #2f2a3e;
     text-decoration: none;
     padding: 65px 20px;
     line-height: 0;

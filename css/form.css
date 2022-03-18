@@ -1,0 +1,96 @@
+.form-contents{
+    margin-top: 150px;
+    margin-left: 50px;
+    width: 500px;
+}
+
+.form-contents input, textarea{
+    background: #f2f2f2;
+    border: none;
+    font-family: 'Montserrat';
+    border-radius: 30px;
+    margin: 6px;
+    padding: 16px;
+}
+
+.form-contents .form-textarea{
+    width: 500px;
+    width: 100%;
+}
+
+.form-textarea textarea{
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+
+.form-name{
+    display: flex;
+    width: 500px;
+}
+
+.form-half{
+    width: 100%;
+}
+
+.form-half + .form-half{
+    margin-left: 40px;
+}
+
+.form-half input{
+    width: 100%;
+}
+
+.form-line{
+    width: 500px;
+}
+
+.form-line input{
+    width: 100%;
+}
+
+.form-button{
+    width: 100%;
+    margin: 6px;
+    padding: 16px;
+    text-align: center;
+}
+
+.form-button svg{
+    fill: white;
+    height: 20px;
+    padding: 5px;
+}
+
+.form-button button{
+    text-align: center;
+    background: #2f2a3e;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    transition: 0.3s;
+}
+
+.form-button button:hover{
+    padding-right: 40px;
+}
+
+.form-button button:hover p{
+    opacity: 1;
+    
+}
+
+.form-button button p{
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
