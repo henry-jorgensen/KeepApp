@@ -25,8 +25,12 @@ const teamObserver = new IntersectionObserver(entries => {
         }, 1400);
 
         setTimeout(() =>{
-          theTeam.classList.add("idea-transition");
-          theTeam.classList.add("idea-active");
+          if (ideaGeneratorsButton.className == "toggle toggle-active"){
+            generatorTeam.classList.add("idea-transition")
+          }
+          else if (ideaImplementorsButton.className == "toggle toggle-active"){
+            implementorTeam.classList.add("idea-transition");
+          }
           teamButtons.classList.add("idea-transition");
         }, 3000);
         
@@ -37,7 +41,8 @@ const teamObserver = new IntersectionObserver(entries => {
       teamh1.classList.remove('transition-h1');
       teamImg.src = "assets/about/Brain-Dark.png"
       teamh1.innerHTML = "Brains at Work"
-      theTeam.classList.remove("idea-transition");
+      generatorTeam.classList.remove("idea-transition");
+      implementorTeam.classList.remove("idea-transition");
       teamButtons.classList.remove("idea-transition");
 
     });
