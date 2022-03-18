@@ -6,8 +6,44 @@
 .left-col{
     height: 100%;
     width: 35%;
-    background-color: antiquewhite;
 }
+
+.sections{
+    position: relative;
+    height: 100%;
+    width: 90%;
+    float: right;
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.section-active{
+    background-color: #f2f2f2;
+}
+
+.section:hover{
+    background-color: #f2f2f2;
+}
+
+.section p{
+    position: absolute;
+    left: 10%;
+}
+
+.section img{
+    position: absolute;
+    height: 40px;
+    top: 20%;
+    left: 80%
+}
+
+
 
 .right-col video{
     height: 60%;
@@ -20,7 +56,6 @@
     height: 100%;
     overflow-y: auto;
     width: 65%;
-    background-color: aquamarine;
     margin-right: 50px;
     padding-left: 20px;
 }
@@ -32,6 +67,11 @@
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 20px;
+}
+
+.right-col .video-text p{
+    margin: 0;
+    font-size: 18px;
 }
 
 
