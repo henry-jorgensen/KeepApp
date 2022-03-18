@@ -2,19 +2,33 @@ const meetTeam = document.querySelector('.meet-team');
 const teamHeader = document.querySelector('.team-header');
 const teamImg = document.getElementById('team-img');
 const teamh1 = document.querySelector('.team-h1');
+const theTeam = document.querySelector('.idea-people')
+const teamButtons = document.querySelector('.team-buttons');
 
 teamHeader.classList.remove('transition-team-header');
+
+var personCount = document.querySelector('.idea-people').childElementCount;
+console.log(personCount);
 
 const teamObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         setTimeout(() =>{
+          if (personCount <= 4){
+            theTeam.classList.add("middle");
+          }
             meetTeam.classList.add('meet-team-transition');
             teamImg.src = "assets/about/Brain-White.png"
             teamHeader.classList.add('transition-team-header');
             teamh1.classList.add('transition-h1');
             teamh1.innerHTML = "Meet our Team"
         }, 1400);
+
+        setTimeout(() =>{
+          theTeam.classList.add("idea-transition");
+          theTeam.classList.add("idea-active");
+          teamButtons.classList.add("idea-transition");
+        }, 3000);
         
         return;
       }
@@ -23,24 +37,34 @@ const teamObserver = new IntersectionObserver(entries => {
       teamh1.classList.remove('transition-h1');
       teamImg.src = "assets/about/Brain-Dark.png"
       teamh1.innerHTML = "Brains at Work"
+      theTeam.classList.remove("idea-transition");
+      teamButtons.classList.remove("idea-transition");
 
     });
   });
   
 teamObserver.observe(document.querySelector('.meet-team'));
 
-const ideaGenerators = document.getElementById('ideaGenerator');
-const ideaImplementors = document.getElementById('ideaImplementor');
+const ideaGeneratorsButton = document.getElementById('ideaGenerator');
+const ideaImplementorsButton = document.getElementById('ideaImplementor');
+
+const generatorTeam = document.getElementById("generators");
+const implementorTeam = document.getElementById("implementors");
 
 
 function toggleGenerator(){
-  ideaGenerators.classList.add('toggle-active');
-  ideaImplementors.classList.remove('toggle-active');
+  ideaGeneratorsButton.classList.add('toggle-active');
+  ideaImplementorsButton.classList.remove('toggle-active');
+  generatorTeam.classList.add("idea-transition");
+  implementorTeam.classList.remove("idea-transition");
+
 }
 
 function toggleImplementor(){
-  ideaImplementors.classList.add('toggle-active');
-  ideaGenerators.classList.remove('toggle-active');
+  ideaImplementorsButton.classList.add('toggle-active');
+  ideaGeneratorsButton.classList.remove('toggle-active');
+  generatorTeam.classList.remove("idea-transition");
+  implementorTeam.classList.add("idea-transition");
 }
 
 

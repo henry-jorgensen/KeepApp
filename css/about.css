@@ -51,13 +51,14 @@
         transform: skewY(-20deg);
     }
     to {
-        margin-left: 0px;
+        margin-left: 150px;
         transform: skewY(0deg);
     }
     
 }
 
 .content-about .opener .phone img{
+    margin-left: 150px;
     position: absolute;
     animation: rotate 2.5s;
     height: 450px;
@@ -200,7 +201,10 @@
     transform: translate(-50%, -50%);
     color: white;
     font-size: 17px;
+    opacity: 0;
+    pointer-events: none;
 }
+
 
 .toggle{
     cursor: pointer;
@@ -212,22 +216,34 @@
     border-radius: 5px;
 }
 
-.idea-generators{
+.idea-people{
+    flex-flow: row wrap;
+    justify-content: center;
     position: absolute;
     height: 400px;
     width: 60%;
-    background-color: red;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.middle {
+    top: 75%;
+}
+
+.idea-transition{
+    transition: 2.5s;
+    opacity: 1;
+    pointer-events: all;
 }
 
 .person{
     position: relative;
     height: 200px;
     width: 200px;
-    background-color: rgb(31, 22, 22);
     
 }
 
@@ -239,7 +255,33 @@
     height: 140px;
     width: 140px;
     border-radius: 140px;
-    background-color: green;
+    background-color: #f98d7d;
+}
+
+.photo img{
+    position: relative;
+    height: 132px;
+    width: 132px;
+    border-radius: 132px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name{
+    text-align: center;
+    margin-top: 5px;
+    height: 30px;
+    width: 100%;
+    color: white;
+}
+
+.role{
+    text-align: center;
+    font-size: 15px;
+    height: 20px;
+    width: 100%;
+    color: #f98d7d;
 }
 
 
@@ -356,16 +398,4 @@
     transition: 0.5s;
 }
 
-.form-button .button-text{
-    color: white;
-    opacity: 0;
-    transition: 0.5s;
-}
 
-.form-button button:hover{
-    padding-right: 40px;
-}
-
-.form-button button:hover .button-text{
-    opacity: 1;
-}
