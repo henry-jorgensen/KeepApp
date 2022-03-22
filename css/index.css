@@ -256,14 +256,20 @@
 
 
 .features-box{
+    margin-top: 50px;
     padding-bottom: 40px;
     background: #ffdcab;
 }
 
-.features-box .features-heading {
+.features-heading {
     text-align: center;
     font-size: 80px;
     color: white;
+}
+
+.features-heading h1{
+    margin: 0;
+    margin-bottom: 120px;
 }
 
 .feature{
@@ -272,7 +278,7 @@
 }
 
 
-.features-box .feature .feature-picture{
+.feature-picture{
     width: 100%;
     text-align: left;
 }
@@ -292,6 +298,15 @@
 
 
 /* MIRROR FEATURE BOX*/
+
+
+
+
+/* CUSTOMER REVIEWS */
+
+.customer-reviews{
+    height: 1000px;
+}
 
 
 /* DOWNLOAD APP ANIMATION */
