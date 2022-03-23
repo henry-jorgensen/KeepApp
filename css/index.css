@@ -305,8 +305,41 @@
 /* CUSTOMER REVIEWS */
 
 .customer-reviews{
-    height: 1000px;
+    height: 1500px;
+    position: relative;
+    background-image: linear-gradient(white, white, white,  #f98d7d);
 }
+
+.review-phone{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.review-phone-transform{
+    top: 50%;
+}
+
+.review-phone-transform img{
+    width: 700px;
+}
+
+.phone-text{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    overflow: visible;
+} 
+
+.phone-text h1{
+    font-size: 55px;
+    color: #2f2a3e;
+    font-weight: bolder
+}
+
 
 
 /* DOWNLOAD APP ANIMATION */
