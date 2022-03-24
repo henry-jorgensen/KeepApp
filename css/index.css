@@ -285,6 +285,10 @@
     text-align: left;
 }
 
+.feature-picture img{
+    width: 350px;
+}
+
 .mirror img{
     float: right;
 }
@@ -309,11 +313,6 @@
 }
 
 
-/* MIRROR FEATURE BOX*/
-
-
-
-
 /* CUSTOMER REVIEWS */
 
 .customer-reviews-content{
@@ -333,6 +332,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 .review-phone-transform{
     transition: 0.5s;
