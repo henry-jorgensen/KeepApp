@@ -183,17 +183,29 @@
                 <div class="phone-text">
                     <h1>What are our clients saying</h1>
                 </div>
-                <div class="customer-reviews hide">
-                    <div class="review-image">
-                        <img src="assets/photos/review-example-2.jpg" />
+                <div class="review-slideshow hide">
+                    <div class="customer-reviews fade">
+                        <div class="review-image">
+                            <img src="assets/photos/review-example-2.jpg" />
+                        </div>
+                        <div class="review-text">
+                            <h3>Lorem Ipsum Dolor</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies metus condimentum interdum ullamcorper. Integer ornare efficitur pharetra.</p>
+                        </div>
                     </div>
-                    <div class="review-text">
-                        <h3>Lorem Ipsum Dolor</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies metus condimentum interdum ullamcorper. Integer ornare efficitur pharetra.</p>
+                    <div class="customer-reviews fade">
+                        <div class="review-image">
+                            <img src="assets/photos/review-example.jpg" />
+                        </div>
+                        <div class="review-text">
+                            <h3>Lorem Ipsum Dolor change</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies metus condimentum interdum ullamcorper. Integer ornare efficitur pharetra.</p>
+                        </div>
                     </div>
                 </div>
-                <a class="prev review-button hide" onclick="plusSlides(-1)">❮</a>
-                <a class="next review-button hide" onclick="plusSlides(1)">❯</a>
+                
+                <a class="prev review-button hide" onclick="plusSlidesReview(-1)">❮</a>
+                <a class="next review-button hide" onclick="plusSlidesReview(1)">❯</a>
             </div>
 
             <div class="client-animation-trigger">
@@ -231,6 +243,7 @@
 
 <script src="js/global-scripts.js"></script>    
 <script src="js/slideshow-wwd.js"></script>
+<script src="js/slideshow-reviews.js"></script>
 <script src="js/client-reviews.js"></script>
 </body>
 <footer>

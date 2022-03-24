@@ -2,7 +2,7 @@ const content = document.querySelector('.customer-reviews-content');
 const trigger = document.querySelector('.client-animation-trigger');
 const phone = document.querySelector('.review-phone');
 const phoneText = document.querySelector('.phone-text');
-const reviews = document.querySelector('.customer-reviews');
+const reviews = document.querySelector('.review-slideshow');
 const buttons = document.getElementsByClassName('review-button');
 
 // Create the observer:
