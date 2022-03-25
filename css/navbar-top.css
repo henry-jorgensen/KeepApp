@@ -4,28 +4,23 @@
     background-color: #2f2a3e;
     color: #7f7999;
     display: flex;
-    line-height: 0;
-    
+
 }
 
 .bar-content{
     display: flex;
-    margin-top: 30px;
     font-size: 14px;
     width: 100%;
 }
 
 .bar-content-right{
     text-align: right;
-    margin-top: 30px;
     width: 200px;
     display: flex;
 }
 
 .bar-content-right .social-medias-top svg{
     height: 40px;
-    margin-top: -20px;
-    margin-bottom: 10px;
     margin-right: 20px;
     fill: #7f7999;
 }
@@ -40,28 +35,30 @@
     fill: #7f7999;
 }
 
-.top-bar .bar-content .phone:hover{
+.bar-content .phone:hover{
     color: white;
     fill: white;
     cursor: default;
 }
 
-.top-bar .bar-content .bar-phone-icon svg {
+.bar-phone-icon svg {
+    margin-left: 20px;
     height: 40px;
-    margin-left: 20px;
-    margin-top: -20px;
-    margin-bottom: 10px;
+
 }
 
-.top-bar .bar-content .bar-text-phone{
+.bar-text-phone{
+    margin-top: 13px;
     margin-left: 20px;
 }
 
-.top-bar .bar-content .top-button{
+.top-button{
+    margin-top: 13px;
     margin-left: 20px;
     color: #7f7999;
     text-decoration: none;
 }
+
 
 .top-bar .bar-content .top-button:hover {
     color: white;
@@ -79,6 +76,7 @@ nav {
     width: 100%;
     z-index: 1;
 }
+
 .sticky {
     position: fixed;
     top: 0;
@@ -152,8 +150,13 @@ nav div:first-child h1 {
 }
 
 nav div:first-child img {
+    margin-top: 18px;
     height: 100px;
     padding-left: 20px;
+}
+
+#menu-icon{
+    display: none;
 }
 
 nav #register a {
