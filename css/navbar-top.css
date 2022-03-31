@@ -141,7 +141,7 @@ li a:hover:not(.active) {
     background-color: lightgray;
 }
 
-#collapsible{
+#nav-icon-div{
     display: none;
 }
 
