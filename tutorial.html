@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/tutorial.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -51,7 +52,14 @@
     </div>
 
     <nav id="nav">
-        <img onclick="switchMenu()" id="collapsible" src="assets/general-icons/menu-icon.png" />
+        <div id="nav-icon-div">
+            <div id="nav-icon" onclick="switchMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
         <div>
             <a href="/index.html"><img src="assets/keep-logos/keep_logo.png" alt="Keep Logo"/></a>
         </div>
