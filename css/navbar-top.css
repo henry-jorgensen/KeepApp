@@ -141,15 +141,11 @@ li a:hover:not(.active) {
     background-color: lightgray;
 }
 
-
-
-nav div:first-child h1 {
-    line-height: 0;
-    padding: .8rem 0rem;
-    margin: 0;
+#collapsible{
+    display: none;
 }
 
-nav div:first-child img {
+nav div a img {
     margin-top: 18px;
     height: 100px;
     padding-left: 20px;

@@ -1,0 +1,55 @@
+nav {
+    position: relative;
+    display: block;
+    top: 0s;
+    justify-content: space-between;
+    background: white;
+    opacity: 0.8;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    transition: 2s;
+    position: absolute;
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    width: 100%;
+    line-height: 0;
+    opacity: 1;
+}
+
+nav ul li {
+    padding: 0px 10px;
+    line-height: 0;
+    height: 100%;
+    display: block;
+}
+
+nav ul li a {
+    text-align: center;
+    color: #2f2a3e;
+    text-decoration: none;
+    padding: 25px 20px;
+    line-height: 0;
+    font-size: 16px;
+    display: block;
+    transition-duration: 0.4s;
+}
+
+#register{
+    display: none;
+}
+
+nav #collapsible{
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 90%;
+}
