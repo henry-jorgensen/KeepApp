@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/keep-logos/keep_logo.png" type="image/icon type">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar-top.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 950px)" href="css/navbar-small.css" />
     <link rel="stylesheet" href="css/faq.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -42,10 +43,11 @@
         </div>
     </div>
     <nav id="nav">
+        <img onclick="switchMenu()" id="collapsible" src="assets/general-icons/menu-icon.png" />
         <div>
-            <h1><a href="/index.html"><img src="assets/keep-logos/keep_logo.png" alt="Keep Logo"/></a></h1>
+            <a href="/index.html"><img src="assets/keep-logos/keep_logo.png" alt="Keep Logo"/></a>
         </div>
-        <ul>
+        <ul id="nav-menu">
             <li>
                 <a href="/index.html">Home</a>
             </li>
@@ -64,7 +66,6 @@
             <li>
                 <a href="/contact.html">Contact</a>
             </li>
-            
         </ul>
         <div id="register">
             <a href="#">Register</a>
@@ -119,6 +120,7 @@
 
     <script src="js/global-scripts.js"></script>    
     <script src="js/faq.js"></script> 
+    <script src="js/collapse-menu.js"></script>
 </body>
 <footer>
     <div class="footer-content">
