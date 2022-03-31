@@ -10,7 +10,7 @@ nav {
 }
 
 nav ul {
-    transition: 2s;
+    transition: 0.5s;
     position: absolute;
     display: block;
     list-style: none;
@@ -20,6 +20,11 @@ nav ul {
     width: 100%;
     line-height: 0;
     opacity: 1;
+}
+
+.nav-off{
+    display: none;
+    opacity: 0;
 }
 
 nav ul li {

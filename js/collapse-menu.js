@@ -1,24 +1,18 @@
 const menuButton = document.getElementById("collapsible");
 const menu = document.getElementById("nav-menu");
 
+const menuStyle = menu.style
 
 
 function switchMenu(){
-    if(menu.style.display != "none"){
-        menu.style.display = "none"
+    if(menu.classList.contains('nav-off')){
+        menu.classList.remove('nav-off')
+        menuButton.src = "assets/general-icons/cross-icon.png"
+    } else{
+        menu.classList.add('nav-off')
+        menuButton.src = "assets/general-icons/menu-icon.png"
     }
-    else if (menu.style.display == "none"){
-        menu.style.display = "block"
-    }
-}
-
-function switchMenuOpacity(){
-    if(menu.style.opacity == "0"){
-        menu.style.opacity = "1"
-    }
-    else if (menu.style.opacity == "1"){
-        menu.style.opacity = "0"
-    }
+    
 }
 
 
