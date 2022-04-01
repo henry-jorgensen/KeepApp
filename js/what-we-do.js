@@ -17,4 +17,4 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-observer.observe(document.querySelector('.wwd-text'));
+observer.observe(document.querySelector('.what-we-do'));

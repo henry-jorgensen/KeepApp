@@ -74,12 +74,6 @@
     display: flex;
 }
 
-.what-we-do .wwd-description{
-    width: 100%;
-    height: 100%;
-    
-}
-
 .header{
     position: absolute;
     font-size: 120px;
@@ -98,12 +92,16 @@
     
 }
 
+.wwd-description{
+    height: 100%;
+    width: 50%;
+}
+
 .what-we-do .wwd-description .wwd-text{
     color: #2f2a3e;
-    position: inherit;
-    width: 100%;
-    height: 100%;
+    height: auto;
     margin-top: 50px;
+
 
 }
 
@@ -129,9 +127,9 @@
 
 
 /* SVG BOX */
-.what-we-do .wwd-box{
-    width: 100%;
+.wwd-box{
     height: 100%;
+    width: 50%;
     position: relative;
 }
 
@@ -142,6 +140,59 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 1250px) {
+    .what-we-do{
+        height: 1100px;
+        width: 100%;
+        display: block;
+    }
+
+    .wwd-description{
+        height: 50%;
+        width: 100%;
+
+    }
+    .wwd-box{
+        height: 50%;
+        width: 100%;
+    }
+
+    .what-we-do .wwd-box svg{
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    .description{
+
+        width: 250px;
+        margin-left: 400px;
+        margin-top: 240px;
+        opacity: 0;
+    
+    }
+
+    .header{
+        position: absolute;
+        font-size: 120px;
+        white-space: nowrap;
+        margin-left: 400px;
+    }
+
+    .transition-header{
+        font-size: 50px;
+        
+    }
+
+    .transition-description{
+        opacity: 1;
+    }
+
+    
+
 }
 
 /* GENIUSES AT WORK */
@@ -298,15 +349,14 @@
 
 .git-description{
     width: 100%;
-    height: 100%;
+    height: auto;
 
 }
 
 .git-text{
     color: #2f2a3e;
-    margin-top: 70px;
-    float: right;
-    margin-right: 200px;
+    margin-top: 100px;
+    margin-left: 200px;
 }
 
 .git-description h1{
@@ -324,4 +374,30 @@
     height: 100%;
 }
 
+.form-contents{
+    margin-top: 150px;
+    margin-left: 50px;
+}
 
+@media screen and (max-width: 1207px) {
+
+    .git-text{
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 400px;
+        margin:  0 auto;
+    }
+
+    
+
+    .form-contents{
+        margin: 0 auto;
+    }
+
+    .get-in-touch{
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+
+}
