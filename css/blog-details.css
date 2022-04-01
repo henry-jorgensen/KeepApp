@@ -32,6 +32,17 @@ h4{
     margin-right: 250px;
 }
 
+@media screen and (max-width: 1190px) {
+    .details-column{
+        width: auto;
+        height: auto;
+        background-color: aliceblue;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+}
+
 .header{
     font-size: 30px;
     width: auto;
