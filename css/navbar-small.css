@@ -23,7 +23,7 @@ nav ul {
 }
 
 .nav-off{
-  
+    pointer-events: none;
     opacity: 0;
 }
 

@@ -1,6 +1,4 @@
 .form-contents{
-    margin-top: 150px;
-    margin-left: 50px;
     width: 500px;
 }
 
@@ -14,7 +12,7 @@
 }
 
 .form-contents .form-textarea{
-    width: 500px;
+    /* width: 500px; */
     width: 100%;
 }
 

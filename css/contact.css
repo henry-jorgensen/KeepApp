@@ -1,7 +1,5 @@
-
-
 #content-contact #box{
-    height: 700px;
+    height: auto;
     background-color: #f98d7d;
     
 }
@@ -46,29 +44,43 @@
 }
 
 .form-container .form {
+    position: relative;
     width: 100%;
     font-family: 'Montserrat';
 }
 
+.form-contents{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
 @media screen and (max-width: 1207px) {
 
+    .form-container .map iframe{
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 500px;
+    }
     .form-contents{
-       text-align: center;
-
+        margin: 0 auto;
     }
 
-    #content-contact{
-        height: 1850px;
-    }
     .form-container{
+        height: auto;
+        width: 100%;
         display: block;
     }
 
     .form-container .map{
         text-align: center;
+        height: auto;
+        width: 100%;
     }
 
     .form-container .form{
+        height: auto;
+        width: 100%;
         position: relative;
     }
 }
