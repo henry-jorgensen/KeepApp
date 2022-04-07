@@ -21,6 +21,20 @@
     height: 70px;
     margin-top: 20px;
     border-radius: 10px;
+    display: flex;
+}
+
+.section-title{
+    position: relative;
+    height: 100%;
+    width: 80%;
+
+}
+
+.section-img{
+    position: relative;
+    height: 100%;
+    width: 20%;
 }
 
 .section-active{
@@ -31,16 +45,28 @@
     background-color: #f2f2f2;
 }
 
-.section p{
+.section-title p{
     position: absolute;
-    left: 10%;
+    left: 5%;
 }
 
-.section img{
+.section-img img{
     position: absolute;
     height: 40px;
     top: 20%;
-    left: 80%
+    left: 10%;
+}
+
+@media screen and (max-width: 1096px) {
+    .section{
+        height: 100px;
+    }
+
+    .section-img img{
+        top: 30%;
+    }
+
+
 }
 
 

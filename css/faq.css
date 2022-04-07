@@ -98,3 +98,13 @@
 .panel p{
     padding: 5px
 }
+
+@media screen and (max-width: 800px){
+    .accordion{
+        width: 70%;
+    }
+    
+    .panel{
+        width: 70%;
+    }
+}

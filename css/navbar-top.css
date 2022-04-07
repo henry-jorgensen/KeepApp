@@ -65,6 +65,8 @@
 }
 
 
+
+
 /* NAVIGATION BAR */
 
 nav {
@@ -173,4 +175,14 @@ nav #register a {
 nav #register a:hover {
     color: white;
     background-color: #f98d7d;
+}
+
+@media screen and (max-width: 664px) {
+    /* .top-bar{
+        display: none;
+    }
+    nav{
+        position: fixed;
+    } */
+
 }
