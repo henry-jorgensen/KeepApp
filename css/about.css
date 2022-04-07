@@ -99,7 +99,7 @@
 
 .what-we-do .wwd-description .wwd-text{
     color: #2f2a3e;
-    height: auto;
+    height: 100%;
     margin-top: 50px;
 
 
@@ -158,6 +158,20 @@
     .wwd-box{
         height: 50%;
         width: 100%;
+    }
+
+    .wwd-text{
+        width: auto;
+        height: auto;
+    }
+
+    .wwd-text .header{
+        margin-left: 32%;
+    }
+
+    .wwd-text .description{
+        margin-top: 210px;
+        margin-left: 32%;
     }
 
     .what-we-do .wwd-box svg{
@@ -274,7 +288,7 @@
     justify-content: center;
     position: absolute;
     height: 400px;
-    width: 60%;
+    width: 70%;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -283,9 +297,31 @@
     pointer-events: none;
 }
 
+
 .middle {
     top: 75%;
 }
+@media screen and (max-width: 1151px) {
+    
+    .idea-people{
+        top: 50%;
+        width: 90%;
+    }
+    .meet-team{
+        height: 1200px;
+    }
+    .middle{
+        top: 55%;
+    }
+
+    .team-buttons{
+        top: 25%;
+    }
+
+}
+
+
+
 
 .idea-transition{
     transition: 1s;
