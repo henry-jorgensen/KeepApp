@@ -304,20 +304,33 @@
 @media screen and (max-width: 1151px) {
     
     .idea-people{
-        top: 50%;
+        top: 53%;
         width: 90%;
     }
     .meet-team{
-        height: 1200px;
+        height: 900px;
     }
     .middle{
-        top: 55%;
+        top: 65%;
     }
 
     .team-buttons{
         top: 25%;
     }
 
+}
+
+@media screen and (max-width: 678px){
+    .idea-people{
+        top: 47%;
+        width: 90%;
+    }
+    .meet-team{
+        height: 1200px;
+    }
+    .middle{
+        top: 65%;
+    }
 }
 
 

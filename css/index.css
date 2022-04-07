@@ -253,6 +253,13 @@
     background-color: #2f2a3e;
 }
 
+@media screen and (max-width: 1000px){
+    .banner a{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
 /* FEATURES BOX */
 
 
