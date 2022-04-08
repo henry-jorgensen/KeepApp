@@ -92,3 +92,27 @@
     -webkit-transition: opacity .2s ease-out;
     -o-transition: opacity .2s ease-out;
 }
+
+
+@media screen and (max-width: 600px){
+    .form-contents{
+        width: 400px;
+    }
+
+    .form-contents{
+        width: 300px;
+    }
+
+    .form-line{
+        width: 100%;
+    }
+
+    .form-name{
+        display: flex;
+        width: 300px;
+    }
+    
+    .form-half{
+        width: 50%;
+    }
+}

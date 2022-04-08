@@ -36,6 +36,8 @@
     display: flex;
 }
 
+/* width="600" height="450" */
+
 .form-container .map{
     width: 100%;
     text-align: right;
@@ -43,6 +45,8 @@
 
 .form-container .map iframe{
     margin-top: 100px;
+    width: 600px;
+    height: 450px;
 }
 
 .form-container .form {
@@ -62,7 +66,8 @@
         margin: 0 auto;
         margin-top: 50px;
         margin-bottom: 50px;
-        width: 500px;
+        height: 500px;
+        width: 650px;
     }
     .form-contents{
         margin: 0 auto;
@@ -88,7 +93,10 @@
 }
 
 @media screen and (max-width: 700px) {
-
+    .form-container .map iframe{
+        height: 300px;
+        width: 450px;
+    }
     
     .container{
         display: block;
