@@ -528,6 +528,10 @@
         width: 300px;
     }
 
+    .phone-text h1{
+        font-size: 50px;
+    }
+
     .customer-reviews-content{
         height: 1100px;
     }

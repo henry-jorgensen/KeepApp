@@ -178,11 +178,56 @@ nav #register a:hover {
 }
 
 @media screen and (max-width: 664px) {
-    /* .top-bar{
-        display: none;
+    .top-bar{
+        display: block;
+        text-align: center;
+    }
+    .phone{
+        margin: 0;
+    }
+
+    .bar-phone-icon {
+        margin: 0;
+        width: 100%;
+    }
+    .bar-phone-icon svg{
+        float: right;
+        margin-right: 15px;
+        margin-left: 0;
+    }
+    
+    .bar-text-phone{
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .bar-text-phone strong{
+        float: left;
+    }
+
+    .bar-content{
+        display: block;
+    }
+    .bar-content-right{
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .top-button{
+        margin: 0;
+    }
+
+    .top-button a{
+        margin-left: 0;
     }
     nav{
         position: fixed;
-    } */
+    }  
+
+    .social-medias-top{
+        width: 100%;
+        float: none;
+    }
 
 }
