@@ -1,34 +1,34 @@
-.content-faq .opener{
+.content .opener{
     display: flex;
     background-color: #2f2a3e;
 }
 
-.content-faq .box{
+.content .box{
     width: 100%;
     height: 300px;
     text-align: center;
 }
 
-.content-faq .box .heading{
+.content .box .heading{
     padding-top: 50px;
 }
 
 
-.content-faq .box .heading h1{
+.content .box .heading h1{
     color: white;
 }
 
-.content-faq .box .input{
+.content .box .input{
     margin-top: 50px;
 }
 
-.content-faq .box .input svg{
+.content .box .input svg{
     position: absolute;
     margin-top: 16px;
     margin-left: 10px;
 }
 
-.content-faq .box .input input{
+.content .box .input input{
     border: none;
     padding: 20px;
     width: 400px;

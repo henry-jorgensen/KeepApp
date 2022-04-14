@@ -86,33 +86,10 @@ nav {
   }
   
   /* Add some top padding to the page content to prevent sudden quick movement */
-.sticky + #content {
-    padding-top: 130px;
+.sticky + .content {
+    padding-top: 110px;
 }
 
-.sticky + .content-about {
-    padding-top: 130px;
-}
-
-.sticky + .content-faq {
-    padding-top: 130px;
-}
-
-.sticky + .content-blog {
-    padding-top: 130px;
-}
-
-.sticky + .content-blog-details{
-    padding-top: 130px;
-}
-
-.sticky + .content-tutorial{
-    padding-top: 130px;
-}
-
-.sticky + #content-contact {
-    padding-top: 130px;
-}
 
 nav ul {
     display: flex;
@@ -132,7 +109,7 @@ nav ul li {
 nav ul li a {
     color: #2f2a3e;
     text-decoration: none;
-    padding: 65px 20px;
+    padding: 55px 20px;
     line-height: 0;
     font-size: 16px;
     display: block;
@@ -149,7 +126,7 @@ li a:hover:not(.active) {
 
 nav div a img {
     margin-top: 18px;
-    height: 100px;
+    height: 75px;
     padding-left: 20px;
 }
 
@@ -167,7 +144,7 @@ nav #register a {
   text-decoration: none;
   display: block;
   font-size: 16px;
-  margin: 47px 24px;
+  margin: 37px 24px;
   transition-duration: 0.4s;
   cursor: pointer;
 }

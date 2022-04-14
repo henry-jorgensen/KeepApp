@@ -1,6 +1,6 @@
 /* OPENING PAGE */
 
-#content{
+.content{
     display: block;
     overflow-x: hidden;
 }

@@ -1,15 +1,15 @@
-#content-contact #box{
+.content #box{
     height: auto;
     background-color: #f98d7d;
     
 }
 
-#content-contact #box{
+.content #box{
     padding-top: 70px;
     text-align: center;
 }
 
-#content-contact #box p{
+.content #box p{
     color: white;
 }
 
