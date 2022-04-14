@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
 </head>
 
 <body>
@@ -103,7 +104,7 @@
                 </a>      
             </button> 
         </div>
-        <div class="slideshow">
+        <div class="slideshow" id="slideshow">
             <div class="what-we-do fade">
                 <div class="heading">
                     <h1>What we do</h1>
@@ -126,7 +127,7 @@
                     <p>Vivamus a efficitur risus. Sed sed dolor consectetur, tempus ipsum nec, iaculis dolor. Nam blandit pharetra augue eget tempus. Nunc tristiq</p>
                 </div>
             </div>
-            <div class="what-we-do fade">
+            <div class="what-we-do fade" id="test">
                 <div class="heading">
                     <h1>What we do 3</h1>
                 </div>
@@ -137,8 +138,8 @@
                     <p>Donec elementum felis in nulla imperdiet, vitae ultricies tortor suscipit. Aliquam tempus nisl in placerat suscipit. Suspendisse potenti. Proin maximus erat</p>
                 </div>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
         </div>
         
 
@@ -304,6 +305,7 @@
 <script src="js/slideshow-wwd.js"></script>
 <script src="js/slideshow-reviews.js"></script>
 <script src="js/slideshow-feature.js"></script>
+<script src="js/sideways-scrolling.js"></script>
 <script src="js/client-reviews.js"></script>
 <script src="js/collapse-menu.js"></script>
 
