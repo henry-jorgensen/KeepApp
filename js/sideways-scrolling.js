@@ -22,7 +22,7 @@ $(function() {
        var start = false;
        if(delta == -1){
            start = false
-           console.log("RIGHT");
+           console.log("SCROLLING RIGHT");
            
            if(event.originalEvent.path[2].id == "Final"){
                end = true;
@@ -31,7 +31,7 @@ $(function() {
            console.log("END: " + end);
        } else{
            end = false;
-           console.log("LEFT");
+           console.log("SCROLLING LEFT");
            
            if(event.originalEvent.path[2].id == "Start"){
                 start = true;

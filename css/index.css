@@ -146,7 +146,7 @@
     margin: auto;
     display: inline-flex;
     width: 99vw;
-    height: 90vh;
+    height: 95vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -302,23 +302,23 @@
 
 
 .features-box{
-    position: relative;
     margin-top: 50px;
-    padding-bottom: 40px;
+    position: relative;
     background: #ffdcab;
+    height: auto;
 }
 
-
-.features-heading {
+#feature-header {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 50%;
+    margin: 0;
     text-align: center;
-    font-size: 80px;
+    font-size: 66pt;
     color: white;
 }
 
-.features-heading h1{
-    margin: 0;
-    margin-bottom: 120px;
-}
 
 .feature{
     width: 100%;
@@ -327,36 +327,53 @@
 
 
 .feature-picture{
+    position: relative;
     width: 49vw;
     text-align: left;
 }
 
 .feature-picture img{
-    width: 350px;
+    position: absolute;
+    height: 450px;
+    bottom: 0;
+    align-self: flex-end;
 }
 
 .mirror img{
+    right: 0;
     float: right;
 }
 
 
 .feature-description{
-    margin-top: 50px;
+    position: relative;
     width: 49vw;
+    height: 100%;
     text-align: center;
     justify-content: center;
 }
 
-.feature-description h1{
-    color: #f98d7d;
+.text-box{
+    font-size: 20px;
+    position: absolute;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
 }
 
-.feature-description p{
+.text-box h1{
+    color: #f98d7d;
+    margin: 0;
+}
+
+.text-box p{
+    margin: 0;
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
     color: #2f2a3e;
 }
+
+
 
 @media screen and (max-width: 716px) {
     .features-heading{
