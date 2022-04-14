@@ -308,15 +308,19 @@
     height: auto;
 }
 
-#feature-header {
+.feature-header {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 15%;
+    top: 16%;
     left: 50%;
     margin: 0;
     text-align: center;
     font-size: 66pt;
     color: white;
+}
+
+.feature-header h1{
+    margin: 0;
 }
 
 
@@ -375,26 +379,19 @@
 
 
 
-@media screen and (max-width: 716px) {
-    .features-heading{
-        font-size: 40px;
+@media screen and (max-width: 875px) {
+    .text-box{
+        font-size: 13px;
+        top: auto;
+        bottom: 0;
     }
-
-    .features-heading h1{
-        margin-bottom: 50px;
-    }
-
-    .feature-description{
-        font-size: 18px;
-        margin-top: 0;
-    }
-    .feature-description p{
-        margin-left: 50px;
-        margin-right: 50px;
+    .text-box p{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .feature-picture img{
-        width: 200px;
+        height: 250px;
     }
     
 }
