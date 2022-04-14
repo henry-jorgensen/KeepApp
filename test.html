@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Keep</title>
+    <link rel="icon" href="assets/keep-logos/keep_logo.png" type="image/icon type" />
+    <link rel="stylesheet" media="only screen and (max-width: 1000px)" href="css/navbar-small.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="vertical-section">
+        Content Below
+    </div>
+    <div class="sticky-container">
+        <main>
+          <section>
+            <h1>Beep</h1>
+          </section>
+          <section>
+            <h1>Boop</h1>
+          </section>
+          <section>
+            <h1>Boooom</h1>
+          </section>
+          <section>
+            <h1>The End</h1>
+          </section>
+        </main>
+      </div>
+      <div class="vertical-section">
+        Content Below
+      </div>
+      <div class="sticky-container">
+        <main>
+          <section>
+            <h1>Beep</h1>
+          </section>
+          <section>
+            <h1>Boop</h1>
+          </section>
+          <section>
+            <h1>Boooom</h1>
+          </section>
+          <section>
+            <h1>The End</h1>
+          </section>
+        </main>
+      </div>
+
+      <script src="js/sideways-scrolling.js"></script>
+
+      <style>
+            html,
+            body {
+            margin: 0;
+            font-family: sans-serif;
+            }
+
+            .vertical-section{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+
+            main {
+            overflow-x: hidden;
+            display: flex;
+            position: sticky;
+            top:0;
+            }
+
+            h1 {
+            margin: 0;
+            padding: 0;
+            }
+
+            section {
+            min-width: 50vw;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4ch;
+            }
+
+            section:nth-child(even) {
+            background-color: teal;
+            color: white;
+            }
+      </style>
+</body>
+
