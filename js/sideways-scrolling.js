@@ -25,7 +25,6 @@ $(function() {
            console.log("RIGHT");
            
            if(event.originalEvent.path[2].id == "Final"){
-               console.log("YEYEYEYEYEYE")
                end = true;
            }
            console.log("START :" + start);
