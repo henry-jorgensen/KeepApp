@@ -141,7 +141,7 @@
 
 /* WHAT WE DO */
 
-.slideshow{
+.horizontal-scroll{
     position: relative;
     margin: auto;
     display: inline-flex;
@@ -308,11 +308,6 @@
     background: #ffdcab;
 }
 
-.feature-scroll{
-    display: flex;
-    overflow-x: auto;
-    width: 98vw;
-}
 
 .features-heading {
     text-align: center;
