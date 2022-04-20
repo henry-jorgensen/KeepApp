@@ -20,11 +20,12 @@ $(function() {
        
        var end = false;
        var start = false;
+       console.log(event);
        if(delta == -1){
            start = false
            console.log("SCROLLING RIGHT");
            
-           if(event.originalEvent.path[2].id == "Final"){
+           if(event.originalEvent.path[2].id == "Final" || event.originalEvent.path[1].id == "Final"){
                end = true;
            }
            console.log("START :" + start);
@@ -33,7 +34,7 @@ $(function() {
            end = false;
            console.log("SCROLLING LEFT");
            
-           if(event.originalEvent.path[2].id == "Start"){
+           if(event.originalEvent.path[2].id == "Start" || event.originalEvent.path[1].id == "Start"){
                 start = true;
            }
            console.log("START :" + start);
