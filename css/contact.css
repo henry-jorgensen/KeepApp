@@ -104,4 +104,11 @@
     }
 }
 
+@media screen and (max-width: 470px){
+    .form-container .map iframe{
+        height: 450px;
+        width: 350px;
+    }
+}
+
 

@@ -1,26 +1,31 @@
+const element = document.querySelector(".what-we-do"); 
+
+const elements = document.getElementsByClassName("what-we-do");
+const elementsIndexLength = elements.length - 1 
+
+elements[0].id = "Start";
+elements[elementsIndexLength].id="Final";
+
+const featureElements = document.getElementsByClassName("feature")
+const featureElementsIndexLength = featureElements.length -1
+
+featureElements[0].id = "Start";
+featureElements[featureElementsIndexLength].id="Final";
+
 $(function() {
-
     $(".horizontal-scroll").mousewheel(function(event, delta) {
-       const element = document.querySelector(".what-we-do"); 
-
-       const elements = document.getElementsByClassName("what-we-do");
-       const elementsIndexLength = elements.length - 1 
-
-       elements[0].id = "Start";
-       elements[elementsIndexLength].id="Final";
-       
-       const featureElements = document.getElementsByClassName("feature")
-       const featureElementsIndexLength = featureElements.length -1
-
-       featureElements[0].id = "Start";
-       featureElements[featureElementsIndexLength].id="Final";
-
-       
        this.scrollLeft -= (delta * element.clientWidth);
        
+       var elementRelativeTop = elements[0].getBoundingClientRect().top
+       var elementRelativeBottom = elements[0].getBoundingClientRect().bottom
+
+       var featureRelativeTop = featureElements[0].getBoundingClientRect().top
+       var featureRelativeBottom = featureElements[0].getBoundingClientRect().bottom
+
        var end = false;
        var start = false;
-       console.log(event);
+
+       
        if(delta == -1){
            start = false
            console.log("SCROLLING RIGHT");
@@ -29,7 +34,7 @@ $(function() {
                end = true;
            }
            console.log("START :" + start);
-           console.log("END: " + end);
+           console.log("END: " + end);  
        } else{
            end = false;
            console.log("SCROLLING LEFT");
@@ -42,13 +47,12 @@ $(function() {
 
        }
 
+
+       
        if (end == true || start == true){
         console.log("At the end")
        } else{
         event.preventDefault();
        }
-       
- 
     });
- 
  });
