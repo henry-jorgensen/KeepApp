@@ -1,58 +1,54 @@
-const element = document.querySelector(".what-we-do"); 
-
 const elements = document.getElementsByClassName("what-we-do");
-const elementsIndexLength = elements.length - 1 
+const elementsIndexLength = elements.length - 1; 
 
 elements[0].id = "Start";
-elements[elementsIndexLength].id="Final";
+elements[elementsIndexLength].id = "Final";
 
 const featureElements = document.getElementsByClassName("feature")
 const featureElementsIndexLength = featureElements.length -1
 
 featureElements[0].id = "Start";
-featureElements[featureElementsIndexLength].id="Final";
+featureElements[featureElementsIndexLength].id = "Final";
+
+var end = false;
+var start = false;
 
 $(function() {
     $(".horizontal-scroll").mousewheel(function(event, delta) {
-       this.scrollLeft -= (delta * element.clientWidth);
-       
-       var elementRelativeTop = elements[0].getBoundingClientRect().top
-       var elementRelativeBottom = elements[0].getBoundingClientRect().bottom
+        var elementRelativeTop = elements[0].getBoundingClientRect().top
+        var elementRelativeBottom = elements[0].getBoundingClientRect().bottom
 
-       var featureRelativeTop = featureElements[0].getBoundingClientRect().top
-       var featureRelativeBottom = featureElements[0].getBoundingClientRect().bottom
+        var featureRelativeTop = featureElements[0].getBoundingClientRect().top
+        var featureRelativeBottom = featureElements[0].getBoundingClientRect().bottom
+        console.log("TEST")
+        console.log(event)
+        
 
-       var end = false;
-       var start = false;
+        if(delta == -1){
+            //Scrolling right
+            start = false
 
-       
-       if(delta == -1){
-           start = false
-           console.log("SCROLLING RIGHT");
-           
-           if(event.originalEvent.path[2].id == "Final" || event.originalEvent.path[1].id == "Final"){
-               end = true;
-           }
-           console.log("START :" + start);
-           console.log("END: " + end);  
-       } else{
-           end = false;
-           console.log("SCROLLING LEFT");
-           
-           if(event.originalEvent.path[2].id == "Start" || event.originalEvent.path[1].id == "Start"){
+            if(event.target.parentNode.parentNode.id == "Final" || event.target.parentNode.id == "Final"){
+                end = true;
+            }
+
+        } else{
+            //Scrolling left
+            end = false;
+
+            if(event.target.parentNode.parentNode.id == "Start" || event.target.parentNode.id == "Start"){
                 start = true;
-           }
-           console.log("START :" + start);
-           console.log("END: " + end);
+            }
+        }
 
-       }
+        this.scrollLeft -= (delta * this.clientWidth);
 
+        if (end == true || start == true){
+            console.log("At the end")
+        } else{
+            event.preventDefault();
+        }
 
        
-       if (end == true || start == true){
-        console.log("At the end")
-       } else{
-        event.preventDefault();
-       }
     });
  });

@@ -87,7 +87,7 @@ nav {
   
   /* Add some top padding to the page content to prevent sudden quick movement */
 .sticky + .content {
-    padding-top: 110px;
+    padding-top: 98.6px;
 }
 
 
