@@ -302,14 +302,14 @@
 .features-box{
     margin-top: 50px;
     position: relative;
-    background: #ffdcab;
+    background: rgba(249, 187, 135, 0.3);
     height: auto;
 }
 
 .feature-header {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 16%;
+    top: 25%;
     left: 50%;
     margin: 0;
     text-align: center;
@@ -351,14 +351,13 @@
     position: relative;
     width: 49vw;
     height: 100%;
-    text-align: center;
     justify-content: center;
 }
 
 .text-box{
     font-size: 20px;
     position: absolute;
-    width: 80%;
+    width: 70%;
     transform: translate(-50%, -50%);
     top: 70%;
     left: 50%;
@@ -371,7 +370,6 @@
 
 .text-box p{
     margin: 0;
-    text-align: center;
     color: #2f2a3e;
 }
 

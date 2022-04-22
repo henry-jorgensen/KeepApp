@@ -55,7 +55,6 @@
 }
 
 .truncate {
-    overflow:hidden;
     max-height: 6rem;
     -webkit-box-orient: vertical;
     display: -webkit-box;
@@ -64,7 +63,13 @@
     -webkit-line-clamp: 3;
   }
 
-p, h2, h4{
+.content p {
+    margin: 0;
+}
+.content h2 {
+    margin: 0;
+}
+.content h4{
     margin: 0;
 }
 
