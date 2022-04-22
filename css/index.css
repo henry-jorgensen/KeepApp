@@ -193,51 +193,68 @@
     to {opacity: 1}
   }
 
+.main{
+    position: sticky;
+    overflow-x: hidden;
+}
+
 .what-we-do{
+    /* margin-top: 150px;
+    margin-bottom: 150px; */
+    position: relative;
     display: flex;
     width: 100vw;
     
 }
 
+
 .what-we-do .heading{
+    position: relative;
     width: 33vw;
     height: 100%;
 }
 
 .what-we-do .heading h1{
-    float: right;
     color: #f98d7d;
-    margin-top: 55%;
-    
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
 }
 
 .what-we-do .keep-phone{
+    position: relative;
     text-align: center;
     width: 33vw;
     height: 100%;
 }
 
 .what-we-do .keep-phone img{
-    margin-top: 25%;
     height: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .what-we-do .text{
+    position: relative;
     width: 33vw;
     height: 100%;
     overflow-wrap: break-word;
 }
 
 .what-we-do .text p{
-    float: left;
-    margin-right: 40px;
-    margin-top: 55%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 @media screen and (max-width: 800px){
-    .slideshow{
+    /* .slideshow{
         height: 500px;
-    }
+    } */
 
     .what-we-do .keep-phone img{
         height: 250px;
