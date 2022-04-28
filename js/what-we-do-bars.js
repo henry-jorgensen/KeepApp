@@ -18,8 +18,8 @@ function drawGraph(size){
     var textY = 135
     var textX = 270
     var imgY = 130
-    var width = 420
-    var height = 600
+    var width = 320
+    var height = 500
 
     if (size == "L"){
         textY = 110
