@@ -1,5 +1,7 @@
 /* TOP BAR */
-
+html{
+    overflow-x: hidden;
+}
 .top-bar{
     background-color: #2f2a3e;
     color: #7f7999;
@@ -87,7 +89,7 @@ nav {
   
   /* Add some top padding to the page content to prevent sudden quick movement */
 .sticky + .content {
-    padding-top: 98.6px;
+    padding-top: 111.2px;
 }
 
 

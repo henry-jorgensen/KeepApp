@@ -170,7 +170,7 @@
       left: 0;
   }
   
-  /* Position the "next button" to the right */
+  /* Position the "next" button to the right */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -199,8 +199,6 @@
 }
 
 .what-we-do{
-    /* margin-top: 150px;
-    margin-bottom: 150px; */
     position: relative;
     display: flex;
     width: 100vw;
@@ -275,6 +273,27 @@
     .what-we-do .heading h1{
         margin-top: 80px;
     }
+}
+
+@media screen and (min-width: 2000px){
+    #openHeading{
+        font-size: 40px;
+    }
+    
+    .what-we-do .keep-phone img{
+        height: 750px;
+    }
+
+    .what-we-do .heading{
+        font-size: 45px;
+    }
+
+    .what-we-do .text{
+        font-size: 35px;
+    }
+
+
+    
 }
 
 /* HOME BANNERS  */
@@ -413,6 +432,24 @@
         height: 250px;
     }
     
+}
+
+@media screen and (min-width: 1800px){
+    .feature-header{
+        font-size: 140px;
+    }
+    
+    .feature-picture img{
+        height: 800px;
+    }
+
+    .text-box p{
+        font-size: 40px;
+    }
+
+    .text-box h1{
+        font-size: 50px;
+    }
 }
 
 

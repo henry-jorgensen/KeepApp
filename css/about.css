@@ -244,6 +244,25 @@
 
 }
 
+@media screen and (min-width: 1800px) {
+    .content .box .heading{
+        margin-left: 500px;
+    }
+
+    .content .box .button{
+        margin-left: 500px;
+    }
+    
+    .description{
+        margin-left: 500px;
+    }
+
+    .header{
+        margin-left: 500px;
+    }
+
+}
+
 /* GENIUSES AT WORK */
 
 .meet-team {
@@ -464,15 +483,12 @@
 }
 
 @media screen and (max-width: 1207px) {
-
     .git-text{
         margin-top: 0px;
         margin-left: 0px;
         width: 400px;
         margin:  0 auto;
     }
-
-    
 
     .form-contents{
         margin: 0 auto;
@@ -484,4 +500,10 @@
         display: block;
     }
 
+}
+
+@media screen and (min-width: 1800px) {
+    .git-text{
+        margin-left: 500px;
+    }
 }

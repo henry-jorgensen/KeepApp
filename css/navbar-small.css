@@ -9,6 +9,10 @@ nav {
     z-index: 1;
 }
 
+.sticky + .content{
+    padding-top: 98.6px;
+}
+
 nav ul {
     transition: 0.25s;
     position: absolute;
