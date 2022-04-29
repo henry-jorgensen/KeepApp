@@ -117,7 +117,7 @@ html{
     margin-left: 10px;
 }
 
-@media screen and (max-width: 355px){
+@media screen and (max-width: 460px){
     .blog-text h2{
         font-size: 15px;
     }
@@ -127,13 +127,30 @@ html{
     }
 
     .blog-item{
-        width: 320px;
-        height: 240px;
+        width: auto;
+        height: auto;
     }
 
     .blog-items{
+        display: block;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .profile-icon img{
+        height: 30px;
+        border-radius: 30px;
+    }
+
+    .profile-name h4{
+        font-size: 15px;
+        margin-left: 0px;
+    }
+
+    .blog-date p{
+        color: #666666;
+        font-size: 12px;
+        margin-left: 0px;
     }
 
 }
