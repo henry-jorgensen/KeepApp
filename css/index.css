@@ -249,11 +249,46 @@
     left: 50%;
 }
 
-@media screen and (max-width: 800px){
-    /* .slideshow{
-        height: 500px;
-    } */
+/* REDOING THIS STUFF FOR OWL CAROUSEL */
+.what-we-do-test{
+    background-color: white;
+    display: flex;
+    height: 85vh;
+    position: relative;
+}
 
+.wwd-section{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.wwd-header{
+    color: #f98d7d;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    margin: 0;
+}
+
+.wwd-phone{
+    height: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.wwd-text{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: 0;
+}
+
+@media screen and (max-width: 800px){
     .what-we-do .keep-phone img{
         height: 250px;
     }
