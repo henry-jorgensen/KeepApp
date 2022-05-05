@@ -14,9 +14,9 @@ const teamObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         setTimeout(() =>{
-          if (personCount <= 4){
-            theTeam.classList.add("middle");
-          }
+          // if (personCount <= 4){
+          //   theTeam.classList.add("middle");
+          // }
             meetTeam.classList.add('meet-team-transition');
             teamImg.src = "assets/about/Brain-White.png"
             teamHeader.classList.add('transition-team-header');

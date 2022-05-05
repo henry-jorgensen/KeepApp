@@ -15,9 +15,9 @@ let img = {
 let margin = {top: 80, right: 40, bottom: 0, left: 110};
 
 function drawGraph(size){
-    var textY = 135
-    var textX = 270
-    var imgY = 130
+    var textY = 115
+    var textX = 170
+    var imgY = 115
     var width = 320
     var height = 500
 
@@ -30,7 +30,6 @@ function drawGraph(size){
     }
 
     d3.selectAll('.theG').remove();
-
 
     let svgWidth = width, svgHeight = height;
     let heightCalc = svgHeight- margin.top- margin.bottom, widthCalc = svgWidth - margin.left - margin.right;

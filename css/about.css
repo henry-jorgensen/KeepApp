@@ -104,6 +104,33 @@
     }
 }
 
+@media screen and (max-width: 415px){
+    .content .box{
+        height: 520px;
+    }
+
+    .content .opener .phone img{
+        height: 250px;
+        margin-top: 70px;
+    }
+
+    .content .box .heading{
+        margin-top: 100px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    
+    .content .box .button{
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+
+    .content .box .button a{
+        padding: 7px 28px;
+        font-size: 14px;
+    }
+}
+
 
 /* WHAT WE DO  */
 
@@ -383,7 +410,7 @@
     flex-flow: row wrap;
     justify-content: center;
     position: absolute;
-    height: 400px;
+    /* height: 400px; */
     width: 70%;
     top: 65%;
     left: 50%;
@@ -400,7 +427,7 @@
 @media screen and (max-width: 1151px) {
     
     .idea-people{
-        top: 53%;
+        top: 61%;
         width: 90%;
     }
     .meet-team{
@@ -415,21 +442,6 @@
     }
 
 }
-
-@media screen and (max-width: 678px){
-    .idea-people{
-        top: 47%;
-        width: 90%;
-    }
-    .meet-team{
-        height: 1200px;
-    }
-    .middle{
-        top: 65%;
-    }
-}
-
-
 
 
 .idea-transition{
@@ -480,6 +492,64 @@
     height: 20px;
     width: 100%;
     color: #f98d7d;
+}
+
+@media screen and (max-width: 678px){
+    .idea-people{
+        top: 63%;
+        width: 100%;
+    }
+    .meet-team{
+        height: 1000px;
+    }
+    .middle{
+        top: 47%;
+    }
+
+    .person{
+        position: relative;
+        height: 170px;
+        width: 170px;
+        margin-top: 10px;
+    }
+    
+    .photo{
+        position: relative;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 120px;
+        width: 120px;
+        border-radius: 100px;
+        background-color: #f98d7d;
+    }
+    
+    .photo img{
+        height: 110px;
+        width: 110px;
+    }
+    
+    .name{
+        font-size: 15px;
+        height: 15px;
+    }
+    
+    .role{
+        font-size: 12px;
+        height: 20px;
+    }
+
+    .team-buttons{
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .team-h1{
+        font-size: 25px;
+    }
+
+
 }
 
 
