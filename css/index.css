@@ -250,14 +250,14 @@
 }
 
 /* REDOING THIS STUFF FOR OWL CAROUSEL */
-.what-we-do-test{
+.carousel-custom{
     background-color: white;
     display: flex;
     height: 85vh;
     position: relative;
 }
 
-.wwd-section{
+.carousel-section{
     position: relative;
     height: 100%;
     width: 100%;
@@ -286,6 +286,27 @@
     top: 50%;
     left: 50%;
     margin: 0;
+}
+
+@media screen and (max-width: 800px){
+    .wwd-header{
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .wwd-text{
+        font-size: 15px;
+    }
+
+    .wwd-phone{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .wwd-text{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -390,7 +411,7 @@
 .feature-header {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 25%;
+    top: 15%;
     left: 50%;
     margin: 0;
     text-align: center;
@@ -452,6 +473,19 @@
 .text-box p{
     margin: 0;
     color: #2f2a3e;
+}
+
+
+.feature-picture-test{
+    position: absolute;
+    height: 450px;
+    bottom: 0;
+    align-self: flex-end;
+}
+
+.mirror-test{
+    right: 0;
+    float: right;
 }
 
 @media screen and (max-width: 780px){
