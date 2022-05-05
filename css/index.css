@@ -251,7 +251,6 @@
 
 /* REDOING THIS STUFF FOR OWL CAROUSEL */
 .carousel-custom{
-    background-color: white;
     display: flex;
     height: 85vh;
     position: relative;
@@ -488,6 +487,26 @@
     float: right;
 }
 
+@media screen and (max-width: 880px){
+    .feature-picture-test{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .carousel-custom{
+        height: 50vh;
+    }
+    .feature-picture-test{
+        height: 200px;
+    }
+
+    .text-box{
+        top: 60%;
+    }
+
+}
+
 @media screen and (max-width: 780px){
     .feature-header{
         font-size: 44pt;
@@ -500,10 +519,6 @@
     .text-box{
         font-size: 13px;
         bottom: 0;
-    }
-    .text-box p{
-        margin-left: 10px;
-        margin-right: 10px;
     }
 
     .feature-picture img{
