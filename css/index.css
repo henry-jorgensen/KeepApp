@@ -395,8 +395,16 @@
 }
 
 @media screen and (max-width: 550px){
-    .feature-header{
-        font-size: 33pt;
+    .feature-header h1{
+        font-size: 50pt;
+    }
+
+    .text-box h1{
+        font-size: 17px;
+    }
+
+    .text-box p{
+        font-size: 10px;
     }
 }
 

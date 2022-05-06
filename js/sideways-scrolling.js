@@ -17,6 +17,7 @@ var owl = $('.owl-carousel');
 var wwdOwl = $('#wwd-carousel');
 var featureOwl = $('#feature-carousel');
 
+var highestDelta = 0;
 $(function() {
     $(".owl-stage").mousewheel(function(event, delta) {
         var elementRelativeTop = elements[0].getBoundingClientRect().top
@@ -28,6 +29,12 @@ $(function() {
         //console.log(event)
         
         console.log(delta);
+        if (delta > highestDelta){
+            highestDelta = delta
+        }
+        console.log(highestDelta)
+
+
         if(delta == -1){
             //Scrolling right
             start = false

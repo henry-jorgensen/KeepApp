@@ -614,6 +614,19 @@
 
 }
 
+@media screen and (max-width: 400px){
+    .git-description h1{
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+    .git-description p{
+        width: 220px;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
+
 @media screen and (min-width: 1800px) {
     .git-text{
         margin-left: 500px;

@@ -7,12 +7,11 @@
     border: none;
     font-family: 'Montserrat';
     border-radius: 30px;
-    margin: 6px;
-    padding: 16px;
+    margin-top: 10px; 
+    padding: 16px; 
 }
 
 .form-contents .form-textarea{
-    /* width: 500px; */
     width: 100%;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .form-half{
-    width: 100%;
+    width: 50%;
 }
 
 .form-half + .form-half{
@@ -95,9 +94,6 @@
 
 
 @media screen and (max-width: 600px){
-    .form-contents{
-        width: 400px;
-    }
 
     .form-contents{
         width: 300px;
@@ -108,11 +104,21 @@
     }
 
     .form-name{
-        display: flex;
-        width: 300px;
+        display: block;
+        width: 100%;
     }
     
     .form-half{
-        width: 50%;
+        width: 100%;
+    }
+
+    .form-half + .form-half{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 355px){
+    .form-contents{
+        width: 200px;
     }
 }
