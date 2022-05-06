@@ -8,7 +8,6 @@ const teamButtons = document.querySelector('.team-buttons');
 teamHeader.classList.remove('transition-team-header');
 
 var personCount = document.querySelector('.idea-people').childElementCount;
-console.log(personCount);
 
 const teamObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {

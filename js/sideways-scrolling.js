@@ -27,7 +27,7 @@ $(function() {
        // console.log("TEST")
         //console.log(event)
         
-
+        console.log(delta);
         if(delta == -1){
             //Scrolling right
             start = false
@@ -50,7 +50,7 @@ $(function() {
         if (end == true || start == true){
             console.log("At the end")
         } else{
-            if(elementRelativeTop < 150 && elementRelativeBottom > 600){
+            if(elementRelativeTop < 150 && elementRelativeTop > 0){
                 if (scrollingDelta<0) {
                     console.log("NEXT")
     
@@ -64,22 +64,19 @@ $(function() {
                     event.preventDefault();
                 }
             }
-            if(featureRelativeTop < 150 && featureRelativeBottom > 600){
+            if(featureRelativeTop < 120 && featureRelativeBottom > 600){
                 if (scrollingDelta<0) {
                     console.log("NEXT")
-    
+
                     featureOwl.trigger('next.owl');
                     event.preventDefault();
-                
-                    
                 } else {
                     console.log("PREV")
+
                     featureOwl.trigger('prev.owl');
                     event.preventDefault();
                 }
-            }
-            
-            
+            }  
         }
     });
  });
@@ -93,4 +90,6 @@ owl.owlCarousel({
 })
 
 $(".owl-nav").remove();
+$('.owl-dots').css({"position" : "absolute", "transform" : "translate(-50%, -50%)",
+                     "left" : "50%", "top" : "96%"});
 $(".horizontal-scroll").remove();

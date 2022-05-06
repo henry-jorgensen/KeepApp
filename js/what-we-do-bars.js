@@ -176,13 +176,4 @@ function resize(){
         smallGraph = false
     }
 }
-
-if (smallGraph == false){
-    xValue = drawGraph("L")
-    triggerAnimation()
-} else{
-    xValue = drawGraph("S")
-    triggerAnimation()
-}
-
-    
+   
