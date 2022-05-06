@@ -302,7 +302,6 @@
 
 /* FEATURES BOX */
 
-
 .features-box{
     margin-top: 50px;
     position: relative;
@@ -350,7 +349,6 @@
     margin: 0;
     color: #2f2a3e;
 }
-
 
 .feature-picture{
     position: absolute;
@@ -685,7 +683,7 @@
 
 /* DOWNLOAD APP ANIMATION */
 
-.container{
+.download-app{
     margin-top: 50px;
     width: auto;
     background: white;
@@ -695,12 +693,12 @@
     position: relative;
 }
 
-.container a{
+.download-app a{
     text-decoration: none;
     color: black;
 }
 
-.container .half{
+.half{
     width: 100%;
     height: 100%;
     text-align: center;
@@ -708,26 +706,26 @@
     
 }
 
-.container .half .text{
+.half .text{
     opacity: 0;
     font-family: 'Montserrat';
 }
 
-.container .half .logo{
+.half .logo{
     height: 160px;
     margin-top: 190px;
     transition: 0.2s;
     
 }
-.container .half:hover{
+.half:hover{
     background: #f98d7d;
 }
 
-.container .half:hover .text{
+.half:hover .text{
     opacity: 1;
 }
 
-.container .half:hover .logo{
+.half:hover .logo{
     height: 100px;
 }
 
@@ -744,26 +742,26 @@
 
 }
 
-.container #right-side:hover ~ #download-text{
+#right-side:hover ~ #download-text{
     opacity: 0;
 }
 
-.container #right-side:hover ~ #end-phone{
+#right-side:hover ~ #end-phone{
     left: 75%;
     transform: translate(-50%, -50%);
 } 
 
-.container #left-side:hover ~ #download-text{
+#left-side:hover ~ #download-text{
     opacity: 0;
 }
 
-.container #left-side:hover ~ #end-phone{
+#left-side:hover ~ #end-phone{
     left: 25%;
     transform: translate(-50%, -50%);
 } 
 
 @media screen and (max-width: 800px){
-    .container{
+    .download-app{
         display: none;
     }
 }
