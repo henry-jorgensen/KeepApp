@@ -148,3 +148,35 @@
         height: 55%;
      }
 }
+
+@media screen and (max-width: 500px){
+    .left-col{
+        width: 270px;
+    }
+
+    .section-title p{
+        margin: 0;
+        font-size: 15px;
+        top: 35%;
+    }
+    
+    .section-img img{
+        position: absolute;
+        height: 35px;
+        top: 20%;
+        left: 0%;
+    }
+
+    .right-col{
+        margin-right: 10px;
+        padding-left: 20px;
+    }
+
+    .right-col .video-text p{
+        font-size: 13px;
+    }
+
+    .right-col .video-text{
+        padding: 8px;
+    }
+}
