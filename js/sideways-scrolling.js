@@ -45,8 +45,8 @@ $(function() {
             }
         }
 
-        console.log("SCROLLING TING" + delta * this.clientWidth);
         var scrollingDelta = delta * this.clientWidth;
+        
         if (end == true || start == true){
             console.log("At the end")
         } else{
