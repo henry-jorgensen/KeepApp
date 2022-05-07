@@ -25,16 +25,9 @@ $(function() {
 
         var featureRelativeTop = featureElements[0].getBoundingClientRect().top
         var featureRelativeBottom = featureElements[0].getBoundingClientRect().bottom
-       // console.log("TEST")
-        //console.log(event)
-        
+        //console.log(event)    
+
         console.log(delta);
-        if (delta > highestDelta){
-            highestDelta = delta
-        }
-        console.log(highestDelta)
-
-
         if(delta == -1){
             //Scrolling right
             start = false

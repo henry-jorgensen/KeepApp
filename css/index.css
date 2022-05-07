@@ -519,13 +519,6 @@
 }
 
 @media screen and (max-width: 865px){
-    .client-animation-trigger{
-        position: absolute;
-        width: 100%;
-        top: 70%;
-        height: 250px;
-    }
-
     .review-phone-transform img{
         transition: 0.5s;
         width: 650px;
@@ -554,11 +547,8 @@
     }
     
     .review-text{
-        width: 100%;
-        height: 30%;
         padding: 10px;
         font-size: 16px; 
-    
     }
 
     .review-text p{
@@ -576,13 +566,6 @@
 
     .customer-reviews-content{
         height: 1100px;
-    }
-
-    .client-animation-trigger{
-        position: absolute;
-        width: 100%;
-        top: 70%;
-        height: 250px;
     }
 
     .review-phone-transform img{
@@ -639,13 +622,6 @@
 
     .phone-text h1{
         font-size: 35px;
-    }
-
-    .client-animation-trigger{
-        position: absolute;
-        width: 100%;
-        top: 70%;
-        height: 250px;
     }
 
     .review-phone-transform img{
