@@ -726,7 +726,7 @@
 
 }
 
-#right-side:hover ~ #download-text{
+#right-side:hover ~ #download-text, #left-side:hover ~ #download-text{
     opacity: 0;
 }
 
@@ -734,10 +734,6 @@
     left: 75%;
     transform: translate(-50%, -50%);
 } 
-
-#left-side:hover ~ #download-text{
-    opacity: 0;
-}
 
 #left-side:hover ~ #end-phone{
     left: 25%;
