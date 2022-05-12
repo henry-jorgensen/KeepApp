@@ -54,8 +54,8 @@ const teamObserver = new IntersectionObserver(entries => {
   
 teamObserver.observe(document.querySelector('.meet-team'));
 
-const ideaGeneratorsButton = document.getElementById('ideaGenerator');
-const ideaImplementorsButton = document.getElementById('ideaImplementor');
+const ideaGeneratorsButton = document.getElementById('idea-generator');
+const ideaImplementorsButton = document.getElementById('idea-implementor');
 
 const generatorTeam = document.getElementById("generators");
 const implementorTeam = document.getElementById("implementors");

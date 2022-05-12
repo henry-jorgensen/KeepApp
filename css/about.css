@@ -403,7 +403,10 @@
 
 .toggle{
     cursor: pointer;
-    
+}
+
+.toggle + .toggle{
+    margin-left: 10px;
 }
 
 .toggle-active{
@@ -427,7 +430,6 @@
     flex-flow: row wrap;
     justify-content: center;
     position: absolute;
-    /* height: 400px; */
     width: 70%;
     top: 65%;
     left: 50%;
@@ -442,6 +444,13 @@
     transition: 1s;
     opacity: 1;
     pointer-events: all;
+    display: flex;
+}
+
+.idea-visible{
+    transition: 2s;
+    opacity: 1;
+
 }
 
 .person{
@@ -524,7 +533,6 @@
 
     .team-buttons{
         font-size: 12px;
-        width: 100%;
         text-align: center;
         top: 67%;
     }
@@ -537,9 +545,6 @@
         top: 35%;
     }
 }
-
-
-
 
 /* GET IN TOUCH SECTION */
 
