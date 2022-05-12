@@ -2,32 +2,43 @@ const meetTeam = document.querySelector('.meet-team');
 const teamHeader = document.querySelector('.team-header');
 const teamImg = document.getElementById('team-img');
 const teamh1 = document.querySelector('.team-h1');
-const theTeam = document.querySelector('.idea-people')
+const theTeam = document.querySelector('.idea-people-remake')
 const teamButtons = document.querySelector('.team-buttons');
 
 teamHeader.classList.remove('transition-team-header');
 
-var personCount = document.querySelector('.idea-people').childElementCount;
+var personCount = document.querySelector('.idea-people-remake').childElementCount;
 
 const teamObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         setTimeout(() =>{
-          // if (personCount <= 4){
-          //   theTeam.classList.add("middle");
-          // }
+          if (ideaGeneratorsButton.className == "toggle toggle-active"){
+            generatorTeam.style.display = "flex"
+          }
+          else if (ideaImplementorsButton.className == "toggle toggle-active"){
+            implementorTeam.style.display = "flex"
+          }
             meetTeam.classList.add('meet-team-transition');
             teamImg.src = "assets/about/Brain-White.png"
             teamHeader.classList.add('transition-team-header');
             teamh1.classList.add('transition-h1');
             teamh1.innerHTML = "Meet our Team"
+            if (ideaGeneratorsButton.className == "toggle toggle-active"){
+              generatorTeam.style.display = "flex"
+            }
+            else if (ideaImplementorsButton.className == "toggle toggle-active"){
+              implementorTeam.style.display = "flex"
+            }
         }, 1400);
 
         setTimeout(() =>{
           if (ideaGeneratorsButton.className == "toggle toggle-active"){
-            generatorTeam.classList.add("idea-transition")
+            generatorTeam.style.display = "flex"
+            generatorTeam.classList.add("idea-transition");
           }
           else if (ideaImplementorsButton.className == "toggle toggle-active"){
+            implementorTeam.style.display = "flex"
             implementorTeam.classList.add("idea-transition");
           }
           teamButtons.classList.add("idea-transition");
@@ -61,6 +72,8 @@ function toggleGenerator(){
   ideaImplementorsButton.classList.remove('toggle-active');
   generatorTeam.classList.add("idea-transition");
   implementorTeam.classList.remove("idea-transition");
+  implementorTeam.style.display = "none"
+  generatorTeam.style.display = "flex"
 
 }
 
@@ -69,6 +82,8 @@ function toggleImplementor(){
   ideaGeneratorsButton.classList.remove('toggle-active');
   generatorTeam.classList.remove("idea-transition");
   implementorTeam.classList.add("idea-transition");
+  implementorTeam.style.display = "flex"
+  generatorTeam.style.display = "none"
 }
 
 
