@@ -2,12 +2,12 @@ const meetTeam = document.querySelector('.meet-team');
 const teamHeader = document.querySelector('.team-header');
 const teamImg = document.getElementById('team-img');
 const teamh1 = document.querySelector('.team-h1');
-const theTeam = document.querySelector('.idea-people-remake')
+const theTeam = document.querySelector('.idea-people')
 const teamButtons = document.querySelector('.team-buttons');
 
 teamHeader.classList.remove('transition-team-header');
 
-var personCount = document.querySelector('.idea-people-remake').childElementCount;
+var personCount = document.querySelector('.idea-people').childElementCount;
 
 const teamObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -24,12 +24,6 @@ const teamObserver = new IntersectionObserver(entries => {
             teamHeader.classList.add('transition-team-header');
             teamh1.classList.add('transition-h1');
             teamh1.innerHTML = "Meet our Team"
-            if (ideaGeneratorsButton.className == "toggle toggle-active"){
-              generatorTeam.style.display = "flex"
-            }
-            else if (ideaImplementorsButton.className == "toggle toggle-active"){
-              implementorTeam.style.display = "flex"
-            }
         }, 1400);
 
         setTimeout(() =>{

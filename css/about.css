@@ -339,7 +339,6 @@
     width: 100%;
     min-height: 590px;
     background-color: white;
-    transition: 2s;
 }
 
 .meet-team-transition{
@@ -351,11 +350,16 @@
     position: absolute;
     height: auto;
     width: auto;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     display: inline-flex; 
+}
+
+.header-container{
+    height: 300px; 
+    position: relative;
 }
 
 .team-header img{
@@ -407,7 +411,7 @@
     border-radius: 5px;
 }
 
-.idea-people-remake{
+.idea-people{
     padding: 10px;
     opacity: 0;
     display: none;
@@ -419,7 +423,7 @@
 
 }
 
-.idea-people{
+.idea-people-redundant{
     flex-flow: row wrap;
     justify-content: center;
     position: absolute;
@@ -431,25 +435,6 @@
     display: flex;
     opacity: 0;
     pointer-events: none;
-}
-
-
-.middle {
-    top: 75%;
-}
-@media screen and (max-width: 1151px) {
-    
-    .idea-people{
-        top: 61%;
-        width: 90%;
-    }
-    /* .meet-team{
-        height: 900px;
-    } */
-    .middle{
-        top: 65%;
-    }
-
 }
 
 
@@ -504,17 +489,6 @@
 }
 
 @media screen and (max-width: 678px){
-    .idea-people{
-        top: 63%;
-        width: 100%;
-    }
-    /* .meet-team{
-        height: 1000px;
-    } */
-    .middle{
-        top: 47%;
-    }
-
     .person{
         position: relative;
         height: 170px;
