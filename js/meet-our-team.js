@@ -14,10 +14,10 @@ const teamObserver = new IntersectionObserver(entries => {
       if (entry.isIntersecting) {
         setTimeout(() =>{
           if (ideaGeneratorsButton.className == "toggle toggle-active"){
-            generatorTeam.style.display = "flex"
+            generatorTeam.classList.add("idea-transition");
           }
           else if (ideaImplementorsButton.className == "toggle toggle-active"){
-            implementorTeam.style.display = "flex"
+            implementorTeam.classList.add("idea-transition");
           }
             meetTeam.classList.add('meet-team-transition');
             teamImg.src = "assets/about/Brain-White.png"
@@ -28,16 +28,23 @@ const teamObserver = new IntersectionObserver(entries => {
 
         setTimeout(() =>{
           if (ideaGeneratorsButton.className == "toggle toggle-active"){
-            generatorTeam.style.display = "flex"
             generatorTeam.classList.add("idea-transition");
+            setTimeout(() =>{
+              generatorTeam.classList.add("idea-visible");
+            }, 100);
           }
           else if (ideaImplementorsButton.className == "toggle toggle-active"){
-            implementorTeam.style.display = "flex"
             implementorTeam.classList.add("idea-transition");
+            setTimeout(() =>{
+              implementorTeam.classList.add("idea-visible");
+            }, 100);
           }
           teamButtons.classList.add("idea-transition");
+          setTimeout(() =>{
+            teamButtons.classList.add("idea-visible");
+          }, 100);
         }, 3000);
-        
+
         return;
       }
       meetTeam.classList.remove('meet-team-transition');
@@ -48,6 +55,9 @@ const teamObserver = new IntersectionObserver(entries => {
       generatorTeam.classList.remove("idea-transition");
       implementorTeam.classList.remove("idea-transition");
       teamButtons.classList.remove("idea-transition");
+      generatorTeam.classList.remove("idea-visible");
+      implementorTeam.classList.remove("idea-visible");
+      teamButtons.classList.remove("idea-visible");
 
     });
   });
@@ -64,20 +74,28 @@ const implementorTeam = document.getElementById("implementors");
 function toggleGenerator(){
   ideaGeneratorsButton.classList.add('toggle-active');
   ideaImplementorsButton.classList.remove('toggle-active');
+
+  setTimeout(() =>{
+    generatorTeam.classList.add("idea-visible");
+  }, 100);
   generatorTeam.classList.add("idea-transition");
   implementorTeam.classList.remove("idea-transition");
-  implementorTeam.style.display = "none"
-  generatorTeam.style.display = "flex"
+  implementorTeam.classList.remove("idea-visible");
 
 }
 
 function toggleImplementor(){
   ideaImplementorsButton.classList.add('toggle-active');
   ideaGeneratorsButton.classList.remove('toggle-active');
+  generatorTeam.classList.remove("idea-visible");
   generatorTeam.classList.remove("idea-transition");
+  setTimeout(() =>{
+    implementorTeam.classList.add("idea-visible");
+  }, 100);
   implementorTeam.classList.add("idea-transition");
-  implementorTeam.style.display = "flex"
-  generatorTeam.style.display = "none"
+  
+
+
 }
 
 

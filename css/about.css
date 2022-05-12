@@ -441,16 +441,13 @@
 
 
 .idea-transition{
-    transition: 1s;
-    opacity: 1;
     pointer-events: all;
     display: flex;
+    transition: 2s;
 }
 
 .idea-visible{
-    transition: 2s;
     opacity: 1;
-
 }
 
 .person{
