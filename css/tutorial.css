@@ -148,6 +148,7 @@
         width: 100%;
         margin-right: 10px;
         padding-left: 50px;
+        overflow: visible;
      }
 
      .right-col video{
