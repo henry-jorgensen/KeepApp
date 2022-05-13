@@ -6,7 +6,9 @@ body {
 }
 
 body h1, body h2, body h3, body h4{
-    text-rendering: optimizeLegibility;
+    text-transform: none; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* width */
