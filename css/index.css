@@ -458,7 +458,7 @@
 .phone-text{
     position: absolute;
     top: 50%;
-    left: 23%;
+    left: 21%;
     transform: translate(-50%, -50%);
     width: 0;
     overflow: visible;
