@@ -52,8 +52,8 @@ const teamObserver = new IntersectionObserver(entries => {
       teamh1.classList.remove('transition-h1');
       teamImg.src = "assets/about/Brain-Dark.png"
       teamh1.innerHTML = "Brains at Work"
-      generatorTeam.classList.remove("idea-transition");
-      implementorTeam.classList.remove("idea-transition");
+      //generatorTeam.classList.remove("idea-transition");
+      //implementorTeam.classList.remove("idea-transition");
       teamButtons.classList.remove("idea-transition");
       generatorTeam.classList.remove("idea-visible");
       implementorTeam.classList.remove("idea-visible");
