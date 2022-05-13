@@ -3,6 +3,8 @@ body {
     padding: 0;
     font-family: 'Montserrat';
     font-size: 22px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body h1, body h2, body h3, body h4{
