@@ -100,8 +100,8 @@
 }
 
 .expand-button-tut{
-    height: 40px;
-    width: 40px;
+    height: 55px;
+    width: 55px;
     background-color: #CCCCCC;
     left: 1%;
     top: 50%;
@@ -114,8 +114,9 @@
 
 .expand-button-tut a{
     position: absolute;
-    top: 10%;
-    left: 35%;
+    top: 13%;
+    left: 36%;
+    font-size: 30px;
     transition: 0.2s;
     transform: rotateY(0deg);
 }
@@ -124,6 +125,7 @@
 @media screen and (max-width: 1096px){
     .expand-button-tut{
         display: block;
+        
     }
 
     .left-col{

@@ -35,7 +35,7 @@ function showMenu(){
         leftMenuColumn.style.opacity = "1";
         leftMenuColumn.style.pointerEvents = "all"
         if (small == true){
-            expandButton.style.left = "90%";
+            expandButton.style.left = "80%";
         } else{
             expandButton.style.left = "70%";
         }
