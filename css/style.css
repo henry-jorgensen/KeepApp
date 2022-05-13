@@ -3,8 +3,10 @@ body {
     padding: 0;
     font-family: 'Montserrat';
     font-size: 22px;
+}
+
+body h1, body h2, body h3, body h4{
     text-rendering: optimizeLegibility;
-    
 }
 
 /* width */
