@@ -52,6 +52,12 @@ html{
 .bar-text-phone{
     margin-top: 13px;
     margin-left: 20px;
+    text-decoration: none;
+}
+
+.bar-text-phone a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .top-button{
