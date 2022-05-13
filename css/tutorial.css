@@ -71,6 +71,7 @@
 }
 
 .right-col{
+    z-index: 3;
     height: 100%;
     overflow-y: auto;
     width: 65%;
@@ -123,9 +124,12 @@
 
 
 @media screen and (max-width: 1096px){
+    .content{
+        height: auto;
+    }
+
     .expand-button-tut{
         display: block;
-        
     }
 
     .left-col{
