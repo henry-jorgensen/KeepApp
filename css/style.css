@@ -11,6 +11,12 @@ body h1, body h2, body h3, body h4{
     -moz-osx-font-smoothing: grayscale;
 }
 
+@supports (-webkit-touch-callout: none){
+    body h1, body h2, body h3, body h4{
+        font-weight: 900;
+    }
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
