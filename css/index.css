@@ -264,6 +264,21 @@
     }
 }
 
+@media screen and (min-width: 2000px){
+    .wwd-phone{
+        height: 600px;
+    }
+
+    .wwd-header{
+        margin-top: 40px;
+        font-size: 55px;
+    }
+
+    .wwd-text{
+        font-size: 30px;
+    }
+}
+
 /* HOME BANNERS  */
 
 .banner{
@@ -408,17 +423,21 @@
     }
 }
 
-@media screen and (min-width: 1800px){
+@media screen and (min-width: 2000px){
     .feature-header{
         font-size: 140px;
     }
 
     .text-box p{
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .feature-picture{
+        height: 600px;
     }
 
     .text-box h1{
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
