@@ -92,6 +92,10 @@
     -o-transition: opacity .2s ease-out;
 }
 
+.button-text{
+    font-family: 'Montserrat';
+}
+
 
 @media screen and (max-width: 600px){
 
