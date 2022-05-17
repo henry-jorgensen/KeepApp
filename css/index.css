@@ -139,6 +139,16 @@
     left: -50px;
 }
 
+@media screen and (max-width: 800px) {
+    .btn{
+        border-color: grey;
+    }
+
+    .btn-reverse{
+        border-color: grey;
+    }
+}
+
 /* WHAT WE DO */
 
 .horizontal-scroll{
