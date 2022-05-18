@@ -71,7 +71,7 @@
 }
 
 .right-col{
-    z-index: 1;
+    z-index: 0;
     height: 100%;
     overflow-y: auto;
     width: 65%;
