@@ -23,6 +23,7 @@ const observer = new IntersectionObserver(entries => {
       phone.classList.add('review-phone-transform');
       phoneText.classList.add('hide');
       reviewOwl.style.display = 'block';
+      
       for (var i = 0; i < buttons.length; i++){
           buttons[i].classList.remove('hide')
       }
