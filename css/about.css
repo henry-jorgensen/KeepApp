@@ -589,7 +589,7 @@
         margin-top: 0px;
         margin-left: 0px;
         width: 400px;
-        margin:  0 auto;
+        margin: 0 auto;
     }
 
     .form-contents{
@@ -614,6 +614,10 @@
         width: 220px;
         font-size: 16px;
         margin-left: 50px;
+    }
+
+    .form-contents{
+        margin: 0px 42px auto;
     }
 }
 

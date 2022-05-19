@@ -73,7 +73,7 @@ function drawGraph(size){
 
     bars.append('rect')
         .attr('class', 'bar')
-        .attr("x", function(d) { return 0; })
+        .attr("x", 0)
         .attr("y", function(d) { return y(d); })
         .attr("width", 0)
         .attr("opacity", 0)
@@ -86,9 +86,9 @@ function drawGraph(size){
         .text(function(d) { return data[d] + "%";})
         .attr('class', 'percent')
         .attr("x", textX)
-        .attr("y", function(d, i){return y(d) + y.bandwidth() - textY; })
+        .attr("y", function(d){return y(d) + y.bandwidth() - textY; })
         .attr("font-family" , "montserrat")
-        .attr("font-weight", "bold")
+        .attr("font-weight", "600")
         .attr("font-size" , "14px")
         .attr("fill" , "#2f2a3e")
         .attr("text-anchor", "end");
@@ -96,10 +96,10 @@ function drawGraph(size){
     bars.append("text")
         .attr('class', 'name')
         .text(function(d) {return d})
-        .attr("x", function(d){return 1;})
+        .attr("x", 1)
         .attr("y", function(d){return y(d) + y.bandwidth() - textY})
         .attr("font-family" , "montserrat")
-        .attr("font-weight", "bold")
+        .attr("font-weight", "600")
         .attr("font-size" , "14px")
         .attr("fill" , "#2f2a3e")
         .attr("text-anchor", "start");
