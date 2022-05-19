@@ -15,18 +15,18 @@ let img = {
 let margin = {top: 80, right: 40, bottom: 0, left: 110};
 
 function drawGraph(size){
-    var textY = 115
-    var textX = 170
-    var imgY = 115
-    var width = 320
-    var height = 500
-
     if (size == "L"){
         textY = 110
         textX = 470
         imgY = 105
         width = 620
         height = 480
+    } else if (size == "S"){
+        var textY = 115
+        var textX = 170
+        var imgY = 115
+        var width = 320
+        var height = 500
     }
 
     d3.selectAll('.theG').remove();
