@@ -676,9 +676,11 @@
     .review-button{
         font-size: 30px;
     }
+
+    .prev, .next{
+        padding: 8px;
+    }
 }
-
-
 
 /* DOWNLOAD APP ANIMATION */
 
