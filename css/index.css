@@ -491,7 +491,7 @@
 .phone-text{
     position: absolute;
     top: 50%;
-    left: 21%;
+    left: 19%;
     transform: translate(-50%, -50%);
     width: 0;
     overflow: visible;
