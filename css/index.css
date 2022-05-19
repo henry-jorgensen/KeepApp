@@ -12,7 +12,7 @@
 
 #openHeading h1 {
     color: #2f2a3e;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 #openHeading h1 span{
@@ -505,7 +505,6 @@
 .phone-text h1{
     font-size: 55px;
     color: #2f2a3e;
-    font-weight: bolder
 }
 
 .client-animation-trigger{
