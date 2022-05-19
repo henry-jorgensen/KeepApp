@@ -123,7 +123,7 @@ nav ul li a {
     line-height: 0;
     font-size: 16px;
     display: block;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 
 li a:hover:not(.active) {
@@ -159,7 +159,7 @@ nav #register a {
   display: block;
   font-size: 16px;
   margin: 37px 24px;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
   cursor: pointer;
 }
 

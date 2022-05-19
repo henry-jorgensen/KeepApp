@@ -38,6 +38,12 @@
     width: 100%;
 }
 
+input:focus, textarea:focus{
+    outline-color: #2f2a3e;
+    outline-style: solid;
+    outline-width: 2px;
+} 
+
 .form-line{
     width: auto;
 }
@@ -67,7 +73,7 @@
     cursor: pointer;
     position: relative;
     display: inline-flex;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .form-button button:hover{
@@ -95,6 +101,7 @@
 .button-text{
     font-family: 'Montserrat';
 }
+
 
 
 @media screen and (max-width: 600px){
