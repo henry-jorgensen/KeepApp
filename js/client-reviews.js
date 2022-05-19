@@ -7,6 +7,12 @@ const buttons = document.getElementsByClassName('review-button');
 
 const reviewOwl = document.getElementById('review-carousel');
 
+$('.next').click(function(){
+  owl.trigger('next.owl.carousel')
+})
+$('.prev').click(function(){
+  owl.trigger('prev.owl.carousel')
+})
 
 
 // Create the observer:
