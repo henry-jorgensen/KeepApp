@@ -4,6 +4,9 @@ body {
     font-family: 'Montserrat';
     font-size: 22px;
     max-width: 100%;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    
 }
 
 body h1, body h2, body h3, body h4{
