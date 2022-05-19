@@ -34,6 +34,10 @@
     margin-top: 100px;
 }
 
+.text p{
+    text-decoration: none ;
+}
+
 .icon img{
     height: 80px;
     width: 80px;
