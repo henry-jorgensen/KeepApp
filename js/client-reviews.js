@@ -5,6 +5,10 @@ const phoneText = document.querySelector('.phone-text');
 const reviews = document.querySelector('.review-slideshow');
 const buttons = document.getElementsByClassName('review-button');
 
+const reviewOwl = document.getElementById('review-carousel');
+
+
+
 // Create the observer:
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -12,7 +16,7 @@ const observer = new IntersectionObserver(entries => {
       content.classList.add('customer-reviews-background-change')
       phone.classList.add('review-phone-transform');
       phoneText.classList.add('hide');
-      reviews.classList.remove('hide');
+      reviewOwl.style.display = 'block';
       for (var i = 0; i < buttons.length; i++){
           buttons[i].classList.remove('hide')
       }
@@ -21,7 +25,7 @@ const observer = new IntersectionObserver(entries => {
     content.classList.remove('customer-reviews-background-change')
     phone.classList.remove('review-phone-transform');
     phoneText.classList.remove('hide');
-    reviews.classList.add('hide');
+    reviewOwl.style.display = 'none';
     for (var i = 0; i < buttons.length; i++){
         buttons[i].classList.add('hide')
     }
