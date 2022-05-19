@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.content #box h1{
+    color: #2f2a3e;
+}
+
 .content #box p{
     color: white;
 }
@@ -30,9 +34,15 @@
     margin-top: 100px;
 }
 
+.icon img{
+    height: 80px;
+    width: 80px;
+}
+
 .contact-header{
     font-weight: 900;
     text-align: center;
+    color: #2f2a3e;
 }
 
 .contact-header h1{
