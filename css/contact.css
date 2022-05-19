@@ -24,18 +24,19 @@
     padding-bottom: 20px;
 }
 
-.container .third{
+.third{
     width: 100%;
     height: auto;
     text-align: center;
 }
 
-.container .third .icon{
+.icon{
     margin-top: 100px;
 }
 
 .text p{
     text-decoration: none ;
+    color: inherit;
 }
 
 .icon img{

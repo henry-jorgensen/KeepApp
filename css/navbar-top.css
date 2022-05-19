@@ -57,6 +57,7 @@ html{
 
 .bar-text-phone a{
     float: left;
+    font-weight: bold;
     text-decoration: none;
     color: inherit;
 }
