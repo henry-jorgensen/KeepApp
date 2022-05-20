@@ -1,11 +1,6 @@
 nav {
     position: relative;
     display: block;
-    top: 0s;
-    justify-content: space-between;
-    background: white;
-    opacity: 0.8;
-    width: 100%;
     z-index: 10;
 }
 
@@ -17,12 +12,7 @@ nav ul {
     transition: 0.25s;
     position: absolute;
     display: block;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background: white;
     width: 100%;
-    line-height: 0;
     opacity: 1;
 }
 
@@ -33,20 +23,14 @@ nav ul {
 
 nav ul li {
     padding: 0px;
-    line-height: 0;
-    height: 100%;
     display: block;
 }
 
 nav ul li a {
     text-align: center;
-    color: #2f2a3e;
-    text-decoration: none;
     padding: 40px 20px;
-    line-height: 0;
     font-size: 20px;
-    display: block;
-    transition-duration: 0.4s;
+    font-weight: 400;
 }
 
 #register{

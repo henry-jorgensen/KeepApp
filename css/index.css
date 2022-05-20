@@ -151,16 +151,6 @@
 
 /* WHAT WE DO */
 
-.horizontal-scroll{
-    position: relative;
-    margin: auto;
-    display: inline-flex;
-    width: 99vw;
-    height: 100vh;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -206,13 +196,6 @@
 .main{
     position: sticky;
     overflow-x: hidden;
-}
-
-.what-we-do{
-    position: relative;
-    display: flex;
-    width: 100vw;
-    
 }
 
 /* What We Do  */
@@ -342,7 +325,7 @@
 .features-box{
     margin-top: 50px;
     position: relative;
-    background: rgba(249, 187, 135, 0.3);
+    background: #FDEADB;
     height: auto;
 }
 
@@ -359,12 +342,6 @@
 
 .feature-header h1{
     margin: 0;
-}
-
-
-.feature{
-    width: 100%;
-    display: flex;
 }
 
 

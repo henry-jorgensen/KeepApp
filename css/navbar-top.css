@@ -81,7 +81,7 @@ html{
 
 nav {
     display: flex;
-    top: 0s;
+    top: 0;
     justify-content: space-between;
     background: white;
     opacity: 0.8;
