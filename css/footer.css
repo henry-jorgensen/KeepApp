@@ -37,6 +37,10 @@ footer{
     text-decoration: none;
 }
 
+.links div{
+    padding-top: 5px;
+}
+
 .topic .address p{
     color: lightgray;
     text-decoration: none;   
@@ -84,7 +88,7 @@ footer{
         height: auto;
     }
     .block{
-        height: 200px;
+        height: auto;
     }
 
     .image{
@@ -105,9 +109,7 @@ footer{
         display: block;
         height: 100px;
     }
-    .block{
-        height: 150px;
-    }
+
     .socials-footer .icon svg{
         margin-left: 10px;
     }
