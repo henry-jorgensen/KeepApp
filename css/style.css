@@ -4,8 +4,6 @@ body {
     font-family: 'Montserrat';
     font-size: 22px;
     max-width: 100%;
-    /* overflow-y: hidden; */
-    
 }
 
 body h1, body h2, body h3, body h4{
@@ -20,10 +18,15 @@ body h1, body h2, body h3, body h4{
     }
 }
 
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #f98d7d lightgrey;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
   
 /* Track */
 ::-webkit-scrollbar-track {
@@ -36,7 +39,3 @@ body h1, body h2, body h3, body h4{
     background: #f98d7d; 
     border-radius: 10px;
 }
-
-
-
-

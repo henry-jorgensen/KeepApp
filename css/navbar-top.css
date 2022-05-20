@@ -21,18 +21,18 @@ html{
     display: flex;
 }
 
-.bar-content-right .social-medias-top svg{
+.social-medias-top svg{
     height: 40px;
     margin-right: 20px;
     fill: #7f7999;
 }
 
-.bar-content-right .social-medias-top svg:hover{
+.social-medias-top svg:hover{
     fill: white;
    
 }
 
-.top-bar .bar-content .phone{
+.bar-content .phone{
     display: flex;
     fill: #7f7999;
 }
@@ -70,12 +70,9 @@ html{
 }
 
 
-.top-bar .bar-content .top-button:hover {
+.bar-content .top-button:hover {
     color: white;
 }
-
-
-
 
 /* NAVIGATION BAR */
 
