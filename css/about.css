@@ -274,12 +274,12 @@
 
 @media screen and (max-width: 440px){
     .wwd-text .header{
-        margin-left: 12%;
+        margin-left: 15%;
     }
 
     .wwd-text .description{
         margin-top: 210px;
-        margin-left: 12%;
+        margin-left: 15%;
     }
 
     .what-we-do .wwd-box svg{
@@ -491,6 +491,13 @@
     color: #f98d7d;
 }
 
+@media screen and (min-width: 1400px){
+    .idea-people{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
 @media screen and (max-width: 678px){
     .person{
         position: relative;
@@ -586,14 +593,13 @@
 
 @media screen and (max-width: 1207px) {
     .git-text{
-        margin-top: 0px;
-        margin-left: 0px;
-        width: 400px;
         margin: 0 auto;
+        width: 300px;
     }
 
     .form-contents{
         margin: 0 auto;
+        padding-right: 36px;
     }
 
     .get-in-touch{
@@ -607,17 +613,13 @@
 @media screen and (max-width: 400px){
     .git-description h1{
         font-size: 50px;
-        margin-left: 50px;
+        margin-left: 30px;
     }
 
     .git-description p{
         width: 220px;
         font-size: 16px;
-        margin-left: 50px;
-    }
-
-    .form-contents{
-        margin: 0px 42px auto;
+        margin-left: 30px;
     }
 }
 
