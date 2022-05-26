@@ -19,7 +19,7 @@ var featureOwl = $('#feature-carousel');
 
 var highestDelta = 0;
 $(function() {
-    $(".owl-stage").mousewheel(function(event, delta) {
+    $(".owl-stage").mousewheel(function(event, delta, deltaX, deltaY) {
         var elementRelativeTop = elements[0].getBoundingClientRect().top
         var elementRelativeBottom = elements[0].getBoundingClientRect().bottom
 
