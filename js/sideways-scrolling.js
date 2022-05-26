@@ -92,4 +92,3 @@ owl.owlCarousel({
 $(".owl-nav").remove();
 $('.owl-dots').css({"position" : "absolute", "transform" : "translate(-50%, -50%)",
                      "left" : "50%", "top" : "96%"});
-$(".horizontal-scroll").remove();

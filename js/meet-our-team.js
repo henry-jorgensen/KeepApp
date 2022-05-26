@@ -78,26 +78,56 @@ function toggleGenerator(){
   ideaGeneratorsButton.classList.add('toggle-active');
   ideaImplementorsButton.classList.remove('toggle-active');
 
-  setTimeout(() =>{
+  // setTimeout(() =>{
+  //   generatorTeam.classList.add("idea-visible");
+  // }, 100);
+  // generatorTeam.classList.add("idea-transition");
+  // implementorTeam.classList.remove("idea-transition");
+  // implementorTeam.classList.remove("idea-visible");
+
+  setTimeout(() => {
+    implementorTeam.classList.remove("idea-transition")
+  }, 500); 
+
+  implementorTeam.classList.remove('idea-visible')
+
+  setTimeout(() => {
     generatorTeam.classList.add("idea-visible");
-  }, 100);
-  generatorTeam.classList.add("idea-transition");
-  implementorTeam.classList.remove("idea-transition");
-  implementorTeam.classList.remove("idea-visible");
+  }, 500);
+  setTimeout(() => {
+    generatorTeam.classList.add("idea-transition");
+  }, 480);
+  
 
 }
 
 function toggleImplementor(){
   ideaImplementorsButton.classList.add('toggle-active');
   ideaGeneratorsButton.classList.remove('toggle-active');
-  generatorTeam.classList.remove("idea-visible");
-  generatorTeam.classList.remove("idea-transition");
-  setTimeout(() =>{
-    implementorTeam.classList.add("idea-visible");
-  }, 100);
-  implementorTeam.classList.add("idea-transition");
-  
 
+
+  // generatorTeam.classList.remove("idea-visible");
+  // generatorTeam.classList.remove("idea-transition");
+  // setTimeout(() =>{
+  //   implementorTeam.classList.add("idea-visible");
+  // }, 100);
+  // implementorTeam.classList.add("idea-transition");
+
+  setTimeout(() => {
+    generatorTeam.classList.remove("idea-transition")
+  }, 500); 
+
+  generatorTeam.classList.remove('idea-visible')
+
+  setTimeout(() => {
+    implementorTeam.classList.add('idea-visible')
+  }, 500);
+
+  setTimeout(() => {
+    implementorTeam.classList.add('idea-transition')
+  }, 480);
+  
+  
 
 }
 

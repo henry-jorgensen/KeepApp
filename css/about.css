@@ -419,28 +419,14 @@
     justify-content: center;
     margin-left: 40px;
     margin-right: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 
 }
-
-.idea-people-redundant{
-    flex-flow: row wrap;
-    justify-content: center;
-    position: absolute;
-    width: 70%;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-}
-
 
 .idea-transition{
     pointer-events: all;
     display: flex;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .idea-visible{
