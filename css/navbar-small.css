@@ -44,8 +44,6 @@ nav ul li a {
 #nav-icon-div{
     display: block;
     position: absolute;
-    height: 90px;
-    width: 90px;
     transform: translate(-50%, -50%);
     left: 90%;
     top: 55%;

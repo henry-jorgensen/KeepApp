@@ -499,8 +499,8 @@
 .client-animation-trigger{
     position: absolute;
     width: 100%;
-    top: 70%;
-    height: 250px;
+    top: 62%;
+    height: 300px;
     pointer-events: none;
 }
 
