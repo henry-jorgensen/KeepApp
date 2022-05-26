@@ -9,12 +9,10 @@ teamHeader.classList.remove('transition-team-header');
 
 var personCount = document.querySelector('.idea-people').childElementCount;
 
-var headerTimeout;
-var peopleTimeout;
 const teamObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        headerTimeout = setTimeout(() =>{
+        setTimeout(() =>{
           if (ideaGeneratorsButton.className == "toggle toggle-active"){
             generatorTeam.classList.add("idea-transition");
           }
@@ -28,7 +26,7 @@ const teamObserver = new IntersectionObserver(entries => {
             teamh1.innerHTML = "Meet our Team"
         }, 1400);
 
-        peopleTimeout = setTimeout(() =>{
+        setTimeout(() =>{
           if (ideaGeneratorsButton.className == "toggle toggle-active"){
             generatorTeam.classList.add("idea-transition");
             setTimeout(() =>{
@@ -49,9 +47,7 @@ const teamObserver = new IntersectionObserver(entries => {
 
         return;
       }
-
-      clearTimeout(headerTimeout)
-      clearTimeout(peopleTimeout)
+      clearTimeouts()
       meetTeam.classList.remove('meet-team-transition');
       teamHeader.classList.remove('transition-team-header');
       teamh1.classList.remove('transition-h1');
@@ -75,6 +71,8 @@ const implementorTeam = document.getElementById("implementors");
 
 
 function toggleGenerator(){
+  clearTimeouts()
+
   ideaGeneratorsButton.classList.add('toggle-active');
   ideaImplementorsButton.classList.remove('toggle-active');
 
@@ -87,21 +85,23 @@ function toggleGenerator(){
 
   setTimeout(() => {
     implementorTeam.classList.remove("idea-transition")
-  }, 500); 
+  }, 750); 
 
   implementorTeam.classList.remove('idea-visible')
 
   setTimeout(() => {
     generatorTeam.classList.add("idea-visible");
-  }, 500);
+  }, 750);
   setTimeout(() => {
     generatorTeam.classList.add("idea-transition");
-  }, 480);
+  }, 720);
   
 
 }
 
 function toggleImplementor(){
+  clearTimeouts()
+
   ideaImplementorsButton.classList.add('toggle-active');
   ideaGeneratorsButton.classList.remove('toggle-active');
 
@@ -115,20 +115,26 @@ function toggleImplementor(){
 
   setTimeout(() => {
     generatorTeam.classList.remove("idea-transition")
-  }, 500); 
+  }, 750); 
 
   generatorTeam.classList.remove('idea-visible')
 
   setTimeout(() => {
     implementorTeam.classList.add('idea-visible')
-  }, 500);
+  }, 750);
 
   setTimeout(() => {
     implementorTeam.classList.add('idea-transition')
-  }, 480);
-  
-  
+  }, 700);
 
+}
+
+function clearTimeouts(){
+  var id = window.setTimeout(function() {}, 0);
+
+  while (id--) {
+      window.clearTimeout(id); // will do nothing if no timeout with id is present
+  }
 }
 
 
