@@ -9,10 +9,13 @@ teamHeader.classList.remove('transition-team-header');
 
 var personCount = document.querySelector('.idea-people').childElementCount;
 
+var headerTimeout;
+var peopleTimeout;
+
 const teamObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        setTimeout(() =>{
+        headerTimeout = setTimeout(() =>{
           if (ideaGeneratorsButton.className == "toggle toggle-active"){
             generatorTeam.classList.add("idea-transition");
           }
@@ -26,7 +29,7 @@ const teamObserver = new IntersectionObserver(entries => {
             teamh1.innerHTML = "Meet our Team"
         }, 1400);
 
-        setTimeout(() =>{
+        peopleTimeout = setTimeout(() =>{
           if (ideaGeneratorsButton.className == "toggle toggle-active"){
             generatorTeam.classList.add("idea-transition");
             setTimeout(() =>{
@@ -47,7 +50,9 @@ const teamObserver = new IntersectionObserver(entries => {
 
         return;
       }
-      clearTimeouts()
+
+      clearTimeout(headerTimeout)
+      clearTimeout(peopleTimeout)
       meetTeam.classList.remove('meet-team-transition');
       teamHeader.classList.remove('transition-team-header');
       teamh1.classList.remove('transition-h1');
