@@ -96,7 +96,7 @@ footer{
     }
 
     .image img{
-        height: 100px;
+        height: 140px;
         margin-right: auto;
     }
 
@@ -111,7 +111,7 @@ footer{
     }
 
     .socials-footer .icon svg{
-        margin-left: 10px;
+        margin-left: 25px;
     }
 
     .socials-footer{
