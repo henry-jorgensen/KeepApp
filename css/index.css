@@ -715,17 +715,25 @@
     height: 100%;
     text-align: center;
     transition: 0.2s;
-    
+    position: relative;
 }
 
 .half .text{
     opacity: 0;
     font-family: 'Montserrat';
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
 }
 
 .half .logo{
     height: 160px;
-    margin-top: 190px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: 0.2s;
     
 }
@@ -737,21 +745,26 @@
     opacity: 1;
 }
 
+.text p, .text h2{
+    margin: 0;
+}
+
 .half:hover .logo{
     height: 100px;
+    top: 45%;
 }
 
 #end-phone, #download-text{
     text-align: center;
-    margin-top: 50px;
     position: absolute;
-    top: 250px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.2s;
     cursor: default;
     pointer-events: none;
     color: #2f2a3e;
+    margin: 0;
 }
 
 #right-side:hover ~ #download-text, #left-side:hover ~ #download-text{
@@ -760,16 +773,58 @@
 
 #right-side:hover ~ #end-phone{
     left: 75%;
-    transform: translate(-50%, -50%);
 } 
 
 #left-side:hover ~ #end-phone{
     left: 25%;
-    transform: translate(-50%, -50%);
 } 
 
 @media screen and (max-width: 800px){
     .download-app{
-        display: none;
+        height: 300px;
+    }
+
+    #end-phone{   
+        height: 250px;
+    }
+
+    #download-text{
+        font-size: 16px;
+    }
+
+    .half .logo{
+        height: 90px;
+    }
+
+    .half .text{
+        font-size: 12px;
+    }
+
+    .half:hover .logo{
+        height: 60px;
+        
+    }
+}
+
+@media screen and (max-width: 480px){
+    #end-phone{
+        height: 200px;
+    }
+
+    #download-text{
+        font-size: 14px;
+    }
+
+    .half .logo{
+        height: 50px;
+    }
+
+    .half .text{
+        font-size: 8px;
+    }
+
+    .half:hover .logo{
+        height: 40px;
+        
     }
 }
