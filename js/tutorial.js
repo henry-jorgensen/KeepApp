@@ -2,6 +2,7 @@ var expandButton = document.getElementById('expand');
 var leftMenuColumn = document.getElementById('columnMenu');
 var rightColumn = document.getElementById('rightCol')
 var darkener = document.getElementById('darken')
+var arrow = document.getElementById('arrow')
 
 var small = false
 var temp = false
@@ -14,7 +15,7 @@ const myObserver = new ResizeObserver(entries => {
           darkener.style.opacity = "0"
           expandButton.style.left = "1%"
           leftMenuColumn.style.pointerEvents = "all"
-          expandButton.style.transform = "rotateY(0deg)"
+          arrow.style.transform = "rotateY(0deg)"
           small = false
       } else{
           small = true
@@ -41,8 +42,7 @@ function showMenu(){
         } else{
             expandButton.style.left = "70%";
         }
-        
-        //expandButton.style.transform = "rotateY(180deg)"
+        arrow.style.transform = "rotateY(180deg)"
         darkener.style.opacity = "1"
         opacityBool = true
     } else{
@@ -50,7 +50,7 @@ function showMenu(){
         leftMenuColumn.style.pointerEvents = "none"
         rightColumn.style.pointerEvents = "all"
         expandButton.style.left = "1%"
-        //expandButton.style.transform = "rotateY(0deg)"
+        arrow.style.transform = "rotateY(0deg)"
         darkener.style.opacity = "0"
         opacityBool = false
     }
