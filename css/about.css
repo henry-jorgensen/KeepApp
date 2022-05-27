@@ -341,9 +341,20 @@
     background-color: white;
 }
 
-.meet-team-transition{
-    transition: 2s;
+.moving-piece{
     background-color: #2f2a3e;
+    z-index: 0;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+}
+
+.moving-piece-transition{
+    height: 100%;
+    opacity: 1;
+    transition: 2s ease-in-out;
 }
 
 .team-header{
@@ -363,8 +374,19 @@
     position: relative;
 }
 
-.team-header img{
+.team-header svg{
     height: 100px;
+    width: 100px;
+}
+
+.team-header svg path{
+    height: 100%;
+    width: 100%;
+}
+
+#svg-path{
+    transition: 2s ease-in-out;
+    fill: #2f2a3e;
 }
 
 .team-h1{
@@ -372,11 +394,12 @@
 }
 
 .transition-team-header{
-    transition: 2s;
+    transition: 2.5s ease-in-out;
     top: 30%;
 }
 
 .transition-h1{
+    transition: color 2.5s ease-in-out;
     color: white;
 }
 

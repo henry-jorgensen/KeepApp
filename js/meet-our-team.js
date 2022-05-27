@@ -1,6 +1,8 @@
 const meetTeam = document.querySelector('.meet-team');
+const slider = document.querySelector('.moving-piece')
 const teamHeader = document.querySelector('.team-header');
 const teamImg = document.getElementById('team-img');
+const brainSVG = document.getElementById('svg-path')
 const teamh1 = document.querySelector('.team-h1');
 const theTeam = document.querySelector('.idea-people')
 const teamButtons = document.querySelector('.team-buttons');
@@ -22,8 +24,9 @@ const teamObserver = new IntersectionObserver(entries => {
           else if (ideaImplementorsButton.className == "toggle toggle-active"){
             implementorTeam.classList.add("idea-transition");
           }
-            meetTeam.classList.add('meet-team-transition');
-            teamImg.src = "assets/about/Brain-White.png"
+            slider.classList.add('moving-piece-transition')
+            brainSVG.style.fill = "white"
+            //teamImg.src = "assets/about/Brain-White.png"
             teamHeader.classList.add('transition-team-header');
             teamh1.classList.add('transition-h1');
             teamh1.innerHTML = "Meet our Team"
@@ -53,10 +56,11 @@ const teamObserver = new IntersectionObserver(entries => {
 
       clearTimeout(headerTimeout)
       clearTimeout(peopleTimeout)
-      meetTeam.classList.remove('meet-team-transition');
+      slider.classList.remove('moving-piece-transition')
       teamHeader.classList.remove('transition-team-header');
       teamh1.classList.remove('transition-h1');
-      teamImg.src = "assets/about/Brain-Dark.png"
+      //teamImg.src = "assets/about/Brain-Dark.png"
+      brainSVG.style.fill = "#2f2a3e"
       teamh1.innerHTML = "Brains at Work"
       teamButtons.classList.remove("idea-transition");
       generatorTeam.classList.remove("idea-visible");
