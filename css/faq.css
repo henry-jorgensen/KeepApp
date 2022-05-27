@@ -72,12 +72,13 @@
 
 .question .icon {
     float: right;
+    color: #2f2a3e;
 }
 
 .accordion {
     background-color: white;
     font-family: 'Montserrat';
-    color: black;
+    color: #2f2a3e;
     cursor: pointer;
     padding: 18px;
     width: 50%;
@@ -114,6 +115,7 @@
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
     border-radius: 10px;
+    color: #2f2a3e;
 }
 
 .panel p{
