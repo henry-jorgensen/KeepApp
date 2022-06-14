@@ -354,7 +354,7 @@
 .moving-piece-transition{
     height: 100%;
     opacity: 1;
-    transition: 2s ease-in-out;
+    transition: 2.5s ease-in-out;
 }
 
 .team-header{
@@ -377,6 +377,7 @@
 .team-header svg{
     height: 100px;
     width: 100px;
+    margin-right: 20px;
 }
 
 .team-header svg path{
@@ -384,9 +385,9 @@
     width: 100%;
 }
 
-#svg-path{
-    transition: 2s ease-in-out;
-    fill: #2f2a3e;
+.brain-transition{
+    fill: white;
+    transition: 2.5s ease-in-out;
 }
 
 .team-h1{

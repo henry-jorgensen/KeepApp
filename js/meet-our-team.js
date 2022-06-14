@@ -25,8 +25,7 @@ const teamObserver = new IntersectionObserver(entries => {
             implementorTeam.classList.add("idea-transition");
           }
             slider.classList.add('moving-piece-transition')
-            brainSVG.style.fill = "white"
-            //teamImg.src = "assets/about/Brain-White.png"
+            brainSVG.classList.add('brain-transition')
             teamHeader.classList.add('transition-team-header');
             teamh1.classList.add('transition-h1');
             teamh1.innerHTML = "Meet our Team"
@@ -59,8 +58,7 @@ const teamObserver = new IntersectionObserver(entries => {
       slider.classList.remove('moving-piece-transition')
       teamHeader.classList.remove('transition-team-header');
       teamh1.classList.remove('transition-h1');
-      //teamImg.src = "assets/about/Brain-Dark.png"
-      brainSVG.style.fill = "#2f2a3e"
+      brainSVG.classList.remove('brain-transition')
       teamh1.innerHTML = "Brains at Work"
       teamButtons.classList.remove("idea-transition");
       generatorTeam.classList.remove("idea-visible");
@@ -85,13 +83,6 @@ function toggleGenerator(){
   ideaGeneratorsButton.classList.add('toggle-active');
   ideaImplementorsButton.classList.remove('toggle-active');
 
-  // setTimeout(() =>{
-  //   generatorTeam.classList.add("idea-visible");
-  // }, 100);
-  // generatorTeam.classList.add("idea-transition");
-  // implementorTeam.classList.remove("idea-transition");
-  // implementorTeam.classList.remove("idea-visible");
-
   setTimeout(() => {
     implementorTeam.classList.remove("idea-transition")
   }, 750); 
@@ -114,14 +105,6 @@ function toggleImplementor(){
   ideaImplementorsButton.classList.add('toggle-active');
   ideaGeneratorsButton.classList.remove('toggle-active');
 
-
-  // generatorTeam.classList.remove("idea-visible");
-  // generatorTeam.classList.remove("idea-transition");
-  // setTimeout(() =>{
-  //   implementorTeam.classList.add("idea-visible");
-  // }, 100);
-  // implementorTeam.classList.add("idea-transition");
-
   setTimeout(() => {
     generatorTeam.classList.remove("idea-transition")
   }, 750); 
@@ -142,9 +125,6 @@ function clearTimeouts(){
   var id = window.setTimeout(function() {}, 0);
 
   while (id--) {
-      window.clearTimeout(id); // will do nothing if no timeout with id is present
+      window.clearTimeout(id); 
   }
 }
-
-
-
