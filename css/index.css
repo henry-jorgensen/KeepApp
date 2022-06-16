@@ -478,7 +478,7 @@
 
 .review-phone-transform img{
     transition: 0.2s;
-    width: 650px;
+    width: 550px;
     border-radius: 20px 20px 0px 0px;
 } 
 
@@ -532,11 +532,16 @@
 
 .review-text h3{
     margin-top: 0;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 .review-text p{
     font-size: 18px;
+}
+
+.review-text h3, .review-text p{
+    font-size: 20px;
+    margin-right: 33px;
 }
 
 .review-button{
@@ -551,11 +556,11 @@
 
 .carousel-customer-review{
     position: absolute;
-    top: 57%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 427px;
-    height: 873px;
+    width: 362px;
+    height: 796px;
     background-color: white;
     border-radius: 50px;
 }
@@ -564,51 +569,47 @@
     display: none;
 }
 
+
+@media screen and (min-width: 1400px){
+    .review-phone-transform img{
+        transition: 0.2s;
+        width: 643px;
+    } 
+
+    .carousel-customer-review{
+        top: 55%;
+        width: 424px;
+        height: 917px;
+    }
+
+    .review-text h3, .review-text p{
+        font-size: 23px;
+    }
+
+}
+
 @media screen and (min-width: 2000px){
     .prev, .next{
         margin: 180px;
         margin-top: 0;
     }
-}
-
-@media screen and (min-width: 1400px){
-    .review-phone-transform img{
-        transition: 0.2s;
-        width: 850px;
-    } 
-
-    .carousel-customer-review{
-        top: 58%;
-        width: 555px;
-        height: 1110px;
-    }
-
-    .review-text h3, .review-text p{
-        font-size: 25px;
-    }
-
-}
-
-@media screen and (max-width: 865px){
-    .review-phone img{
-        width: 335px;
-    }
 
     .review-phone-transform img{
-        transition: 0.2s;
-        width: 650px;
+        width: 800px;
     }
 
     .carousel-customer-review{
         top: 55%;
-        width: 429px;
-        height: 937px;
+        width: 527px;
+        height: 1126px;
     }
-    
-    .review-text p{
-        width: 95%;
+
+    .review-text h3, .review-text p{
+        font-size: 28px;
+        margin-right: 33px;
     }
 }
+
 @media screen and (max-width: 640px){
     .review-phone img{
         width: 300px;

@@ -145,7 +145,7 @@ function deleteElements(){
     }
 }
 
-function loopThroughElements(type){
+function createElementsLoop(type){
   var ideaPeopleDiv = document.getElementById('idea-people')
 
   for (var i = 0; i < listDict[type].length; i++){
@@ -183,5 +183,5 @@ function createElements(type) {
         index = 1
     }
 
-    loopThroughElements(index)
+    createElementsLoop(index)
 }
