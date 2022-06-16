@@ -14,15 +14,18 @@ var personCount = document.querySelector('.idea-people').childElementCount;
 var headerTimeout;
 var peopleTimeout;
 
+
 const teamObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         headerTimeout = setTimeout(() =>{
           if (ideaGeneratorsButton.className == "toggle toggle-active"){
-            generatorTeam.classList.add("idea-transition");
+            createElements("Generator")
+            ideaPeople.classList.add("idea-transition"); 
           }
           else if (ideaImplementorsButton.className == "toggle toggle-active"){
-            implementorTeam.classList.add("idea-transition");
+            createElements("Implementor")
+            ideaPeople.classList.add("idea-transition");
           }
             slider.classList.add('moving-piece-transition')
             brainSVG.classList.add('brain-transition')
@@ -33,15 +36,15 @@ const teamObserver = new IntersectionObserver(entries => {
 
         peopleTimeout = setTimeout(() =>{
           if (ideaGeneratorsButton.className == "toggle toggle-active"){
-            generatorTeam.classList.add("idea-transition");
+            ideaPeople.classList.add("idea-transition");
             setTimeout(() =>{
-              generatorTeam.classList.add("idea-visible");
+              ideaPeople.classList.add("idea-visible");
             }, 100);
           }
           else if (ideaImplementorsButton.className == "toggle toggle-active"){
-            implementorTeam.classList.add("idea-transition");
+            ideaPeople.classList.add("idea-transition");
             setTimeout(() =>{
-              implementorTeam.classList.add("idea-visible");
+              ideaPeople.classList.add("idea-visible");
             }, 100);
           }
           teamButtons.classList.add("idea-transition");
@@ -61,8 +64,7 @@ const teamObserver = new IntersectionObserver(entries => {
       brainSVG.classList.remove('brain-transition')
       teamh1.innerHTML = "Brains at Work"
       teamButtons.classList.remove("idea-transition");
-      generatorTeam.classList.remove("idea-visible");
-      implementorTeam.classList.remove("idea-visible");
+      ideaPeople.classList.remove("idea-visible");
       teamButtons.classList.remove("idea-visible");
 
     });
@@ -73,51 +75,28 @@ teamObserver.observe(document.querySelector('.meet-team'));
 const ideaGeneratorsButton = document.getElementById('idea-generator');
 const ideaImplementorsButton = document.getElementById('idea-implementor');
 
-const generatorTeam = document.getElementById("generators");
-const implementorTeam = document.getElementById("implementors");
-
+const ideaPeople = document.getElementById('idea-people')
 
 function toggleGenerator(){
   clearTimeouts()
 
+  deleteElements()
+
+  createElements("Generator")
+
   ideaGeneratorsButton.classList.add('toggle-active');
   ideaImplementorsButton.classList.remove('toggle-active');
-
-  setTimeout(() => {
-    implementorTeam.classList.remove("idea-transition")
-  }, 750); 
-
-  implementorTeam.classList.remove('idea-visible')
-
-  setTimeout(() => {
-    generatorTeam.classList.add("idea-visible");
-  }, 750);
-  setTimeout(() => {
-    generatorTeam.classList.add("idea-transition");
-  }, 720);
-  
-
 }
 
 function toggleImplementor(){
   clearTimeouts()
 
+  deleteElements()
+
+  createElements("Implementor")
+
   ideaImplementorsButton.classList.add('toggle-active');
   ideaGeneratorsButton.classList.remove('toggle-active');
-
-  setTimeout(() => {
-    generatorTeam.classList.remove("idea-transition")
-  }, 750); 
-
-  generatorTeam.classList.remove('idea-visible')
-
-  setTimeout(() => {
-    implementorTeam.classList.add('idea-visible')
-  }, 750);
-
-  setTimeout(() => {
-    implementorTeam.classList.add('idea-transition')
-  }, 700);
 
 }
 
@@ -129,4 +108,60 @@ function clearTimeouts(){
   }
 }
 
+var listDict = [[{name: "Lorem Ipsum", role: "Developer", img: "assets/photos/Face.jpg"}, {name: "Lorem Ipsum", role: "Developer", img: "assets/photos/Face.jpg"}, {name: "Lorem Ipsum", role: "Developer", img: "assets/photos/Face.jpg"}, {name: "Lorem Ipsum", role: "Developer", img: "assets/photos/Face.jpg"}], [{name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}]]
+console.log(listDict[0])
 
+function deleteElements(){
+
+  console.log("DELETING ELEMENTS")
+  var elementsIn = document.getElementsByClassName('person')
+  console.log(elementsIn)
+    for (var i = 0; i < elementsIn.length; i++){
+      elementsIn[i].remove()
+    }
+}
+
+function loopThroughElements(type){
+  var ideaPeopleDiv = document.getElementById('idea-people')
+
+  for (var i = 0; i < listDict[type].length; i++){
+    var outerDiv = document.createElement("div")
+    outerDiv.classList.add("person")
+    
+    var photoDiv = document.createElement("div")
+    photoDiv.classList.add('photo')
+    var photoImg = document.createElement("img")
+    photoImg.src = listDict[type][i].img
+    photoDiv.appendChild(photoImg)
+
+    var nameDiv = document.createElement("div")
+    nameDiv.classList.add('name')
+
+    var roleDiv = document.createElement("div")
+    roleDiv.classList.add('role')
+    roleDiv.innerHTML = listDict[type][i].role
+    nameDiv.innerHTML = listDict[type][i].name
+
+    outerDiv.appendChild(photoDiv)
+    outerDiv.appendChild(nameDiv)
+    outerDiv.appendChild(roleDiv)
+
+    ideaPeopleDiv.appendChild(outerDiv)
+  } 
+}
+
+function createElements(type) {
+    console.log("HIT" + type)
+    deleteElements()
+    var index
+    if (type == "Generator"){
+        index = 0
+    } else if (type == "Implementor"){
+        index = 1
+    }
+
+    setTimeout(() => {
+      loopThroughElements(index)
+    }, 500);    
+    
+}
