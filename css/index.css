@@ -404,7 +404,7 @@
 
 @media screen and (max-width: 570px){
     .carousel-custom{
-        height: 60vh;
+        height: 50vh;
     }
     
     .feature-picture{
@@ -412,7 +412,7 @@
     }
 
     .text-box{
-        top: 65%;
+        top: 67%;
     }
 
     .feature-header h1{
@@ -427,6 +427,12 @@
         font-size: 10px;
     }
 
+}
+
+@media screen and (max-width: 380px){
+    .text-box{
+        top: 60%;
+    }
 }
 
 @media screen and (min-width: 2000px){
