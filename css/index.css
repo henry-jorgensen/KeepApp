@@ -572,7 +572,6 @@
 
 @media screen and (min-width: 1400px){
     .review-phone-transform img{
-        transition: 0.2s;
         width: 643px;
     } 
 
@@ -630,11 +629,8 @@
     .carousel-customer-review{
         top: 55%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        position: absolute;
         width: 295px;
         height: 638px;
-        background-color: white;
         border-radius: 30px;
     }
     
@@ -646,7 +642,6 @@
     .review-text h3, .review-text p{
         font-size: 15px; 
     }
-
 
     .review-text p{
         width: 95%;
