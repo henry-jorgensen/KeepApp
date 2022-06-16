@@ -470,6 +470,9 @@
     pointer-events: none;
 }
 
+.review-phone img{
+    width: 335px;
+}
 
 .review-phone-transform{
     transition: 0.5s;
