@@ -1,3 +1,11 @@
+function clearTimeouts(){
+  var id = window.setTimeout(function() {}, 0);
+
+  while (id--) {
+      window.clearTimeout(id); 
+  }
+}
+
 const meetTeam = document.querySelector('.meet-team');
 const slider = document.querySelector('.moving-piece')
 const teamHeader = document.querySelector('.team-header');
@@ -13,18 +21,24 @@ var personCount = document.querySelector('.idea-people').childElementCount;
 
 var headerTimeout;
 var peopleTimeout;
-
-
+var elementsIn;
 const teamObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        elementsIn = document.getElementsByClassName('person')
         headerTimeout = setTimeout(() =>{
           if (ideaGeneratorsButton.className == "toggle toggle-active"){
-            createElements("Generator")
+            if (elementsIn.length == 0){
+              createElements("Generator")
+            }
+            
             ideaPeople.classList.add("idea-transition"); 
           }
           else if (ideaImplementorsButton.className == "toggle toggle-active"){
-            createElements("Implementor")
+            if (elementsIn.length == 0){
+              createElements("Implementor")
+            }
+
             ideaPeople.classList.add("idea-transition");
           }
             slider.classList.add('moving-piece-transition')
@@ -80,10 +94,17 @@ const ideaPeople = document.getElementById('idea-people')
 function toggleGenerator(){
   clearTimeouts()
 
-  deleteElements()
+  ideaPeople.classList.remove('idea-visible')
 
-  createElements("Generator")
-
+  setTimeout(() => {
+    deleteElements()
+  }, 600);
+  
+  setTimeout(() => {
+    createElements("Generator")
+    ideaPeople.classList.add('idea-visible')
+  }, 700);
+  
   ideaGeneratorsButton.classList.add('toggle-active');
   ideaImplementorsButton.classList.remove('toggle-active');
 }
@@ -91,33 +112,36 @@ function toggleGenerator(){
 function toggleImplementor(){
   clearTimeouts()
 
-  deleteElements()
+  ideaPeople.classList.remove('idea-visible')
 
-  createElements("Implementor")
+  setTimeout(() => {
+    deleteElements()
+  }, 600);
+  
+  setTimeout(() => {
+    createElements("Implementor")
+    ideaPeople.classList.add('idea-visible')
+  }, 700);
+  
 
+  
   ideaImplementorsButton.classList.add('toggle-active');
   ideaGeneratorsButton.classList.remove('toggle-active');
-
-}
-
-function clearTimeouts(){
-  var id = window.setTimeout(function() {}, 0);
-
-  while (id--) {
-      window.clearTimeout(id); 
-  }
 }
 
 var listDict = [[{name: "Lorem Ipsum", role: "Developer", img: "assets/photos/Face.jpg"}, {name: "Lorem Ipsum", role: "Developer", img: "assets/photos/Face.jpg"}, {name: "Lorem Ipsum", role: "Developer", img: "assets/photos/Face.jpg"}, {name: "Lorem Ipsum", role: "Developer", img: "assets/photos/Face.jpg"}], [{name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}, {name: "Lorem Ipsum", role: "Engineer", img: "assets/photos/Face2.jpg"}]]
-console.log(listDict[0])
 
 function deleteElements(){
-
-  console.log("DELETING ELEMENTS")
-  var elementsIn = document.getElementsByClassName('person')
-  console.log(elementsIn)
-    for (var i = 0; i < elementsIn.length; i++){
-      elementsIn[i].remove()
+  elementsIn = document.getElementsByClassName('person')
+    var length = elementsIn.length
+    var i = 0
+    while (i == 0){
+      i = 0
+      if (elementsIn[i] != undefined){
+        elementsIn[i].remove()
+      } else {
+        break
+      } 
     }
 }
 
@@ -152,7 +176,6 @@ function loopThroughElements(type){
 
 function createElements(type) {
     console.log("HIT" + type)
-    deleteElements()
     var index
     if (type == "Generator"){
         index = 0
@@ -160,8 +183,5 @@ function createElements(type) {
         index = 1
     }
 
-    setTimeout(() => {
-      loopThroughElements(index)
-    }, 500);    
-    
+    loopThroughElements(index)
 }

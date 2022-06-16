@@ -509,6 +509,10 @@
 }
 
 @media screen and (max-width: 678px){
+    .meet-team{
+        min-height: 800px;
+    }
+
     .person{
         position: relative;
         height: 170px;

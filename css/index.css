@@ -145,11 +145,11 @@
 
 @media screen and (max-width: 800px) {
     .btn{
-        border: solid #2f2a3e81 2px;
+        border: solid #2f2a3e 2px;
     }
 
     .btn-reverse{
-        border: solid #2f2a3e81 2px;
+        border: solid #2f2a3e 2px;
     }
 }
 
@@ -404,7 +404,7 @@
 
 @media screen and (max-width: 570px){
     .carousel-custom{
-        height: 50vh;
+        height: 60vh;
     }
     .feature-picture{
         height: 200px;
