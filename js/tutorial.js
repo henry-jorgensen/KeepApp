@@ -3,6 +3,7 @@ var leftMenuColumn = document.getElementById('columnMenu');
 var rightColumn = document.getElementById('rightCol')
 var darkener = document.getElementById('darken')
 var arrow = document.getElementById('arrow')
+var navbar = document.getElementById('nav')
 
 var small = false
 var temp = false
@@ -44,6 +45,7 @@ function showMenu(){
         }
         arrow.style.transform = "rotateY(180deg)"
         darkener.style.opacity = "1"
+        navbar.style.pointerEvents = "none"
         opacityBool = true
     } else{
         leftMenuColumn.style.opacity = "0";
@@ -52,6 +54,7 @@ function showMenu(){
         expandButton.style.left = "1%"
         arrow.style.transform = "rotateY(0deg)"
         darkener.style.opacity = "0"
+        navbar.style.pointerEvents = "all"
         opacityBool = false
     }
     

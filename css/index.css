@@ -406,6 +406,7 @@
     .carousel-custom{
         height: 60vh;
     }
+    
     .feature-picture{
         height: 200px;
     }
@@ -438,7 +439,7 @@
     }
 
     .feature-picture{
-        height: 600px;
+        height: 800px;
     }
 
     .text-box h1{
