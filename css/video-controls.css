@@ -1,0 +1,67 @@
+.video-container{
+    position: relative;
+    width: 100%;
+}
+
+#video{
+    position: relative;
+}
+
+.controls-container{
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 92.5%;
+    background-color: #2f2a3e;
+    height: 40px;
+    bottom: 5px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+video:hover ~ .controls-container, .controls-container:hover{
+    opacity: 1;
+}
+
+.controls button{
+    background: none;
+    font-weight: bolder;
+    text-shadow: 2px 1px 2px #000;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.controls button svg{
+    fill: #fff;
+}
+
+.controls-container .timeline{
+    flex: 1;
+    position: absolute;
+    bottom: 45px;
+    border: none;
+    height: 5px;
+    width: 92.5%;
+    background-color: #f58e7e63;
+}
+
+.controls-container .bar{
+    width: 10%;
+    height: inherit;
+    background-color: #f58e7e;
+}
+
+.time{
+    margin-top: 10px;
+    font-size: 16px; 
+    display: flex;  
+}
+
+#play{
+    display: block;
+}
