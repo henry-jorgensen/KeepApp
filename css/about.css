@@ -150,7 +150,7 @@
 
 .transition-header{
     font-size: 50px;
-    transition: font-size 2s ease;
+    transition: font-size 1.5s ease;
 }
 
 .wwd-description{

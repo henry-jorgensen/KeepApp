@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(entries => {
       description.classList.add('transition-description');
       setTimeout(() => {
         triggerAnimation();
-      }, 1500);
+      }, 1000);
       
       return;
     }

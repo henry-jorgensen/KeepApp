@@ -124,11 +124,11 @@ nav ul li a {
 }
 
 li a:hover:not(.active) {
-    background-color: lightgray;
+    background-color: rgba(48, 42, 62, 0.1);
 }
 
 .active-tab{
-    background-color: lightgray;
+    background-color: rgba(48, 42, 62, 0.1);
 }
 
 #nav-icon-div{
@@ -137,7 +137,7 @@ li a:hover:not(.active) {
 
 nav div a img {
     margin-top: 18px;
-    height: 75px;
+    height: 87px;
     padding-left: 20px;
 }
 
@@ -163,6 +163,32 @@ nav #register a {
 nav #register a:hover {
     color: white;
     background-color: #f98d7d;
+}
+
+@media screen and (min-width: 2000px){
+    nav{
+        justify-content: space-around;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        padding: 80px 20px;
+    }
+
+    nav div a img {
+        margin-top: 18px;
+        height: 130px;
+        padding-left: 20px;
+    }
+
+    nav #register{
+        padding: 59px 0px;
+    }
+    
+    nav #register a{
+        font-size: 20px;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 670px) {
