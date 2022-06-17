@@ -70,16 +70,16 @@ const teamObserver = new IntersectionObserver(entries => {
         return;
       }
 
-      clearTimeout(headerTimeout)
-      clearTimeout(peopleTimeout)
-      slider.classList.remove('moving-piece-transition')
-      teamHeader.classList.remove('transition-team-header');
-      teamh1.classList.remove('transition-h1');
-      brainSVG.classList.remove('brain-transition')
-      teamh1.innerHTML = "Brains at Work"
-      teamButtons.classList.remove("idea-transition");
-      ideaPeople.classList.remove("idea-visible");
-      teamButtons.classList.remove("idea-visible");
+      // clearTimeout(headerTimeout)
+      // clearTimeout(peopleTimeout)
+      // slider.classList.remove('moving-piece-transition')
+      // teamHeader.classList.remove('transition-team-header');
+      // teamh1.classList.remove('transition-h1');
+      // brainSVG.classList.remove('brain-transition')
+      // teamh1.innerHTML = "Brains at Work"
+      // teamButtons.classList.remove("idea-transition");
+      // ideaPeople.classList.remove("idea-visible");
+      // teamButtons.classList.remove("idea-visible");
 
     });
   });

@@ -8,12 +8,15 @@ const observer = new IntersectionObserver(entries => {
     if (entry.isIntersecting) {
       header.classList.add('transition-header');
       description.classList.add('transition-description');
-      triggerAnimation();
+      setTimeout(() => {
+        triggerAnimation();
+      }, 1500);
+      
       return;
     }
-    header.classList.remove('transition-header');
-    description.classList.remove('transition-description');
-    reverseAnimation();
+    // header.classList.remove('transition-header');
+    // description.classList.remove('transition-description');
+    // reverseAnimation();
   });
 });
 

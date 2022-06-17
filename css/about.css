@@ -147,15 +147,10 @@
     margin-left: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .header {
-      transition: font-size 1.5s ease;
-    }
-  }
 
 .transition-header{
     font-size: 50px;
-    
+    transition: font-size 2s ease;
 }
 
 .wwd-description{
@@ -254,13 +249,13 @@
         opacity: 0;
     
     }
-
+/* 
     .header{
         position: absolute;
         font-size: 120px;
         white-space: nowrap;
         margin-left: 400px;
-    }
+    } */
 
     .transition-header{
         font-size: 50px;

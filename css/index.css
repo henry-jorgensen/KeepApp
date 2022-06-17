@@ -144,13 +144,13 @@
 }
 
 @media screen and (max-width: 800px) {
-    .btn{
+    /* .btn{
         border: solid #2f2a3e 2px;
     }
 
     .btn-reverse{
         border: solid #2f2a3e 2px;
-    }
+    } */
 }
 
 /* WHAT WE DO */
