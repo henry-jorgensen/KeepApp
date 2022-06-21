@@ -139,13 +139,14 @@
 
     .left-col{
         background-color: #fff;
-        position: fixed;
+        position: absolute;
         z-index: 1000;
         opacity: 0;
         width: 370px;
         transition: 0.2s;
         border-radius: 0px 20px 20px 0px;
         top: 0;
+        left: -370px;
         pointer-events: none;
     }
 

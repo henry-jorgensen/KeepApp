@@ -36,6 +36,7 @@ var opacityBool = false;
 function showMenu(){
     if (opacityBool == false){
         leftMenuColumn.style.opacity = "1";
+        leftMenuColumn.style.left = "0px";
         leftMenuColumn.style.pointerEvents = "all"
         rightColumn.style.pointerEvents = "none"
         if (small == true){
@@ -49,6 +50,7 @@ function showMenu(){
         opacityBool = true
     } else{
         leftMenuColumn.style.opacity = "0";
+        leftMenuColumn.style.left = "-370px";
         leftMenuColumn.style.pointerEvents = "none"
         rightColumn.style.pointerEvents = "all"
         expandButton.style.left = "1%"
