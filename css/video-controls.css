@@ -14,13 +14,29 @@
 
 .controls{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: absolute;
     width: 92.5%;
     background-color: #2f2a3e;
     height: 40px;
     bottom: 5px;
     border-radius: 0px 0px 20px 20px;
+}
+
+.time{
+    margin-top: 10px;
+    font-size: 16px; 
+    display: flex;  
+    margin-right: 20px;
+}
+
+.right-section{
+    display: flex;
+}
+
+.full-screen{
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 video:hover ~ .controls-container, .controls-container:hover{
@@ -51,16 +67,12 @@ video:hover ~ .controls-container, .controls-container:hover{
 }
 
 .controls-container .bar{
-    width: 10%;
+    width: 0%;
     height: inherit;
     background-color: #f58e7e;
 }
 
-.time{
-    margin-top: 10px;
-    font-size: 16px; 
-    display: flex;  
-}
+
 
 #play{
     display: block;

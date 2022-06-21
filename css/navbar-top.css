@@ -165,32 +165,6 @@ nav #register a:hover {
     background-color: #f98d7d;
 }
 
-@media screen and (min-width: 2000px){
-    nav{
-        justify-content: space-around;
-    }
-
-    nav ul li a{
-        font-size: 20px;
-        padding: 80px 20px;
-    }
-
-    nav div a img {
-        margin-top: 18px;
-        height: 130px;
-        padding-left: 20px;
-    }
-
-    nav #register{
-        padding: 59px 0px;
-    }
-    
-    nav #register a{
-        font-size: 20px;
-        margin: auto;
-    }
-}
-
 @media screen and (max-width: 670px) {
     .top-bar{
         display: block;

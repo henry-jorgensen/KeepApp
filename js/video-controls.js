@@ -1,36 +1,43 @@
-var video;
+var video = document.getElementById('video');
 
 const playButton = document.getElementById('play')
 
-const currentTimeDiv = document.getElementById('current-time')
-const videoDuration = document.getElementById('video-duration') 
+const timeElapsed = document.getElementById('time-elapsed')
+const duration = document.getElementById('duration')
 
+function formatTime(timeInSeconds){
+    const result = new Date(timeInSeconds * 1000).toISOString().substr(11, 8)
+
+    return {
+        minutes: result.substr(3,2),
+        seconds: result.substr(6, 2),
+    }
+}
+
+function updateTimeElapsed(){
+    const time = formatTime(Math.round(video.currentTime))
+    timeElapsed.innerText = `${time.minutes}:${time.seconds}`
+    timeElapsed.setAttribute('datetime', `${time.minutes}m:${time.seconds}s`)
+}
 
 function init() {
-    video = document.getElementById('video')
     video.onloadedmetadata = function(e){
-        var length = video.duration
-        console.log("DURATION" + length)
-        currentTimeDiv.innerHTML = video.currentTime
-        videoDuration.innerHTML = video.duration
+        const videoDuration = Math.round(video.duration)
+        const time = formatTime(videoDuration)
+        duration.innerText = `${time.minutes}:${time.seconds}`;
+        duration.setAttribute('datetime', `${time.minutes}m ${time.seconds}`)
     }
 }
 
 document.addEventListener("DOMContentLoaded", init, false)
 
 function play(event){
-    var minutes = parseInt(video.duration / 60, 10)
-    var seconds = parseInt(video.duration % 60)
-    console.log(seconds)
-    if (seconds == 0){
-        seconds = "00"
+    if (video.paused || video.ended){
+        video.play()
+    } else {
+        video.pause()
     }
-    videoDuration.innerHTML = minutes + ":" + seconds
-    var num = parseInt(video.duration)
-
-    video.play()
-    
-    
-    
 
 }
+
+video.addEventListener('timeupdate', updateTimeElapsed)
