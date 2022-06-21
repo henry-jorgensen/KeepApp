@@ -16,10 +16,10 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 92.5%;
+    width: 92.4%;
     background-color: #2f2a3e;
     height: 40px;
-    bottom: 5px;
+    bottom: 7px;
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -28,15 +28,23 @@
     font-size: 16px; 
     display: flex;  
     margin-right: 20px;
+    
 }
 
 .right-section{
+    color: white;
     display: flex;
+    margin-right: 15px;
 }
 
 .full-screen{
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.full-screen img{
+    height: 24px;
 }
 
 video:hover ~ .controls-container, .controls-container:hover{
@@ -59,10 +67,10 @@ video:hover ~ .controls-container, .controls-container:hover{
 .controls-container .timeline{
     flex: 1;
     position: absolute;
-    bottom: 45px;
+    bottom: 47px;
     border: none;
     height: 5px;
-    width: 92.5%;
+    width: 92.4%;
     background-color: #f58e7e63;
 }
 
@@ -71,8 +79,6 @@ video:hover ~ .controls-container, .controls-container:hover{
     height: inherit;
     background-color: #f58e7e;
 }
-
-
 
 #play{
     display: block;
