@@ -9,6 +9,9 @@ const duration = document.getElementById('duration')
 const progressBar = document.getElementById('progress-bar')
 const seek = document.getElementById('seek')
 
+const fullscreenButton = document.getElementById('fullscreen-btn')
+const videoContainer = document.getElementById('video-container')
+
 function formatTime(timeInSeconds){
     const result = new Date(timeInSeconds * 1000).toISOString().substr(11, 8)
 
@@ -22,9 +25,21 @@ function updateTimeElapsed(){
     const time = formatTime(Math.round(video.currentTime))
     timeElapsed.innerText = `${time.minutes}:${time.seconds}`
     timeElapsed.setAttribute('datetime', `${time.minutes}m:${time.seconds}s`)
+    if (video.ended){
+        playButtonImg.src = "assets/tutorials/Play.png"
+    }
 }
 
+function toggleFullScreen(){
+    if (document.fullscreenElement){
+        document.exitFullscreen()
+    }
+    else {
+        video.requestFullscreen()
+    }
+}
 
+fullscreenButton.onclick = toggleFullScreen
 
 function init() {
     video.onloadedmetadata = function(e){
@@ -45,7 +60,8 @@ function play(event){
         playButtonImg.src = "assets/tutorials/Play.png"
         video.pause()
     }
-
 }
 
 video.addEventListener('timeupdate', updateTimeElapsed)
+
+

@@ -115,9 +115,12 @@
         </div>
         <div class="right-col" id="rightCol">
             <div class="video-container">
-                <video id="video" src="https://st.depositphotos.com/8469332/53417/v/600/depositphotos_534179478-stock-video-generic-php-source-code-building.mp4">
+                <video preload="metadata" id="video" src="https://st.depositphotos.com/8469332/53417/v/600/depositphotos_534179478-stock-video-generic-php-source-code-building.mp4">
                 </video>
                 <div class="controls-container">
+                    <div class="video-title">
+                        <h3>What is Track My Kid</h3>
+                    </div>
                     <div class="timeline">
                         <div class="bar"></div>
                     </div>
@@ -127,7 +130,7 @@
                         </button>
                         <div class="right-section">
                             <div class="time"><time id="time-elapsed">00:00</time>/<time id="duration"></time></div>
-                            <div class="full-screen-btn"><img src="assets/tutorials/Enlarge-fullscreen-white.png" /></div>
+                            <div class="fullscreen-btn" id="fullscreen-btn"><img src="assets/tutorials/Enlarge-fullscreen-white.png" /></div>
                         </div>
                     </div>
                 </div>
