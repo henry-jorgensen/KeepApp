@@ -139,7 +139,7 @@
 
     .left-col{
         background-color: #fff;
-        position: absolute;
+        position: fixed;
         z-index: 1000;
         opacity: 0;
         width: 370px;
