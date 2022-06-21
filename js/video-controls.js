@@ -30,6 +30,12 @@ function updateTimeElapsed(){
     }
 }
 
+function updateProgress(){
+    seek.value = Math.floor(video.currentTime)
+}
+
+
+
 function toggleFullScreen(){
     if (document.fullscreenElement){
         document.exitFullscreen()
@@ -44,6 +50,7 @@ fullscreenButton.onclick = toggleFullScreen
 function init() {
     video.onloadedmetadata = function(e){
         const videoDuration = Math.round(video.duration)
+        seek.setAttribute('max', videoDuration)
         const time = formatTime(videoDuration)
         duration.innerText = `${time.minutes}:${time.seconds}`;
         duration.setAttribute('datetime', `${time.minutes}m ${time.seconds}`)
@@ -63,5 +70,6 @@ function play(event){
 }
 
 video.addEventListener('timeupdate', updateTimeElapsed)
+video.addEventListener('timeupdate', updateProgress)
 
 
