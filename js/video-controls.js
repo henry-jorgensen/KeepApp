@@ -13,9 +13,12 @@ const fullscreenButton = document.getElementById('fullscreen-btn')
 const videoContainer = document.getElementById('video-container')
 
 function formatTime(timeInSeconds){
-    const result = new Date(timeInSeconds * 1000).toISOString().substr(11, 8)
+    const timeInMilliseconds = timeInSeconds * 1000
+    console.log("format" + timeInMilliseconds)
+    const result = new Date(timeInMilliseconds).toISOString().substr(11, 8)
 
     return {
+        milliseconds: toString(timeInMilliseconds),
         minutes: result.substr(3,2),
         seconds: result.substr(6, 2),
     }
@@ -41,7 +44,8 @@ function toggleFullScreen(){
         document.exitFullscreen()
     }
     else {
-        video.requestFullscreen()
+        videoContainer.requestFullscreen()
+        
     }
 }
 
@@ -49,9 +53,11 @@ fullscreenButton.onclick = toggleFullScreen
 
 function init() {
     video.onloadedmetadata = function(e){
+        
         const videoDuration = Math.round(video.duration)
         seek.setAttribute('max', videoDuration)
         const time = formatTime(videoDuration)
+        console.log(`Init ${time.milliseconds}`)
         duration.innerText = `${time.minutes}:${time.seconds}`;
         duration.setAttribute('datetime', `${time.minutes}m ${time.seconds}`)
     }
