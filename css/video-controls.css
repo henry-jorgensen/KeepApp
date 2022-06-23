@@ -7,29 +7,30 @@
     position: relative;
 }
 
-.controls-container{
-    opacity: 1;
+.video-elements-container{
+    opacity: 0;
     transition: opacity 0.2s;
+    width: 100%;
 }
 
-.video-title-gradient{
+.video-title-container{
     position: absolute;
     top: 20px;
-    width: 100%;
+    width: inherit;
     height: 60px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 14px 14px 0px 0px;
 }
 
 .video-title-container h3{
     position: absolute;
-    top: 20px;
+    top: 0px;
     font-size: 16px;
     color: white;
     left: 15px;
 }
 
 .video-title-gradient::after{
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 14px 14px 0px 0px;
     content: '';
     position: absolute;
     top: 0;
@@ -43,15 +44,21 @@
     margin-left: 15px;
 }
 
+.controls-container{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    bottom: 46px;
+}
+
 .controls{
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 100%;
+    width: inherit;
     background-color: #2f2a3e;
     height: 40px;
-    bottom: 6px;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 14px 14px;
 }
 
 #play-pause{
@@ -60,6 +67,7 @@
 }
 
 .time{
+    font-weight: 100;
     margin-top: 10px;
     font-size: 16px; 
     display: flex;  
@@ -83,7 +91,7 @@
     height: 24px;
 }
 
-video:hover ~ .controls-container, .controls-container:hover{
+video:hover ~ .video-elements-container, .video-elements-container:hover{
     opacity: 1;
 }
 
@@ -100,15 +108,54 @@ video:hover ~ .controls-container, .controls-container:hover{
     fill: #fff;
 }
 
-input[type="range"] {
-    -webkit-appearance: none;
+.seek-tooltip{
+    opacity: 0;
     position: absolute;
-    bottom: 44px;
-    left: -2px;
+    bottom: 40px;
+    background-color: #2f2a3e;
+    color: white;
+    font-size: 14px;
+    content : attr(data-title);
+    padding: 5px;
+    border-radius: 5px;
+    transition: opacity 0.2s;
+}
+
+.progress:hover + .seek-tooltip {
+    
+    opacity: 1;
+}
+
+progress{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 10px;
     width: 100%;
     border-radius: 0px;
-    background: rgba(255, 255, 255, 0.6);
-    background-image: linear-gradient(#f58e7e, #f58e7e);
+    position: absolute;
+    bottom: -2px;
+    transition: 0.2s;
+    
+}
+
+progress::-webkit-progress-bar{
+    background-color: #f58e7eaa;
+}
+
+progress::-webkit-progress-value{
+    background-color: #f58e7e;
+}
+
+input[type="range"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    width: 100%;
+    border-radius: 0px;
+    background: transparent; 
     height: 10px;
 }
 
@@ -128,30 +175,33 @@ input[type="range"]::-webkit-slider-runnable-track{
     background: transparent;
 }
 
-
-
-/* .timeline{
-    flex: 1;
-    position: absolute;
-    bottom: 47px;
-    border: none;
-    height: 5px;
-    width: 92.4%;
-    background-color: #f58e7e63;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.timeline:hover{
-    height: 15px;
-}
-
-.bar{
-    width: 4%;
-    height: inherit;
-    background-color: #f58e7e;
-} */
-
 #play{
     display: block;
+}
+
+.centre-icon{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    background-color: #2f2a3e;
+    opacity: 1;
+}
+
+.centre-icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+}
+
+.fade-out{
+    opacity: 0;
+    transition: 0.5s;
 }
