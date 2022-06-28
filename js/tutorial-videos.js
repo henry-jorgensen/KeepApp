@@ -12,15 +12,20 @@ const videoLinks = [{id: 0, video: "https://st.depositphotos.com/8469332/53417/v
                     {id: 3, video: ""}, 
                     {id: 4, video: ""}]
 
-const videoDescriptions = [{id: 0, description: "h1"},
-                           {id: 1, description: "h1"},
-                           {id: 2, description: "h1"},
-                           {id: 3, description: "h1"},
-                           {id: 4, description: "h1"},]
+const videoDescriptions = [{id: 0, title: "test", description: "h12"},
+                           {id: 1, title: "test", description: "h12"},
+                           {id: 2, title: "test", description: "h12"},
+                           {id: 3, title: "test", description: "h12"},
+                           {id: 4, title: "test", description: "h12"},]
+
+const sectionNodes = document.getElementsByClassName('section')
 
 function fillSectionsLoop(){
     for (var i = 0; i < sectionsData.length; i++){
         createSection(sectionsData[i].id, sectionsData[i].title, sectionsData[i].completion)
+    }
+    for (var i = 0; i < sectionNodes.length; i++){
+        sectionNodes[i].addEventListener('click', clickSection)
     }
 }
 
@@ -63,11 +68,6 @@ function updateVideo(id){
     video.src = videoLinks[id].video
 }
 
-fillSectionsLoop()
-
-
-const sectionNodes = document.getElementsByClassName('section')
-
 function clickSection(event){   
     if(menuBool == true){
         showMenu()
@@ -86,16 +86,5 @@ function clickSection(event){
 
 }
 
-function addListeners(){
-    for (var i = 0; i < sectionNodes.length; i++){
-        sectionNodes[i].addEventListener('click', clickSection)
-    }
-}
-addListeners()
+fillSectionsLoop()
 
-function changeActive(event){
-    for (var i =0; i < sectionNodes.length; i++){
-        sectionNodes[i].className = sectionNodes[i].className.replace(" section-active", "")
-    }
-    event.currentTarget.className += " section-active"
-  } 
