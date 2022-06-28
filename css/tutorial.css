@@ -86,7 +86,7 @@
     border-radius: 14px;
 }
 
-.right-col .video-text{
+.right-col .video-description-container{
     margin-top: 20px;
     width: 89.5%;
     margin-bottom: 20px;
@@ -96,7 +96,7 @@
     color: #2f2a3e;
 }
 
-.right-col .video-text p{
+.right-col .video-description-container p{
     margin: 0;
     font-size: 18px;
 }
@@ -122,6 +122,10 @@
     transition: 0.2s;
     transform: rotateY(0deg);
     color: #2f2a3e;
+}
+
+.video-description-title{
+    margin: 0;
 }
 
 
@@ -181,11 +185,11 @@
         padding-left: 20px;
     }
 
-    .right-col .video-text p{
+    .right-col .video-description-container p{
         font-size: 13px;
     }
 
-    .right-col .video-text{
+    .right-col .video-description-container{
         padding: 8px;
     }
 }
