@@ -99,7 +99,7 @@ function createIcon(type){
 
 }
 
-function play(event){
+function play(){
     if (video.paused || video.ended){
         playButtonImg.src = "assets/tutorials/Pause.png"
         video.play()
