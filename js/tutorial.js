@@ -5,6 +5,7 @@ var darkener = document.getElementById('darken')
 var arrow = document.getElementById('arrow')
 var navbar = document.getElementById('nav')
 
+var menuBool = false
 var small = false
 var temp = false
 const myObserver = new ResizeObserver(entries => {
@@ -35,6 +36,7 @@ myObserver.observe(document.body);
 var opacityBool = false;
 function showMenu(){
     if (opacityBool == false){
+        menuBool = true
         leftMenuColumn.style.opacity = "1";
         leftMenuColumn.style.left = "0px";
         leftMenuColumn.style.pointerEvents = "all"
@@ -49,6 +51,7 @@ function showMenu(){
         navbar.style.pointerEvents = "none"
         opacityBool = true
     } else{
+        menuBool = false
         leftMenuColumn.style.opacity = "0";
         leftMenuColumn.style.left = "-370px";
         leftMenuColumn.style.pointerEvents = "none"

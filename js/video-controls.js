@@ -19,7 +19,6 @@ const controls = document.getElementById('controls')
 
 function formatTime(timeInSeconds){
     const timeInMilliseconds = timeInSeconds * 1000
-    console.log("format" + timeInMilliseconds)
     const result = new Date(timeInMilliseconds).toISOString().substr(11, 8)
 
     return {
@@ -79,7 +78,6 @@ document.addEventListener("DOMContentLoaded", init, false)
 function createIcon(type){
     var typeRoute;
     if (type == "play"){
-        console.log("HIT")
         typeRoute = "./assets/tutorials/Play.png"
     } else if (type == "pause"){
         typeRoute = "./assets/tutorials/Pause.png"
@@ -101,7 +99,7 @@ function createIcon(type){
 
 }
 
-function play(event){
+function play(){
     if (video.paused || video.ended){
         playButtonImg.src = "assets/tutorials/Pause.png"
         video.play()
