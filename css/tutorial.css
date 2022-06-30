@@ -163,6 +163,10 @@
 }
 
 @media screen and (max-width: 500px){
+    .video-description-title{
+        font-size: 18px;
+    }
+
     .left-col{
         width: 270px;
     }
