@@ -1,5 +1,5 @@
 const sectionsData = [{id: 0, title: "What is Track my Kid?", completion: true }, 
-                      {id: 1, title: "Download the app", completion: true}, 
+                      {id: 1, title: "Download the app", completion: false}, 
                       {id: 2, title: "Register", completion: false}, 
                       {id: 3, title: "Lorem Ipsum", completion: false}, 
                       {id: 4, title: "Lorem Ipsum", completion: false}]
@@ -87,6 +87,11 @@ function createDescription(id){
 function updateVideo(id){
     videoHoverTitle.textContent = sectionsData[id].title
     video.src = videoLinks[id].route
+}
+
+function updateCompletion(id){
+    sectionsData[id].completion = true
+    sectionNodes[id].childNodes[1].childNodes[0].src = "assets/general-icons/Tick-Fill.png"
 }
 
 function clickSection(event){  

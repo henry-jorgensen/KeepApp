@@ -120,7 +120,16 @@ function updateSeekToolTip(event){
     const t = formatTime(skipTo);
     seekTooltip.textContent = `${t.minutes}:${t.seconds}`;
     const rect = video.getBoundingClientRect();
-    seekTooltip.style.left = `${event.pageX - rect.left}px`;
+    const tooltipWidth = seekTooltip.getBoundingClientRect().width
+    const position = parseInt(event.pageX - rect.left, 10)
+
+    if (position > rect.width - tooltipWidth){
+        console.log("HIT", position)
+        seekTooltip.style.left = rect.width - 49 +"px"
+    } else {
+        console.log("NOT HITIING")
+        seekTooltip.style.left = `${event.pageX - rect.left}px`;
+    }
 }
 
 seek.addEventListener('mousemove', updateSeekToolTip);
