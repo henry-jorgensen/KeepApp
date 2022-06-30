@@ -17,6 +17,10 @@ const titleContainer = document.getElementById('title-container')
 const controlsContainer = document.getElementById('controls-container')
 const controls = document.getElementById('controls')
 
+const initalIcon = document.getElementById('initial-icon')
+
+console.log(screen.width)
+
 function formatTime(timeInSeconds){
     const timeInMilliseconds = timeInSeconds * 1000
     const result = new Date(timeInMilliseconds).toISOString().substr(11, 8)
@@ -100,6 +104,8 @@ function createIcon(type){
 }
 
 function play(){
+    initalIcon.remove()
+
     if (video.paused || video.ended){
         video.play()
         createIcon("play")

@@ -109,7 +109,7 @@ function clickSection(event){
         if(menuBool == true){
             showMenu()
         }
-    }, 300);
+    }, 100);
 
 }
 
