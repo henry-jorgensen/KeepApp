@@ -114,6 +114,8 @@ function play(){
         createIcon("pause")
     }
 }
+
+initalIcon.addEventListener('click', play)
 video.addEventListener('click', play)
 video.addEventListener('timeupdate', updateTimeElapsed)
 video.addEventListener('timeupdate', updateProgress)

@@ -194,7 +194,7 @@ input[type="range"]::-webkit-slider-runnable-track{
     border-radius: 80px;
     background-color: #2f2a3e;
     opacity: 1;
-    pointer-events: none;
+    cursor: pointer;
 }
 
 .centre-icon img{
