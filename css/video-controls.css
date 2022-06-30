@@ -147,6 +147,10 @@ progress::-webkit-progress-value{
     background-color: #f58e7e;
 }
 
+progress::-moz-progress-bar{
+    background-color: #f58e7e;
+}
+
 input[type="range"] {
     cursor: pointer;
     -webkit-appearance: none;
