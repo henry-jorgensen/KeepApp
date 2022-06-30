@@ -101,11 +101,9 @@ function createIcon(type){
 
 function play(){
     if (video.paused || video.ended){
-        playButtonImg.src = "assets/tutorials/Pause.png"
         video.play()
         createIcon("play")
     } else {
-        playButtonImg.src = "assets/tutorials/Play.png"
         video.pause()
         createIcon("pause")
     }
@@ -113,6 +111,15 @@ function play(){
 video.addEventListener('click', play)
 video.addEventListener('timeupdate', updateTimeElapsed)
 video.addEventListener('timeupdate', updateProgress)
+video.addEventListener('timeupdate', checkPlaying)
+
+function checkPlaying(){
+    if (!video.paused){
+        playButtonImg.src = "assets/tutorials/Pause.png"
+    } else if (video.paused){
+        playButtonImg.src = "assets/tutorials/Play.png"
+    }
+}
 
 function updateSeekToolTip(event){
     const skipTo = Math.round((event.offsetX / event.target.clientWidth) * parseInt(event.target.getAttribute('max'), 10));
