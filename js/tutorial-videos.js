@@ -96,9 +96,7 @@ function updateCompletion(id){
 
 function clickSection(event){  
     var id;
-    if(menuBool == true){
-        showMenu()
-    }
+    
     
     if (event.path[1].id){
         id = event.path[1].id
@@ -114,6 +112,12 @@ function clickSection(event){
         sectionNodes[i].className = sectionNodes[i].className.replace(" section-active", "")
     }
     event.currentTarget.className += " section-active"
+    
+    setTimeout(() => {
+        if(menuBool == true){
+            showMenu()
+        }
+    }, 300);
 
 }
 
