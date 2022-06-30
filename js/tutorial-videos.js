@@ -95,16 +95,8 @@ function updateCompletion(id){
 }
 
 function clickSection(event){  
-    var id;
-    
-    
-    if (event.path[1].id){
-        id = event.path[1].id
-        updateVideo(event.path[1].id)
-    } else {
-        id = event.path[2].id
-        updateVideo(event.path[2].id)
-    }
+    var id = this.id;
+    updateVideo(id)
 
     createDescription(id)
 
