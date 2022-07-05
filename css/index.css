@@ -435,6 +435,22 @@
     }
 }
 
+@media screen and (min-width: 1400px){
+    .text-box p{
+        font-size: 25px;
+    }
+
+    .feature-picture{
+        height: 650px;
+    }
+
+    .text-box h1{
+        font-size: 35px;
+    }
+}
+
+
+
 @media screen and (min-width: 2000px){
     .feature-header{
         font-size: 140px;
@@ -452,6 +468,8 @@
         font-size: 40px;
     }
 }
+
+
 
 
 /* CUSTOMER REVIEWS */
