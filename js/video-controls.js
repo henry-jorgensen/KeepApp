@@ -19,8 +19,6 @@ const controls = document.getElementById('controls')
 
 const initalIcon = document.getElementById('initial-icon')
 
-console.log(screen.width)
-
 function formatTime(timeInSeconds){
     const timeInMilliseconds = timeInSeconds * 1000
     const result = new Date(timeInMilliseconds).toISOString().substr(11, 8)
@@ -33,7 +31,7 @@ function formatTime(timeInSeconds){
 }
 
 function updateTimeElapsed(){
-    const time = formatTime(Math.round(video.currentTime))
+    const time = formatTime(Math.floor(video.currentTime))
     timeElapsed.innerText = `${time.minutes}:${time.seconds}`
     timeElapsed.setAttribute('datetime', `${time.minutes}m:${time.seconds}s`)
     if (video.ended){
@@ -42,11 +40,12 @@ function updateTimeElapsed(){
 }
 
 function updateProgress(){
-    seek.value = Math.floor(video.currentTime)
-    progressBar.value = Math.floor(video.currentTime)
+    var percentage = Math.floor((1000 / video.duration) * video.currentTime)
+    if (!isNaN(percentage)){
+        progressBar.value = percentage
+    } 
+    seek.value = percentage
 }
-
-
 
 function toggleFullScreen(){
     if (document.fullscreenElement){
@@ -69,8 +68,10 @@ function init() {
     video.onloadedmetadata = function(e){
         
         const videoDuration = Math.round(video.duration)
-        seek.setAttribute('max', videoDuration)
-        progressBar.setAttribute('max', videoDuration)
+        video.currentTime = 0
+        progressBar.value = 0
+        // seek.setAttribute('max', videoDuration)
+        // progressBar.setAttribute('max', videoDuration)
         const time = formatTime(videoDuration)
         duration.innerText = `${time.minutes}:${time.seconds}`;
         duration.setAttribute('datetime', `${time.minutes}m ${time.seconds}`)
@@ -107,9 +108,11 @@ function play(){
     initalIcon.remove()
 
     if (video.paused || video.ended){
+        playButtonImg.src = "assets/tutorials/Play.png"
         video.play()
         createIcon("play")
     } else {
+        playButtonImg.src = "assets/tutorials/Pause.png"
         video.pause()
         createIcon("pause")
     }
@@ -130,7 +133,7 @@ function checkPlaying(){
 }
 
 function updateSeekToolTip(event){
-    const skipTo = Math.round((event.offsetX / event.target.clientWidth) * parseInt(event.target.getAttribute('max'), 10));
+    const skipTo = Math.round((event.offsetX / event.target.clientWidth) * video.duration);
     seek.setAttribute('data-seek', skipTo)
     const t = formatTime(skipTo);
     seekTooltip.textContent = `${t.minutes}:${t.seconds}`;
@@ -139,10 +142,8 @@ function updateSeekToolTip(event){
     const position = parseInt(event.pageX - rect.left, 10)
 
     if (position > rect.width - tooltipWidth){
-        console.log("HIT", position)
         seekTooltip.style.left = rect.width - 49 +"px"
     } else {
-        console.log("NOT HITIING")
         seekTooltip.style.left = `${event.pageX - rect.left}px`;
     }
 }
@@ -150,10 +151,11 @@ function updateSeekToolTip(event){
 seek.addEventListener('mousemove', updateSeekToolTip);
 
 function skipAhead(event){
+    var percentage = Math.floor((1000 / video.duration) * video.currentTime)
     const skipTo = event.target.dataset.seek ? event.target.dataset.seek : event.target.value;
     video.currentTime = skipTo
-    progressBar.value = skipTo
-    seek.value = skipTo
+    progressBar.value = percentage
+    seek.value = percentage
 }
 
 seek.addEventListener('input', skipAhead)

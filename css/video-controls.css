@@ -194,9 +194,13 @@ input[type="range"]::-webkit-slider-runnable-track{
     border-radius: 80px;
     background-color: #2f2a3e;
     opacity: 1;
-    cursor: pointer;
+    pointer-events: none;
 }
 
+#initial-icon{
+    cursor: pointer;
+    pointer-events: all;
+}
 .centre-icon img{
     position: absolute;
     top: 50%;
