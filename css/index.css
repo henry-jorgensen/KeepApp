@@ -435,7 +435,7 @@
     }
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1700px){
     .text-box p{
         font-size: 25px;
     }
@@ -475,7 +475,7 @@
 /* CUSTOMER REVIEWS */
 
 .customer-reviews-content{
-    height: 1500px;
+    height: 1000px;
     position: relative;
     background-image: linear-gradient(white, white, #f98d7d);
 }
@@ -495,7 +495,7 @@
 }
 
 .review-phone img{
-    width: 335px;
+    width: 235px;
 }
 
 .review-phone-transform{
@@ -505,7 +505,7 @@
 
 .review-phone-transform img{
     transition: 0.2s;
-    width: 550px;
+    width: 397px;
     border-radius: 20px 20px 0px 0px;
 } 
 
@@ -524,7 +524,7 @@
 }
 
 .phone-text h1{
-    font-size: 55px;
+    font-size: 40px;
     color: #2f2a3e;
 }
 
@@ -567,12 +567,17 @@
 }
 
 .review-text h3, .review-text p{
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 33px;
 }
 
 .review-button{
-    font-size: 80px;
+    font-size: 60px;
+}
+
+.feature-slide{
+    top: 30%;
+    font-size: 60px;
 }
 
 .carousel-customer-container{
@@ -583,13 +588,13 @@
 
 .carousel-customer-review{
     position: absolute;
-    top: 55%;
+    top: 36.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 362px;
-    height: 796px;
+    width: 264px;
+    height: 564px;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 35px;
 }
 
 .customer-reviews-content .owl-dots{
@@ -597,7 +602,7 @@
 }
 
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1700px){
     .review-phone-transform img{
         width: 643px;
     } 
@@ -637,13 +642,13 @@
 }
 
 @media screen and (max-width: 640px){
-    .review-phone img{
+    /* .review-phone img{
         width: 300px;
     }
 
     .phone-text h1{
         font-size: 50px;
-    }
+    } */
 
     .customer-reviews-content, .carousel-customer-container{
         height: 1100px;

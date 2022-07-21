@@ -3,15 +3,15 @@ const trigger = document.querySelector('.client-animation-trigger');
 const phone = document.querySelector('.review-phone');
 const phoneText = document.querySelector('.phone-text');
 const reviews = document.querySelector('.review-slideshow');
-const buttons = document.getElementsByClassName('review-button');
+const buttons = document.getElementsByClassName('client-review');
 
 const reviewOwl = document.getElementById('review-carousel');
-
+var clientOwl = $('#review-carousel')
 $('.next').click(function(){
-  owl.trigger('next.owl.carousel')
+  clientOwl.trigger('next.owl.carousel')
 })
 $('.prev').click(function(){
-  owl.trigger('prev.owl.carousel')
+  clientOwl.trigger('prev.owl.carousel')
 })
 
 

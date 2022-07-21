@@ -16,6 +16,7 @@ var start = false;
 var owl = $('.owl-carousel');
 var wwdOwl = $('#wwd-carousel');
 var featureOwl = $('#feature-carousel');
+var clientOwl = $('#review-carousel')
 
 var highestDelta = 0;
 $(function() {
