@@ -2,7 +2,6 @@ footer{
     position: relative;
     bottom: 0;
     margin-top: 30px;
-    height: 300px; 
     background: #2f2a3e;
     font-size: 16px;
     width: 100%;
@@ -10,6 +9,10 @@ footer{
 
 .image{
     width: 100%;
+}
+
+.topic .heading h2{
+    font-size: 18px;
 }
 
 .block{
@@ -35,6 +38,7 @@ footer{
 .topic .links a{
     color: lightgray;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .links div{
@@ -47,9 +51,8 @@ footer{
 }
 
 
-
 .image img{
-    height: 200px;
+    height: 150px;
     float: right;
 }
 
@@ -60,8 +63,8 @@ footer{
 
 .socials-footer .icon svg{
     margin-left: 50px;
-    height: 50px;
-    margin-bottom: 30px;
+    height: 40px;
+    margin-bottom: 15px;
     fill: white;
 }
 
@@ -69,7 +72,7 @@ footer{
     text-align: center;
     background: #2f2a3e;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 1px;
     bottom: 0;
 }
 
